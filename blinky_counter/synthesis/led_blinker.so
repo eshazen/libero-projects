@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SynplifyOutput>
+	<result>Success</result>
+	<design>led_blinker</design>
+	<target_verilog>/home/hazen/LiberoProjects/blinky_counter/synthesis/led_blinker.vm</target_verilog>
+</SynplifyOutput>

@@ -1,0 +1,5 @@
+#List of actual used RTLs.
+
+File                                                                   Type     IN_PROJECT/INCLUDED/LIBRARY
+
+"/home/hazen/LiberoProjects/blinky_counter/hdl/counter_top.vhd"        vhdl                      IN PROJECT

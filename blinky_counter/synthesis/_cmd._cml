@@ -1,0 +1,1 @@
+-link -encrypt -top work.led_blinker -osyn /home/hazen/LiberoProjects/blinky_counter/synthesis/synwork/led_blinker_comp.srs /home/hazen/LiberoProjects/blinky_counter/synthesis/synwork/layer0.srs  -jobname linker  

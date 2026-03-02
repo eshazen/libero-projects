@@ -1,0 +1,15 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N|stack limit increased to max
+@N:"/home/hazen/LiberoProjects/blinky_counter/hdl/counter_top.vhd":5:7:5:17|Top entity is set to led_blinker.
+@N: CD140 :	| Using the VHDL 2008 Standard for file '/home/hazen/LiberoProjects/blinky_counter/hdl/counter_top.vhd'.
+@N: CD231 :"/home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/lib/vhd2008/std1164.vhd":889:16:889:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
+@N|Running in 64-bit mode
+@N|stack limit increased to max
+@N|stack limit increased to max
+@N:"/home/hazen/LiberoProjects/blinky_counter/hdl/counter_top.vhd":5:7:5:17|Top entity is set to led_blinker.
+@N: CD140 :	| Using the VHDL 2008 Standard for file '/home/hazen/LiberoProjects/blinky_counter/hdl/counter_top.vhd'.
+@N: CD231 :"/home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/lib/vhd2008/std1164.vhd":889:16:889:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
+@N: CD630 :"/home/hazen/LiberoProjects/blinky_counter/hdl/counter_top.vhd":5:7:5:17|Synthesizing work.led_blinker.rtl.
+@N|Running in 64-bit mode
+

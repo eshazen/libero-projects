@@ -1,0 +1,11 @@
+@P:  Worst Slack : 18.040
+@P:  clk50 - Estimated Frequency : 510.2 MHz
+@P:  clk50 - Requested Frequency : 50.0 MHz
+@P:  clk50 - Estimated Period : 1.960
+@P:  clk50 - Requested Period : 20.000
+@P:  clk50 - Slack : 18.040
+@P: led_blinker Part : mpfs095tfcvg784-1
+@P: led_blinker Register bits  : 32 
+@P: led_blinker DSP Blocks  : 0
+@P: led_blinker I/O primitives : 10
+@P:  CPU Time : 0h:00m:01s

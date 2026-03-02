@@ -1,0 +1,8 @@
+# Microchip Technology Inc.
+# Date: 2025-Nov-18 13:36:22
+# This file was generated based on the following SDC source files:
+#   /home/hazen/LiberoProjects/blinky_counter/constraint/led_blinker_derived_constraints.sdc
+#   /home/hazen/LiberoProjects/blinky_counter/constraint/user.sdc
+#
+
+create_clock -name {clk50} -period 20 -waveform {0 10 } [ get_ports { clk_i } ]

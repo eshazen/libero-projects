@@ -1,0 +1,46 @@
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: V-2023.09M-5
+Install: /home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro
+OS: Ubuntu 24.04.3 LTS
+Hostname: hazen-x24
+max virtual memory: unlimited (bytes)
+max user processes: 63485
+max stack size: 8388608 (bytes)
+
+
+Implementation : synthesis
+Synopsys HDL compiler and linker, Version comp202309synp1, Build 540R, Built Apr 29 2025 06:34:33, @6004905
+
+Modified Files: 0
+FID:  path (prevtimestamp, timestamp)
+
+*******************************************************************
+Modules that may have changed as a result of file changes: 0
+MID:  lib.cell.view
+
+*******************************************************************
+Unmodified files: 11
+FID:  path (timestamp)
+0        /home/hazen/LiberoProjects/blinky_counter/hdl/counter_top.vhd (2025-11-18 13:35:23)
+1        /home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/lib/vhd/hyperents.vhd (2025-04-29 09:27:56)
+2        /home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/lib/vhd/snps_haps_pkg.vhd (2025-04-29 09:27:56)
+3        /home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/lib/vhd/umr_capim.vhd (2025-04-29 09:27:57)
+4        /home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/lib/vhd2008/arith.vhd (2025-04-29 09:27:56)
+5        /home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/lib/vhd2008/location.map (2025-04-29 09:27:57)
+6        /home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/lib/vhd2008/numeric.vhd (2025-04-29 09:38:21)
+7        /home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/lib/vhd2008/std.vhd (2025-04-29 09:27:57)
+8        /home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/lib/vhd2008/std1164.vhd (2025-04-29 09:27:57)
+9        /home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/lib/vhd2008/std_textio.vhd (2025-04-29 09:27:57)
+10       /home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/lib/vhd2008/unsigned.vhd (2025-04-29 09:27:57)
+
+*******************************************************************
+Unchanged modules: 2
+MID:  lib.cell.view
+0        work.led_blinker.rtl
+1        work.led_blinker.vhdl

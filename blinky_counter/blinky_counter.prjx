@@ -1,0 +1,283 @@
+KEY LIBERO "2025.1"
+KEY CAPTURE "2025.1.0.14"
+KEY DEFAULT_IMPORT_LOC ""
+KEY DEFAULT_OPEN_LOC ""
+KEY ProjectID "0"
+KEY HDLTechnology "VHDL"
+KEY VERILOGMODE "SYSTEMVERILOG"
+KEY VHDLMODE "VHDL2008"
+KEY SYSTEMVERILOGMFCU "FALSE"
+KEY UseConstraintFlowTechnology "TRUE"
+KEY VendorTechnology_Family "PolarFireSoC"
+KEY VendorTechnology_Die "PA5SOC095T"
+KEY VendorTechnology_Package "fcsg325"
+KEY VendorTechnology_Speed "-1"
+KEY VendorTechnology_DieVoltage "1.0"
+KEY VendorTechnology_PART_RANGE "EXT"
+KEY VendorTechnology_DSW_VCCA_VOLTAGE_RAMP_RATE ""
+KEY VendorTechnology_IO_DEFT_STD "LVCMOS18"
+KEY VendorTechnology_OPCONR ""
+KEY VendorTechnology_PLL_SUPPLY ""
+KEY VendorTechnology_RAD_EXPOSURE ""
+KEY VendorTechnology_RESERVEMIGRATIONPINS "1"
+KEY VendorTechnology_RESTRICTPROBEPINS "1"
+KEY VendorTechnology_RESTRICTSPIPINS "0"
+KEY VendorTechnology_SYSTEM_CONTROLLER_SUSPEND_MODE "0"
+KEY VendorTechnology_TARGETDEVICESFORMIGRATION "PA5SOC095T"
+KEY VendorTechnology_TEMPR "EXT"
+KEY VendorTechnology_UNUSED_MSS_IO_RESISTOR_PULL "None"
+KEY VendorTechnology_VCCI_1.2_VOLTR "EXT"
+KEY VendorTechnology_VCCI_1.5_VOLTR "EXT"
+KEY VendorTechnology_VCCI_1.8_VOLTR "EXT"
+KEY VendorTechnology_VCCI_2.5_VOLTR "EXT"
+KEY VendorTechnology_VCCI_3.3_VOLTR "EXT"
+KEY VendorTechnology_VOLTR "EXT"
+KEY ProjectLocation "/home/hazen/LiberoProjects/blinky_counter"
+KEY ProjectDescription ""
+KEY UseRootLocationForLinkedFiles "FALSE"
+KEY RootLocationENVForLinkedFiles ""
+KEY RootLocationForLinkedFiles ""
+KEY GlobalIncludePaths ""
+KEY Pa4PeripheralNewSeq "GOOD"
+KEY MemoryMapDrcSeverity "FALSE"
+KEY LossOfDataDRCSeverity "TRUE"
+KEY IdWidthMismatchDRCSeverity "TRUE"
+KEY SimulationType "VHDL"
+KEY Vendor "Actel"
+KEY ActiveRoot "led_blinker::work"
+LIST REVISIONS
+VALUE="Impl1",NUM=1
+CURREV=1
+ENDLIST
+LIST GlobalIncludeFileList
+ENDLIST
+LIST FileManager
+VALUE "<project>/constraint/io/user.pdc,io_pdc"
+STATE="utd"
+TIME="1763491096"
+SIZE="1854"
+IS_TARGET="TRUE"
+ENDFILE
+VALUE "<project>/constraint/led_blinker_derived_constraints.sdc,sdc"
+STATE="utd"
+TIME="1763484360"
+SIZE="148"
+ENDFILE
+VALUE "<project>/constraint/user.sdc,sdc"
+STATE="utd"
+TIME="1763485927"
+SIZE="80"
+IS_TARGET="TRUE"
+ENDFILE
+VALUE "<project>/hdl/counter_top.vhd,hdl"
+STATE="utd"
+TIME="1763490923"
+SIZE="622"
+ENDFILE
+VALUE "<project>/synthesis/led_blinker.so,so"
+STATE="utd"
+TIME="1763490986"
+SIZE="232"
+ENDFILE
+VALUE "<project>/synthesis/led_blinker.vm,syn_vm"
+STATE="utd"
+TIME="1763490986"
+SIZE="15185"
+ENDFILE
+VALUE "<project>/synthesis/led_blinker_syn.prj,prj"
+STATE="utd"
+TIME="1763490986"
+SIZE="2809"
+ENDFILE
+VALUE "<project>/synthesis/led_blinker_vm.sdc,syn_sdc"
+STATE="utd"
+TIME="1763490986"
+SIZE="843"
+ENDFILE
+VALUE "<project>/synthesis/synwork/layer0.so,so"
+STATE="utd"
+TIME="1763490031"
+SIZE="154"
+ENDFILE
+ENDLIST
+LIST UsedFile
+ENDLIST
+LIST NewModulesInfo
+LIST "led_blinker::work"
+FILE "<project>/hdl/counter_top.vhd,hdl"
+LIST SynthesisConstraints
+VALUE "<project>/constraint/led_blinker_derived_constraints.sdc,sdc"
+VALUE "<project>/constraint/user.sdc,sdc"
+ENDLIST
+LIST TimingConstraints
+VALUE "<project>/constraint/led_blinker_derived_constraints.sdc,sdc"
+VALUE "<project>/constraint/user.sdc,sdc"
+ENDLIST
+LIST PNRConstraints
+VALUE "<project>/constraint/io/user.pdc,io_pdc"
+VALUE "<project>/constraint/led_blinker_derived_constraints.sdc,sdc"
+VALUE "<project>/constraint/user.sdc,sdc"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSYNTHESIS(<project>/synthesis/led_blinker.vm,syn_vm)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+ENDLIST
+LIST AssociatedStimulus
+ENDLIST
+LIST Other_Association
+ENDLIST
+LIST SimulationOptions
+UseAutomaticDoFile=true
+IncludeWaveDo=false
+Type=max
+RunTime=1000ns
+Resolution=1ps
+VsimOpt=
+EntityName=testbench
+TopInstanceName=<top>_0
+DoFileName=
+DoFileName2=wave.do
+DoFileParams=
+DisplayDUTWave=false
+LogAllSignals=false
+DisablePulseFiltering=false
+DumpVCD=false
+VCDFileName=power.vcd
+VHDL2008=false
+Verilog2001=false
+SystemVerilog=false
+TimeUnit=1
+TimeUnitBase=ns
+Precision=100
+PrecisionBase=ps
+SdfCorner=slow_lv_ht
+PliPath=/home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Designer/lib/modelsimpro/pli/pf_crypto_lin_me_pli.so
+UseCustomPliPath=false
+ENDLIST
+LIST ModelSimLibPath
+UseCustomPath=FALSE
+LibraryPath=
+ENDLIST
+LIST GlobalFlowOptions
+GenerateHDLAfterSynthesis=FALSE
+GenerateHDLAfterPhySynthesis=FALSE
+RunDRCAfterSynthesis=FALSE
+AutoCheckConstraints=TRUE
+UpdateModelSimIni=TRUE
+NoIOMode=FALSE
+PeriInitStandalone=FALSE
+OnDemandBuildDH=TRUE
+EnableViewDraw=FALSE
+UpdateViewDrawIni=TRUE
+GenerateHDLFromSchematic=TRUE
+VmNetlistFlowOn=TRUE
+EnableDesignSeparationOn=FALSE
+EnableSETMitigationOn=FALSE
+DisplayFanoutLimit=10
+AbortFlowOnPDCErrorsOn=TRUE
+AbortFlowOnSDCErrorsOn=TRUE
+AbortFlowOn3.3V_IO_ON=FALSE
+InstantiateInSmartDesign=TRUE
+FlashProInputFile=pdb
+SmartGenCompileReport=T
+ENDLIST
+LIST PhySynthesisOptions
+ENDLIST
+LIST Profiles
+NAME="SoftConsole"
+FUNCTION="SoftwareIDE"
+TOOL="SoftConsole"
+LOCATION="eclipse.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="Synplify Pro ME"
+FUNCTION="Synthesis"
+TOOL="Synplify Pro ME"
+LOCATION="/home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/bin/synplify_pro"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="ModelSim ME Pro"
+FUNCTION="Simulation"
+TOOL="ModelSim Pro Edition"
+LOCATION="/home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/ModelSim_Pro/linuxacoem/vsim"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="Identify Debugger"
+FUNCTION="IdentifyDebugger"
+TOOL="Identify Debugger"
+LOCATION="/home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Identify/bin/identify_debugger"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+ENDLIST
+LIST ProjectState5.1
+LIST "led_blinker::work"
+LIST Impl1
+ideSYNTHESIS(<project>/synthesis/led_blinker.vm,syn_vm)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+LIST ExcludePackageForSimulation
+ENDLIST
+LIST ExcludePackageForSynthesis
+ENDLIST
+LIST IncludeModuleForSimulation
+ENDLIST
+LIST CDBOrder
+ENDLIST
+LIST UserCustomizedFileList
+ENDLIST
+LIST OpenedFileList
+ORIENTATION;HORIZONTAL
+Constraint Manager;Constraint Manager;0
+HDL;hdl/counter_top.vhd;0
+Reports;Reports;0
+ReportsCurrentItem;Run Programming Action:led_blinker_PROGRAM.log
+StartPage;StartPage;0
+ACTIVEVIEW;Constraint Manager
+ENDLIST
+LIST ModuleSubBlockList
+LIST "led_blinker::work","hdl/counter_top.vhd","FALSE","FALSE"
+ENDLIST
+ENDLIST
+LIST ActiveTestBenchList
+ENDLIST
+LIST IOTabList
+VALUE "constraint/io/user.pdc"
+ENDLIST
+LIST FPTabList
+ENDLIST
+LIST TimingTabList
+VALUE "constraint/led_blinker_derived_constraints.sdc"
+VALUE "constraint/user.sdc"
+ENDLIST
+LIST FDCTabList
+ENDLIST

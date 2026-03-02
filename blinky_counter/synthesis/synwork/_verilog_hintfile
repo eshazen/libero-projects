@@ -1,0 +1,24 @@
+%%% protect protected_file
+#OPTIONS:"|-bldtbl|-prodtype|synplify_pro|-infer_seqShift|-primux|-dspmac|-pqdpadd|-fixsmult|-sdff_counter|-divnmod|-nram|-actel|-work_is_curlib|1|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-vhdl2008|-work_is_curlib|1|-ignore_undefined_lib|-lib|work"
+#CUR:"/home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/linux_a_64/c_vhdl":1745933903
+#CUR:"/home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/lib/vhd2008/location.map":1745933277
+#CUR:"/home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/lib/vhd2008/std.vhd":1745933277
+#CUR:"/home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/lib/vhd/snps_haps_pkg.vhd":1745933276
+#CUR:"/home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/lib/vhd2008/std1164.vhd":1745933277
+#CUR:"/home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/lib/vhd2008/std_textio.vhd":1745933277
+#CUR:"/home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/lib/vhd2008/numeric.vhd":1745933901
+#CUR:"/home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/lib/vhd/umr_capim.vhd":1745933277
+#CUR:"/home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/lib/vhd2008/arith.vhd":1745933276
+#CUR:"/home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/lib/vhd2008/unsigned.vhd":1745933277
+#CUR:"/home/hazen/LiberoProjects/blinky_counter/hdl/counter_top.vhd":1763490923
+@E8lFkRDCD_C8LMDH	
+CsDsHLNRs$I	Fs
+bHMkO0RDH	_RH4
+M0bkR#sCCM0__4HR
+0FkbRk0D_C8F
+RUClM8FD8kC
+
+
+
+
+@ 

@@ -1,0 +1,148 @@
+Compile Report
+Microchip Technology Inc. - Microchip Libero Software Release 2025.1 (Version 2025.1.0.14)
+Date: Tue Nov 18 13:36:30 2025
+
+Device Selection
++------------------------+--------------+
+| Family                 | PolarFireSoC |
+| Device                 | MPFS095T     |
+| Package                | FCSG325      |
+| Speed Grade            | -1           |
+| Core Voltage           | 1.0V         |
+| Part Range             | EXT          |
+| Default I/O technology | LVCMOS 1.8V  |
++------------------------+--------------+
+
+Source Files
++---------+--------------------------------------------------------------------+
+| Topcell | led_blinker                                                        |
+| Format  | Verilog                                                            |
+| Source  | /home/hazen/LiberoProjects/blinky_counter/synthesis/led_blinker.vm |
++---------+--------------------------------------------------------------------+
+
+Options
++----------------------------------------------------+----+
+| Limit the number of high fanout nets to display to | 10 |
++----------------------------------------------------+----+
+
+Resource Usage
++-----------------------------+------+-------+------------+
+| Type                        | Used | Total | Percentage |
++-----------------------------+------+-------+------------+
+| 4LUT                        | 33   | 93516 | 0.04       |
+| DFF                         | 32   | 93516 | 0.03       |
+| User I/O                    | 10   | 80    | 12.50      |
+| -- Single-ended I/O         | 10   | 80    | 12.50      |
+| -- Differential I/O Pairs   | 0    | 40    | 0.00       |
+| -- I/Os using I/O Registers | 0    | 80    | 0.00       |
+| I/O Register Flip-Flops     | 0    | 240   | 0.00       |
+| -- Input  I/O Flip-Flops    | 0    | 80    | 0.00       |
+| -- Output I/O Flip-Flops    | 0    | 80    | 0.00       |
+| -- Enable I/O Flip-Flops    | 0    | 80    | 0.00       |
+| uSRAM                       | 0    | 876   | 0.00       |
+| LSRAM                       | 0    | 308   | 0.00       |
+| Math                        | 0    | 292   | 0.00       |
+| H-Chip Global               | 1    | 48    | 2.08       |
+| PLL                         | 0    | 8     | 0.00       |
+| DLL                         | 0    | 8     | 0.00       |
+| Transceiver Lanes           | 0    | 2     | 0.00       |
+| Transceiver PCIe            | 0    | 2     | 0.00       |
+| MSS                         | 0    | 1     | 0.00       |
++-----------------------------+------+-------+------------+
+
+Detailed Logic Resource Usage
++-----------------------+------+-----+
+| Type                  | 4LUT | DFF |
++-----------------------+------+-----+
+| Fabric Logic          | 33   | 32  |
+| uSRAM Interface Logic | 0    | 0   |
+| LSRAM Interface Logic | 0    | 0   |
+| Math Interface Logic  | 0    | 0   |
+| Total Used            | 33   | 32  |
++-----------------------+------+-----+
+
+Detailed Carry Chains Resource Usage
++--------+------+
+| Length | Used |
+| 32     | 1    |
+| Total  | 1    |
++--------+------+
+
+I/O Function
++-------------------------------+--------------+-------------+-----------------+
+| Type                          | w/o register | w/ register | w/ DDR register |
++-------------------------------+--------------+-------------+-----------------+
+| Input I/O                     | 2            | 0           | 0               |
+| Output I/O                    | 8            | 0           | 0               |
+| Bidirectional I/O             | 0            | 0           | 0               |
+| Differential Input I/O Pairs  | 0            | 0           | 0               |
+| Differential Output I/O Pairs | 0            | 0           | 0               |
++-------------------------------+--------------+-------------+-----------------+
+
+Nets assigned to chip global resources
++--------+---------+---------------------+
+| Fanout | Type    | Name                |
++--------+---------+---------------------+
+| 32     | INT_NET | Net   : NN_1        |
+|        |         | Driver: I_1/U0_RGB1 |
+|        |         | Source: NETLIST     |
++--------+---------+---------------------+
+
+Nets assigned to row global resources
++--------+------+------+
+| Fanout | Type | Name |
++--------+------+------+
++--------+------+------+
+
+High fanout nets
++--------+---------+------------------------+
+| Fanout | Type    | Name                   |
++--------+---------+------------------------+
+| 32     | INT_NET | Net   : reset_n_i_c    |
+|        |         | Driver: reset_n_i_ibuf |
+| 2      | INT_NET | Net   : counter_Z[0]   |
+|        |         | Driver: counter[0]     |
+| 2      | INT_NET | Net   : led_o_c[7]     |
+|        |         | Driver: counter[31]    |
+| 2      | INT_NET | Net   : led_o_c[6]     |
+|        |         | Driver: counter[30]    |
+| 2      | INT_NET | Net   : led_o_c[5]     |
+|        |         | Driver: counter[29]    |
+| 2      | INT_NET | Net   : led_o_c[4]     |
+|        |         | Driver: counter[28]    |
+| 2      | INT_NET | Net   : led_o_c[3]     |
+|        |         | Driver: counter[27]    |
+| 2      | INT_NET | Net   : led_o_c[2]     |
+|        |         | Driver: counter[26]    |
+| 2      | INT_NET | Net   : led_o_c[1]     |
+|        |         | Driver: counter[25]    |
+| 2      | INT_NET | Net   : led_o_c[0]     |
+|        |         | Driver: counter[24]    |
++--------+---------+------------------------+
+
+High fanout nets (through buffer trees)
++--------+---------+------------------------+
+| Fanout | Type    | Name                   |
++--------+---------+------------------------+
+| 32     | INT_NET | Net   : reset_n_i_c    |
+|        |         | Driver: reset_n_i_ibuf |
+| 2      | INT_NET | Net   : counter_Z[0]   |
+|        |         | Driver: counter[0]     |
+| 2      | INT_NET | Net   : led_o_c[7]     |
+|        |         | Driver: counter[31]    |
+| 2      | INT_NET | Net   : led_o_c[6]     |
+|        |         | Driver: counter[30]    |
+| 2      | INT_NET | Net   : led_o_c[5]     |
+|        |         | Driver: counter[29]    |
+| 2      | INT_NET | Net   : led_o_c[4]     |
+|        |         | Driver: counter[28]    |
+| 2      | INT_NET | Net   : led_o_c[3]     |
+|        |         | Driver: counter[27]    |
+| 2      | INT_NET | Net   : led_o_c[2]     |
+|        |         | Driver: counter[26]    |
+| 2      | INT_NET | Net   : led_o_c[1]     |
+|        |         | Driver: counter[25]    |
+| 2      | INT_NET | Net   : led_o_c[0]     |
+|        |         | Driver: counter[24]    |
++--------+---------+------------------------+
+

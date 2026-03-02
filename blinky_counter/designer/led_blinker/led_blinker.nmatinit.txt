@@ -1,0 +1,72 @@
+# Microchip NMAT TXT File
+
+# Version: 2025.1 2025.1.0.14
+
+# Design Name: led_blinker 
+
+# Input Netlist Format: EDIF 
+
+# Family: PolarFireSoC , Die: MPFS095T , Package: FCSG325 , Speed grade: -1 
+
+# Date generated: Tue Nov 18 13:39:34 2025 
+
+
+#
+# I/O constraints
+#
+
+set_io clk_i R18
+set_io led_o[0] T18
+set_io led_o[1] V17
+set_io led_o[2] U20
+set_io led_o[3] U21
+set_io led_o[4] AA18
+set_io led_o[5] V16
+set_io led_o[6] U15
+set_io led_o[7] E10
+set_io reset_n_i T19
+
+#
+# Core cell constraints
+#
+
+set_location counter[24] 1968 163
+set_location counter[17] 1961 163
+set_location counter[2] 1946 163
+set_location counter[7] 1951 163
+set_location counter_RNO[0] 1932 162
+set_location counter[6] 1950 163
+set_location counter[8] 1952 163
+set_location counter[22] 1966 163
+set_location counter[16] 1960 163
+set_location counter[15] 1959 163
+set_location counter[29] 1973 163
+set_location counter[14] 1958 163
+set_location counter[21] 1965 163
+set_location counter[4] 1948 163
+set_location counter[28] 1972 163
+set_location counter[5] 1949 163
+set_location counter[31] 1975 163
+set_location counter[12] 1956 163
+set_location counter[1] 1945 163
+set_location counter[3] 1947 163
+set_location counter[23] 1967 163
+set_location counter[19] 1963 163
+set_location counter[20] 1964 163
+set_location counter[27] 1971 163
+set_location counter[11] 1955 163
+set_location counter[30] 1974 163
+set_location counter[18] 1962 163
+set_location I_1/U0_RGB1 1603 152
+set_location I_1 1166 0
+set_location counter[26] 1970 163
+set_location counter[13] 1957 163
+set_location counter[0] 1944 163
+set_location counter[10] 1954 163
+set_location counter[9] 1953 163
+set_location counter[25] 1969 163
+set_location counter_s_1 1944 162
+set_location I_1/U0_IOBA 1598 215
+set_location counter_s_1_CC_0 1944 164
+set_location counter_s_1_CC_1 1956 164
+set_location counter_s_1_CC_2 1968 164

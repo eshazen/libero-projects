@@ -1,0 +1,19 @@
+********************************************************************
+Delay Instance Report - Date: Tue Nov 18 13:39:34 2025
+Product: Designer
+Release: 2025.1
+Version: 2025.1.0.14
+Design Name: led_blinker
+Family: PolarFireSoC
+Die: MPFS095T
+Package: FCSG325
+********************************************************************
+
+Microchip Technology Inc. - Microchip Libero Software Release 2025.1 (Version 2025.1.0.14)
+
+
++------+---------------+------------+-------------+-----------------+-----------+
+| Type | Instance Name | Param Name | Delay Value | PDC Option Name | Editable? |
++------+---------------+------------+-------------+-----------------+-----------+
++------+---------------+------------+-------------+-----------------+-----------+
+
