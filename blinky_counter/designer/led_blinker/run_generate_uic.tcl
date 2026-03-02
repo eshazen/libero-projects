@@ -3,9 +3,9 @@ set_device \
     -die PA5SOC095T \
     -pkg fcsg325
 set_proj_dir \
-    -path {/home/hazen/LiberoProjects/blinky_counter}
+    -path {/home/hazen/work/libero-projects/blinky_counter}
 set_impl_dir \
-    -path {/home/hazen/LiberoProjects/blinky_counter/designer/led_blinker}
+    -path {/home/hazen/work/libero-projects/blinky_counter/designer/led_blinker}
 set_is_relative_path \
     -value {FALSE}
 set_root_path_dir \

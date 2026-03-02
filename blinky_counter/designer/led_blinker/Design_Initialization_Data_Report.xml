@@ -6,9 +6,9 @@
 <text>Family: PolarFireSoC</text>
 <text>Die: MPFS095T</text>
 <text>Package: FCSG325</text>
-<text>Date: Tue Nov 18 13:41:49 2025
+<text>Date: Mon Mar  2 16:20:41 2026
 </text>
-<text>Report path: /home/hazen/LiberoProjects/blinky_counter/designer/led_blinker/Design_Initialization_Data_Report.xml</text>
+<text>Report path: /home/hazen/work/libero-projects/blinky_counter/designer/led_blinker/Design_Initialization_Data_Report.xml</text>
 <section>
 <name>
 PolarFireSoC Macros</name>

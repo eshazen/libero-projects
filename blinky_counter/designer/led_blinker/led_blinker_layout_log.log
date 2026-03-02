@@ -1,38 +1,28 @@
-INFO: Reading User SDC file /home/hazen/LiberoProjects/blinky_counter/constraint/led_blinker_derived_constraints.sdc.
-INFO: Reading User SDC file /home/hazen/LiberoProjects/blinky_counter/constraint/user.sdc.
-INFO: The option "Abort flow if errors are found in SDC" is turned ON in Project Settings> Design flow page. The Place & Route tool will fail if errors are found in associated SDC files. Please uncheck the option to ignore the errors and continue running the tool.
-
-No errors or warnings found.
+Info: No timing constraint has been associated to the 'Place and Route' tool. 'Place and Route' will be run in non Timing Driven mode.
 INFO: The option "Abort flow if errors are found in PDC" is turned ON in Project Settings> Design flow page. The Place & Route tool will fail if errors are found in associated PDC files. Please uncheck the option to ignore the errors and continue running the tool
 ***** Place and Route Configurations *****
-Timing-driven            : ON
+Timing-driven            : OFF
 Power-driven             : OFF
 I/O Register Combining   : OFF
-Global Pins Demotion     : ON
+Global Pins Demotion     : OFF
 Driver Replication       : OFF
 High-effort              : OFF
 Repair min-delay         : OFF
 Incremental              : OFF
-Inter-clock optimization : ON
 
-INFO: Reading User PDC file /home/hazen/LiberoProjects/blinky_counter/constraint/io/user.pdc. 0 error(s) and 0 warning(s)
-
- Running Timing based Global Demotion.
-        Demoted 0 global pins.
-
- Timing based Global Demotion completed successfully.
+INFO: Reading User PDC file /home/hazen/work/libero-projects/blinky_counter/constraint/io/user.pdc. 0 error(s) and 0 warning(s)
 
 Running the I/O Bank and Globals Assigner.
 Info:  Globals Assigner found no global involed in the problem.
-Info:  I/O Bank and Globals Assigner identified 10 fixed I/O macros, 0 unfixed I/O macros
+Info:  I/O Bank and Globals Assigner identified 12 fixed I/O macros, 0 unfixed I/O macros
 
 I/O Bank and Globals Assigner completed successfully.
 Total time spent in I/O Bank and Globals Assigner: 0 seconds
 
 Placer V5.0 - 2025.1.0
-Design: led_blinker                     Started: Tue Nov 18 13:38:46 2025
+Design: led_blinker                     Started: Mon Mar  2 16:18:05 2026
 
-Initializing Normal-Effort Timing-Driven Placement ...
+Initializing Normal-Effort Standard Placement ...
 Clustering ...
 Placing ...
 Improving placement ...
@@ -40,37 +30,37 @@ End of placement.
 
 Placer Runtime Summary   :
 Clustering (1 pass)      : 0 seconds
-Placement                : 0 seconds
+Placement                : 1 seconds
 Improvement              : 0 seconds
 
 Placer completed successfully.
 
 Design: led_blinker
-Finished: Tue Nov 18 13:39:21 2025
-Total CPU Time:     00:00:34            Total Elapsed Time: 00:00:35
-Total Memory Usage: 1307.0 Mbytes
+Finished: Mon Mar  2 16:18:25 2026
+Total CPU Time:     00:00:18            Total Elapsed Time: 00:00:20
+Total Memory Usage: 1246.6 Mbytes
                         o - o - o - o - o - o
 
 
 Router
-Design: led_blinker                     Started: Tue Nov 18 13:39:25 2025
+Design: led_blinker                     Started: Mon Mar  2 16:18:28 2026
 
 
 Router completed successfully.
 
 Design: led_blinker
-Finished: Tue Nov 18 13:39:34 2025
-Total CPU Time:     00:00:08            Total Elapsed Time: 00:00:09
-Total Memory Usage: 2009.2 Mbytes
+Finished: Mon Mar  2 16:18:38 2026
+Total CPU Time:     00:00:09            Total Elapsed Time: 00:00:10
+Total Memory Usage: 2007.0 Mbytes
                         o - o - o - o - o - o
 
 Resource Usage
 +---------------------------+------+-------+------------+
 | Type                      | Used | Total | Percentage |
 +---------------------------+------+-------+------------+
-| 4LUT                      | 33   | 93516 | 0.04       |
-| DFF                       | 32   | 93516 | 0.03       |
-| Logic Element             | 33   | 93516 | 0.04       |
+| 4LUT                      | 120  | 93516 | 0.13       |
+| DFF                       | 119  | 93516 | 0.13       |
+| Logic Element             | 153  | 93516 | 0.16       |
 | I/Os using I/O Registers  | 0    | 80    | 0.00       |
 | I/O Register Flip-Flops   | 0    | 240   | 0.00       |
 | -- Input  I/O Flip-Flops  | 0    | 80    | 0.00       |
@@ -82,7 +72,7 @@ I/O Placement
 +--------+-------+------------+
 | Type   | Count | Percentage |
 +--------+-------+------------+
-| Locked |  10   | 100.00%    |
+| Locked |  12   | 100.00%    |
 | Placed |  0    | 0.00%      |
 +--------+-------+------------+
 

@@ -1,15 +1,44 @@
 @N: CD231 :"/home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/lib/vhd2008/std1164.vhd":889:16:889:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
-@N: CD630 :"/home/hazen/LiberoProjects/blinky_counter/hdl/counter_top.vhd":5:7:5:17|Synthesizing work.led_blinker.rtl.
-@W: CD648 :"/home/hazen/LiberoProjects/blinky_counter/hdl/counter_top.vhd":25:24:25:30|Expression does not match type std_ulogic_vector
-@W: CD648 :"/home/hazen/LiberoProjects/blinky_counter/hdl/counter_top.vhd":25:24:25:45|Expression does not match type std_ulogic_vector
+@N: CD630 :"/home/hazen/work/libero-projects/blinky_counter/hdl/counter_top.vhd":5:7:5:17|Synthesizing work.led_blinker.rtl.
+@N: CD630 :"/home/hazen/work/libero-projects/blinky_counter/hdl/uart_tx.vhd":18:7:18:13|Synthesizing work.uart_tx.rtl.
+@N: CD231 :"/home/hazen/work/libero-projects/blinky_counter/hdl/uart_tx.vhd":35:17:35:18|Using onehot encoding for type t_sm_main. For example, enumeration s_idle is mapped to "10000".
+@N: CD604 :"/home/hazen/work/libero-projects/blinky_counter/hdl/uart_tx.vhd":126:8:126:21|OTHERS clause is not synthesized.
+Post processing for work.uart_tx.rtl
+Running optimization stage 1 on uart_tx .......
+Finished optimization stage 1 on uart_tx (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+@N: CD630 :"/home/hazen/work/libero-projects/blinky_counter/hdl/uart_new.vhd":11:7:11:14|Synthesizing work.uart_new.arch.
+Post processing for work.uart_new.arch
+Running optimization stage 1 on uart_new .......
+@W: CL265 :"/home/hazen/work/libero-projects/blinky_counter/hdl/uart_new.vhd":60:4:60:5|Removing unused bit 0 of ser_sr_6(9 downto 0). Either assign all bits or reduce the width of the signal.
+@A: CL282 :"/home/hazen/work/libero-projects/blinky_counter/hdl/uart_new.vhd":60:4:60:5|Feedback mux created for signal ser_dat[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"/home/hazen/work/libero-projects/blinky_counter/hdl/uart_new.vhd":60:4:60:5|Feedback mux created for signal rx_last. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"/home/hazen/work/libero-projects/blinky_counter/hdl/uart_new.vhd":60:4:60:5|Feedback mux created for signal ser_valid. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+Finished optimization stage 1 on uart_new (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
 Post processing for work.led_blinker.rtl
 Running optimization stage 1 on led_blinker .......
-Finished optimization stage 1 on led_blinker (CPU Time 0h:00m:00s, Memory Used current: 186MB peak: 186MB)
+@W: CL271 :"/home/hazen/work/libero-projects/blinky_counter/hdl/counter_top.vhd":53:46:53:46|Pruning unused bits 5 to 4 of param_array_0(5 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL169 :"/home/hazen/work/libero-projects/blinky_counter/hdl/counter_top.vhd":53:46:53:46|Pruning unused register param_array_1(5 downto 0). Make sure that there are no unused intermediate registers.
+@W: CL169 :"/home/hazen/work/libero-projects/blinky_counter/hdl/counter_top.vhd":53:46:53:46|Pruning unused register param_array_2(5 downto 0). Make sure that there are no unused intermediate registers.
+@W: CL169 :"/home/hazen/work/libero-projects/blinky_counter/hdl/counter_top.vhd":53:46:53:46|Pruning unused register param_array_3(5 downto 0). Make sure that there are no unused intermediate registers.
+@A: CL282 :"/home/hazen/work/libero-projects/blinky_counter/hdl/counter_top.vhd":115:6:115:7|Feedback mux created for signal led_o[3:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+Finished optimization stage 1 on led_blinker (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+Running optimization stage 2 on uart_new_work_led_blinker_rtl_0layer0 .......
+Finished optimization stage 2 on uart_new_work_led_blinker_rtl_0layer0 (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+Running optimization stage 2 on uart_tx_5208 .......
+@N: CL201 :"/home/hazen/work/libero-projects/blinky_counter/hdl/uart_tx.vhd":49:4:49:5|Trying to extract state machine for register r_SM_Main.
+Extracted state machine for register r_SM_Main
+State machine has 5 reachable states with original encodings of:
+   00001
+   00010
+   00100
+   01000
+   10000
+Finished optimization stage 2 on uart_tx_5208 (CPU Time 0h:00m:00s, Memory Used current: 188MB peak: 188MB)
 Running optimization stage 2 on led_blinker .......
-Finished optimization stage 2 on led_blinker (CPU Time 0h:00m:00s, Memory Used current: 186MB peak: 186MB)
+Finished optimization stage 2 on led_blinker (CPU Time 0h:00m:00s, Memory Used current: 188MB peak: 188MB)
 
 For a summary of runtime per design unit, please see file:
 ==========================================================
-@L: /home/hazen/LiberoProjects/blinky_counter/synthesis/synwork/layer0.duruntime
+@L: /home/hazen/work/libero-projects/blinky_counter/synthesis/synwork/layer0.duruntime
 
 

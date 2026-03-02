@@ -59,13 +59,13 @@ set_compile_info \
 set_compile_info \
     -category {"Source Files"} \
     -name {"Source"} \
-    -value {"/home/hazen/LiberoProjects/blinky_counter/synthesis/led_blinker.vm"}
+    -value {"/home/hazen/work/libero-projects/blinky_counter/synthesis/led_blinker.vm"}
 set_compile_info \
     -category {"Options"} \
     -name {"Limit the number of high fanout nets to display to"} \
     -value {"10"}
 compile \
-    -desdir {/home/hazen/LiberoProjects/blinky_counter/designer/led_blinker} \
+    -desdir {/home/hazen/work/libero-projects/blinky_counter/designer/led_blinker} \
     -design led_blinker \
     -fam PolarFireSoC \
     -die PA5SOC095T \

@@ -1,6 +1,6 @@
 <project name="led_blinker" version="1.2">
     <ProjectDirectory>
-        /home/hazen/LiberoProjects/blinky_counter/designer/led_blinker/led_blinker_fp
+        /home/hazen/work/libero-projects/blinky_counter/designer/led_blinker/led_blinker_fp
     </ProjectDirectory>
     <View>
         ChainView
@@ -9,7 +9,7 @@
         MPFS095T
     </LiberoTargetDevice>
     <LogFile>
-        /home/hazen/LiberoProjects/blinky_counter/designer/led_blinker/led_blinker_fp/led_blinker.log
+        /home/hazen/work/libero-projects/blinky_counter/designer/led_blinker/led_blinker_fp/led_blinker.log
     </LogFile>
     <SerializationOption>
         Skip

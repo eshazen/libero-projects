@@ -1,5 +1,7 @@
 #List of actual used RTLs.
 
-File                                                                   Type     IN_PROJECT/INCLUDED/LIBRARY
+File                                                                         Type     IN_PROJECT/INCLUDED/LIBRARY
 
-"/home/hazen/LiberoProjects/blinky_counter/hdl/counter_top.vhd"        vhdl                      IN PROJECT
+"/home/hazen/work/libero-projects/blinky_counter/hdl/counter_top.vhd"        vhdl                      IN PROJECT
+"/home/hazen/work/libero-projects/blinky_counter/hdl/uart_tx.vhd"            vhdl                      IN PROJECT
+"/home/hazen/work/libero-projects/blinky_counter/hdl/uart_new.vhd"           vhdl                      IN PROJECT

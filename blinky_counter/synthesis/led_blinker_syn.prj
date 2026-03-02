@@ -1,14 +1,16 @@
 #--  Synopsys, Inc.
 #--  Version V-2023.09M-5
-#--  Project file /home/hazen/LiberoProjects/blinky_counter/synthesis/led_blinker_syn.prj
-#--  Written on Tue Nov 18 13:36:26 2025
+#--  Project file /home/hazen/work/libero-projects/blinky_counter/synthesis/led_blinker_syn.prj
+#--  Written on Mon Mar  2 16:16:41 2026
 
 
 #project files
 add_file -verilog "../component/syn_comps.v"
-add_file -vhdl -lib work "/home/hazen/LiberoProjects/blinky_counter/hdl/counter_top.vhd"
+add_file -vhdl -lib work "/home/hazen/work/libero-projects/blinky_counter/hdl/uart_tx.vhd"
+add_file -vhdl -lib work "/home/hazen/work/libero-projects/blinky_counter/hdl/uart_new.vhd"
+add_file -vhdl -lib work "/home/hazen/work/libero-projects/blinky_counter/hdl/counter_top.vhd"
 add_file -verilog "../component/MSS_syn_comps.v"
-add_file -fpga_constraint "/home/hazen/LiberoProjects/blinky_counter/designer/led_blinker/synthesis.fdc"
+add_file -fpga_constraint "/home/hazen/work/libero-projects/blinky_counter/designer/led_blinker/synthesis.fdc"
 
 
 #implementation: "synthesis"

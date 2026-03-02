@@ -16,7 +16,7 @@
 </header>
 <row>
  <cell>0.1</cell>
- <cell>Tue Nov 18 13:39:36 2025</cell>
+ <cell>Mon Mar  2 16:18:40 2026</cell>
  <cell>Designer</cell>
  <cell>2025.1</cell>
  <cell>2025.1.0.14</cell>
@@ -2682,55 +2682,55 @@
 </row>
 <row>
  <cell>E14</cell>
- <cell>---</cell>
+ <cell>uart_rx_o</cell>
  <cell>GPIO126NB1</cell>
  <cell>Bank1</cell>
- <cell>Unassigned</cell>
+ <cell>Fixed</cell>
+ <cell>LVCMOS18</cell>
+ <cell>Input</cell>
+ <cell>None</cell>
+ <cell>No</cell>
+ <cell>ON</cell>
+ <cell>Up</cell>
+ <cell>No</cell>
+ <cell>OFF</cell>
+ <cell>---</cell>
+ <cell>OFF</cell>
+ <cell>120</cell>
+ <cell>OFF</cell>
  <cell>---</cell>
  <cell>---</cell>
  <cell>---</cell>
  <cell>---</cell>
  <cell>---</cell>
  <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>DNC, LiberoSOC Defined High-Z with weak pull up ON. Connection to VDDI1 through resistor (10K ohm) is allowed. CLAMP=OFF</cell>
+ <cell>uart_rx_o</cell>
 </row>
 <row>
  <cell>E15</cell>
- <cell>---</cell>
+ <cell>uart_tx_o</cell>
  <cell>GPIO126PB1</cell>
  <cell>Bank1</cell>
- <cell>Unassigned</cell>
+ <cell>Fixed</cell>
+ <cell>LVCMOS18</cell>
+ <cell>Output</cell>
+ <cell>None</cell>
+ <cell>No</cell>
+ <cell>ON</cell>
+ <cell>None</cell>
+ <cell>No</cell>
  <cell>---</cell>
  <cell>---</cell>
  <cell>---</cell>
+ <cell>120</cell>
  <cell>---</cell>
+ <cell>OFF</cell>
+ <cell>8</cell>
  <cell>---</cell>
+ <cell>5</cell>
  <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>---</cell>
- <cell>DNC, LiberoSOC Defined High-Z with weak pull up ON. Connection to VDDI1 through resistor (10K ohm) is allowed. CLAMP=OFF</cell>
+ <cell>OFF</cell>
+ <cell>uart_tx_o</cell>
 </row>
 <row>
  <cell>E16</cell>

@@ -3,7 +3,7 @@
 <doc>
 <title>Global Net Report</title>
 <text>Microchip Technology Inc. - Microchip Libero Software Release 2025.1 (Version 2025.1.0.14)</text>
-<text>Date: Tue Nov 18 13:39:22 2025
+<text>Date: Mon Mar  2 16:18:26 2026
 </text>
 <section>
 <name>Global Nets Information</name>
@@ -20,7 +20,7 @@
  <cell>I_1/U0</cell>
  <cell>(1166, 0)</cell>
  <cell>I_1/U0_Y</cell>
- <cell>32</cell>
+ <cell>119</cell>
 </row>
 </table>
 <text></text>
@@ -89,9 +89,19 @@
  <cell>I_1/U0</cell>
  <cell>(1166, 0)</cell>
  <cell>I_1/U0_Y</cell>
- <cell>32</cell>
- <cell> </cell>
+ <cell>119</cell>
+ <cell>1</cell>
  <cell>(1603, 152)</cell>
+ <cell>87</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>2</cell>
+ <cell>(1603, 206)</cell>
  <cell>32</cell>
 </row>
 </table>
@@ -108,15 +118,15 @@
 </row>
 <row>
  <cell>The number of clock signals through     Row Global resources</cell>
- <cell>1</cell>
-</row>
-<row>
- <cell>The number of clock signals through  Sector Global resources</cell>
  <cell>2</cell>
 </row>
 <row>
+ <cell>The number of clock signals through  Sector Global resources</cell>
+ <cell>4</cell>
+</row>
+<row>
  <cell>The number of clock signals through Cluster Global resources</cell>
- <cell>3</cell>
+ <cell>15</cell>
 </row>
 </table>
 <text></text>

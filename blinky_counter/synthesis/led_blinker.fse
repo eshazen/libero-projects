@@ -1,0 +1,14 @@
+
+fsm_encoding {9494491} sequential
+
+fsm_state_encoding {9494491} s_idle {000}
+
+fsm_state_encoding {9494491} s_tx_start_bit {001}
+
+fsm_state_encoding {9494491} s_tx_data_bits {010}
+
+fsm_state_encoding {9494491} s_tx_stop_bit {011}
+
+fsm_state_encoding {9494491} s_cleanup {100}
+
+fsm_registers {9494491} {r_SM_Main[2]}  {r_SM_Main[1]}  {r_SM_Main[0]} 

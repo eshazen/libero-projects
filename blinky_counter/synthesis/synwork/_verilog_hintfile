@@ -1,5 +1,5 @@
 %%% protect protected_file
-#OPTIONS:"|-bldtbl|-prodtype|synplify_pro|-infer_seqShift|-primux|-dspmac|-pqdpadd|-fixsmult|-sdff_counter|-divnmod|-nram|-actel|-work_is_curlib|1|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-vhdl2008|-work_is_curlib|1|-ignore_undefined_lib|-lib|work"
+#OPTIONS:"|-bldtbl|-prodtype|synplify_pro|-infer_seqShift|-primux|-dspmac|-pqdpadd|-fixsmult|-sdff_counter|-divnmod|-nram|-actel|-work_is_curlib|1|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-vhdl2008|-work_is_curlib|1|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work"
 #CUR:"/home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/linux_a_64/c_vhdl":1745933903
 #CUR:"/home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/lib/vhd2008/location.map":1745933277
 #CUR:"/home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/lib/vhd2008/std.vhd":1745933277
@@ -10,15 +10,38 @@
 #CUR:"/home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/lib/vhd/umr_capim.vhd":1745933277
 #CUR:"/home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/lib/vhd2008/arith.vhd":1745933276
 #CUR:"/home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/lib/vhd2008/unsigned.vhd":1745933277
-#CUR:"/home/hazen/LiberoProjects/blinky_counter/hdl/counter_top.vhd":1763490923
+#CUR:"/home/hazen/work/libero-projects/blinky_counter/hdl/uart_tx.vhd":1772484976
+#CUR:"/home/hazen/work/libero-projects/blinky_counter/hdl/uart_new.vhd":1772485844
+#CUR:"/home/hazen/work/libero-projects/blinky_counter/hdl/counter_top.vhd":1772486188
 @E8lFkRDCD_C8LMDH	
 CsDsHLNRs$I	Fs
 bHMkO0RDH	_RH4
 M0bkR#sCCM0__4HR
 0FkbRk0D_C8F
-RUClM8FD8kC
-
-
-
+RUFbk0kk0RN_s00FG_RH4
+M0bkRskN0G_s_4FR
+8CMlkF8DlC
+FD8kCNRksM0_CDI
+HNLssI$RF
+s	bNNslCC0sYR11va _iBp_R]ZHCM0o
+CsbNNslCC0seRm 1)_qpvu MRH0CCosN
+bsCNl0RCsA7qz_a)q MRH0CCosM
+HbRk0sR#0-H4
+M0bkR))#G4R-
+0FkbRk0#_Cs8RN0-F4
+kk0b0CR#sN_PDRH8-H4
+M0bkR	ODR
+-4ClM8FD8kCF
+l8CkDRskN0G_0
+LDHs$NsRsIF	N
+bsCNl0RCsop_Biu1_ A)_QHaRMo0CCHs
+M0bkRBH_D-	R4M
+HbRk0HX_a_R7e-H4
+M0bkRaH_X$_A0-CR4k
+F00bkRaF_XO_q0CHPR
+-4Fbk0kF0R__aX1HCsN-DR4k
+F00bkRaF_XF_7M-CR4M
+C88lFk
+DC
 
 @ 

@@ -1,5 +1,5 @@
 ;--------------------------------------------------------------------------------
-; Date:    Tue Nov 18 13:41:08 2025
+; Date:    Mon Mar  2 16:19:50 2026
 ; version: 2025.1 2025.1.0.14
 ; Design:  led_blinker
 ; Family:  PolarFireSoC
@@ -31,10 +31,10 @@ Module  ICBMUXINGPC_NE_0                      1604 217      1665 854  ICBMUXING 
         BANKCLK_CW_SOURCE_SEL                 "30'h18C6318C"           D. 
         BANK_OUT_CCW_SEL                      "6'h3F"                  D. 
         BANK_OUT_CW_SEL                       "6'h3F"                  D. 
-        CLKSTOP_SOURCE_SEL                    "60'h6000"               U. 
+        CLKSTOP_SOURCE_SEL                    "60'h4C00"               U. 
         DYNEN                                 "1'h1"                   D. 
         DYNEN_SOFT_RESET                      "1'h1"                   D. 
-        NMUX_SEL                              "72'hFDAFFFFFFFFFFFFFFF" U. 
+        NMUX_SEL                              "72'hFFFFDAFFFFFFFFFFFF" U. 
         SOFT_RESET                            "1'h0"                   D. 
         SOFT_RESET_PERIPH                     "1'h0"                   D. 
         STOP_SEL                              "24'hFFFFCF"             U. 

@@ -3,7 +3,7 @@
 <doc>
 <title>Compile Report</title>
 <text>Microchip Technology Inc. - Microchip Libero Software Release 2025.1 (Version 2025.1.0.14)</text>
-<text>Date: Tue Nov 18 13:36:30 2025
+<text>Date: Mon Mar  2 16:16:45 2026
 </text>
 <section><name>Device Selection</name></section>
 <table>
@@ -52,7 +52,7 @@
 </row>
 <row>
  <cell>Source</cell>
- <cell>/home/hazen/LiberoProjects/blinky_counter/synthesis/led_blinker.vm</cell>
+ <cell>/home/hazen/work/libero-projects/blinky_counter/synthesis/led_blinker.vm</cell>
 </row>
 </table>
 <section><name>Options</name></section>
@@ -74,27 +74,27 @@
 </header>
 <row>
  <cell>4LUT</cell>
- <cell>33</cell>
+ <cell>120</cell>
  <cell>93516</cell>
- <cell>0.04</cell>
+ <cell>0.13</cell>
 </row>
 <row>
  <cell>DFF</cell>
- <cell>32</cell>
+ <cell>119</cell>
  <cell>93516</cell>
- <cell>0.03</cell>
+ <cell>0.13</cell>
 </row>
 <row>
  <cell>User I/O</cell>
- <cell>10</cell>
+ <cell>12</cell>
  <cell>80</cell>
- <cell>12.50</cell>
+ <cell>15.00</cell>
 </row>
 <row>
  <cell>-- Single-ended I/O</cell>
- <cell>10</cell>
+ <cell>12</cell>
  <cell>80</cell>
- <cell>12.50</cell>
+ <cell>15.00</cell>
 </row>
 <row>
  <cell>-- Differential I/O Pairs</cell>
@@ -196,8 +196,8 @@
 </header>
 <row>
  <cell>Fabric Logic</cell>
- <cell>33</cell>
- <cell>32</cell>
+ <cell>120</cell>
+ <cell>119</cell>
 </row>
 <row>
  <cell>uSRAM Interface Logic</cell>
@@ -216,8 +216,8 @@
 </row>
 <row>
  <cell>Total Used</cell>
- <cell>33</cell>
- <cell>32</cell>
+ <cell>120</cell>
+ <cell>119</cell>
 </row>
 </table>
 <section><name>Detailed Carry Chains Resource Usage</name></section>
@@ -229,12 +229,20 @@
  <cell>Used</cell>
 </row>
 <row>
+ <cell>9</cell>
+ <cell>1</cell>
+</row>
+<row>
+ <cell>14</cell>
+ <cell>1</cell>
+</row>
+<row>
  <cell>32</cell>
  <cell>1</cell>
 </row>
 <row>
  <cell>Total</cell>
- <cell>1</cell>
+ <cell>3</cell>
 </row>
 </table>
 <section><name>I/O Function</name></section>
@@ -247,13 +255,13 @@
 </header>
 <row>
  <cell>Input I/O</cell>
- <cell>2</cell>
+ <cell>3</cell>
  <cell>0</cell>
  <cell>0</cell>
 </row>
 <row>
  <cell>Output I/O</cell>
- <cell>8</cell>
+ <cell>9</cell>
  <cell>0</cell>
  <cell>0</cell>
 </row>
@@ -284,7 +292,7 @@
  <cell>Name</cell>
 </header>
 <row>
- <cell>32</cell>
+ <cell>119</cell>
  <cell>INT_NET</cell>
  <cell>Net   : NN_1</cell>
 </row>
@@ -315,7 +323,7 @@
  <cell>Name</cell>
 </header>
 <row>
- <cell>32</cell>
+ <cell>77</cell>
  <cell>INT_NET</cell>
  <cell>Net   : reset_n_i_c</cell>
 </row>
@@ -325,94 +333,94 @@
  <cell>Driver: reset_n_i_ibuf</cell>
 </row>
 <row>
- <cell>2</cell>
+ <cell>18</cell>
  <cell>INT_NET</cell>
- <cell>Net   : counter_Z[0]</cell>
+ <cell>Net   : UART_TX_1/r_SM_Main_Z[2]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: counter[0]</cell>
+ <cell>Driver: UART_TX_1/r_SM_Main[2]</cell>
 </row>
 <row>
- <cell>2</cell>
+ <cell>16</cell>
  <cell>INT_NET</cell>
- <cell>Net   : led_o_c[7]</cell>
+ <cell>Net   : UART_TX_1/r_Clk_Count_RNISQBL91_Y[12]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: counter[31]</cell>
+ <cell>Driver: UART_TX_1/r_Clk_Count_RNISQBL91[12]</cell>
 </row>
 <row>
- <cell>2</cell>
+ <cell>14</cell>
  <cell>INT_NET</cell>
- <cell>Net   : led_o_c[6]</cell>
+ <cell>Net   : UART_TX_1/N_284_i</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: counter[30]</cell>
+ <cell>Driver: UART_TX_1/r_SM_Main_RNI558EA[1]</cell>
 </row>
 <row>
- <cell>2</cell>
+ <cell>13</cell>
  <cell>INT_NET</cell>
- <cell>Net   : led_o_c[5]</cell>
+ <cell>Net   : store_1_sqmuxa</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: counter[29]</cell>
+ <cell>Driver: uart_new_1/store_1_sqmuxa</cell>
 </row>
 <row>
- <cell>2</cell>
+ <cell>9</cell>
  <cell>INT_NET</cell>
- <cell>Net   : led_o_c[4]</cell>
+ <cell>Net   : uart_new_1/bitCtr_2_sqmuxa_Z</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: counter[28]</cell>
+ <cell>Driver: uart_new_1/bitCtr_2_sqmuxa</cell>
 </row>
 <row>
- <cell>2</cell>
+ <cell>9</cell>
  <cell>INT_NET</cell>
- <cell>Net   : led_o_c[3]</cell>
+ <cell>Net   : UART_TX_1/r_TX_Data_0_sqmuxa</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: counter[27]</cell>
+ <cell>Driver: UART_TX_1/r_SM_Main_RNI6H9CI[2]</cell>
 </row>
 <row>
- <cell>2</cell>
+ <cell>8</cell>
  <cell>INT_NET</cell>
- <cell>Net   : led_o_c[2]</cell>
+ <cell>Net   : uart_new_1/ser_dat_0_sqmuxa_Z</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: counter[26]</cell>
+ <cell>Driver: uart_new_1/ser_dat_0_sqmuxa</cell>
 </row>
 <row>
- <cell>2</cell>
+ <cell>8</cell>
  <cell>INT_NET</cell>
- <cell>Net   : led_o_c[1]</cell>
+ <cell>Net   : UART_TX_1/r_SM_Main_Z[0]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: counter[25]</cell>
+ <cell>Driver: UART_TX_1/r_SM_Main[0]</cell>
 </row>
 <row>
- <cell>2</cell>
+ <cell>7</cell>
  <cell>INT_NET</cell>
- <cell>Net   : led_o_c[0]</cell>
+ <cell>Net   : uart_new_1/baud_sample_Z</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: counter[24]</cell>
+ <cell>Driver: uart_new_1/baud_sample</cell>
 </row>
 </table>
 <section><name>High fanout nets (through buffer trees)</name></section>
@@ -423,7 +431,7 @@
  <cell>Name</cell>
 </header>
 <row>
- <cell>32</cell>
+ <cell>77</cell>
  <cell>INT_NET</cell>
  <cell>Net   : reset_n_i_c</cell>
 </row>
@@ -433,94 +441,94 @@
  <cell>Driver: reset_n_i_ibuf</cell>
 </row>
 <row>
- <cell>2</cell>
+ <cell>18</cell>
  <cell>INT_NET</cell>
- <cell>Net   : counter_Z[0]</cell>
+ <cell>Net   : UART_TX_1/r_SM_Main_Z[2]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: counter[0]</cell>
+ <cell>Driver: UART_TX_1/r_SM_Main[2]</cell>
 </row>
 <row>
- <cell>2</cell>
+ <cell>16</cell>
  <cell>INT_NET</cell>
- <cell>Net   : led_o_c[7]</cell>
+ <cell>Net   : UART_TX_1/r_Clk_Count_RNISQBL91_Y[12]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: counter[31]</cell>
+ <cell>Driver: UART_TX_1/r_Clk_Count_RNISQBL91[12]</cell>
 </row>
 <row>
- <cell>2</cell>
+ <cell>14</cell>
  <cell>INT_NET</cell>
- <cell>Net   : led_o_c[6]</cell>
+ <cell>Net   : UART_TX_1/N_284_i</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: counter[30]</cell>
+ <cell>Driver: UART_TX_1/r_SM_Main_RNI558EA[1]</cell>
 </row>
 <row>
- <cell>2</cell>
+ <cell>13</cell>
  <cell>INT_NET</cell>
- <cell>Net   : led_o_c[5]</cell>
+ <cell>Net   : store_1_sqmuxa</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: counter[29]</cell>
+ <cell>Driver: uart_new_1/store_1_sqmuxa</cell>
 </row>
 <row>
- <cell>2</cell>
+ <cell>9</cell>
  <cell>INT_NET</cell>
- <cell>Net   : led_o_c[4]</cell>
+ <cell>Net   : uart_new_1/bitCtr_2_sqmuxa_Z</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: counter[28]</cell>
+ <cell>Driver: uart_new_1/bitCtr_2_sqmuxa</cell>
 </row>
 <row>
- <cell>2</cell>
+ <cell>9</cell>
  <cell>INT_NET</cell>
- <cell>Net   : led_o_c[3]</cell>
+ <cell>Net   : UART_TX_1/r_TX_Data_0_sqmuxa</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: counter[27]</cell>
+ <cell>Driver: UART_TX_1/r_SM_Main_RNI6H9CI[2]</cell>
 </row>
 <row>
- <cell>2</cell>
+ <cell>8</cell>
  <cell>INT_NET</cell>
- <cell>Net   : led_o_c[2]</cell>
+ <cell>Net   : uart_new_1/ser_dat_0_sqmuxa_Z</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: counter[26]</cell>
+ <cell>Driver: uart_new_1/ser_dat_0_sqmuxa</cell>
 </row>
 <row>
- <cell>2</cell>
+ <cell>8</cell>
  <cell>INT_NET</cell>
- <cell>Net   : led_o_c[1]</cell>
+ <cell>Net   : UART_TX_1/r_SM_Main_Z[0]</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: counter[25]</cell>
+ <cell>Driver: UART_TX_1/r_SM_Main[0]</cell>
 </row>
 <row>
- <cell>2</cell>
+ <cell>7</cell>
  <cell>INT_NET</cell>
- <cell>Net   : led_o_c[0]</cell>
+ <cell>Net   : uart_new_1/baud_sample_Z</cell>
 </row>
 <row>
  <cell></cell>
  <cell></cell>
- <cell>Driver: counter[24]</cell>
+ <cell>Driver: uart_new_1/baud_sample</cell>
 </row>
 </table>
 </doc>

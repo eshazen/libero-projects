@@ -1,15 +1,15 @@
 Software Version: 2025.1.0.14
-Opened '/home/hazen/LiberoProjects/blinky_counter/designer/led_blinker/led_blinker_fp/led_blinker.pro'
-PDB file '/home/hazen/LiberoProjects/blinky_counter/designer/led_blinker/led_blinker.pdb' has been loaded successfully.
-DESIGN : led_blinker;  CHECKSUM : FA5B;  PDB_VERSION : 1.9
+Opened '/home/hazen/work/libero-projects/blinky_counter/designer/led_blinker/led_blinker_fp/led_blinker.pro'
+PDB file '/home/hazen/work/libero-projects/blinky_counter/designer/led_blinker/led_blinker.pdb' has been loaded successfully.
+DESIGN : led_blinker;  CHECKSUM : FF88;  PDB_VERSION : 1.9
 Info: Programming Interface selected is JTAG.
 Info: Design version: 0
-File/Folder '/home/hazen/LiberoProjects/blinky_counter/designer/led_blinker/led_blinker.ppd' will be overwritten.
-Successfully exported PPD file for currently secured device: '/home/hazen/LiberoProjects/blinky_counter/designer/led_blinker/led_blinker.ppd'; file programs Fabric and sNVM.
-Fabric component bitstream digest: 7321ffb4272c8c4f05dfd2e620bffddd42611bf50076a8ffc78c7cc0f0fad481
+File/Folder '/home/hazen/work/libero-projects/blinky_counter/designer/led_blinker/led_blinker.ppd' will be overwritten.
+Successfully exported PPD file for currently secured device: '/home/hazen/work/libero-projects/blinky_counter/designer/led_blinker/led_blinker.ppd'; file programs Fabric and sNVM.
+Fabric component bitstream digest: c0d965dbb21150f8fdb4d92e661f6aa6bde4fa3e72fde718e5fa5fd45111ac7a
 sNVM component bitstream digest: b0a9e2be29f47fa951a6a131a8dd9a9016e5ba87de5833c742b7f654428ea6e7
-Entire bitstream digest: 15c2f10e64a97410e8ac131d524d9ce1a984a527811decc61195c9a97fed66f8
-Finished: Tue Nov 18 13:42:21 2025 (Elapsed time 00:00:21)
+Entire bitstream digest: 327754e3a5288534eb4ce58cc4469edde5bcdfa4d615750f3525926a3c413b5c
+Finished: Mon Mar  2 16:21:15 2026 (Elapsed time 00:00:22)
 
 Project saved.
 Project closed.

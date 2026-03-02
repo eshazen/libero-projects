@@ -1,0 +1,40 @@
+data HELP_TYPE_DES 2
+data DESIGN led_blinker
+data HPATH '/home/hazen/work/libero-projects/blinky_counter/designer/led_blinker'
+data CPATH '/home/hazen/work/libero-projects/blinky_counter/constraint/fp'
+data CDIR '/home/hazen/work/libero-projects/blinky_counter/constraint'
+data NLV_HIDE_OPTION_DLG 1
+data REGION_DEFCOLOR_EMPTY 2143322112
+data REGION_DEFCOLOR_INCLUSIVE 2147442270
+data REGION_DEFCOLOR_EXCLUSIVE 2143338688
+data REGION_DEFCOLOR_CLOCK 16735838
+data ETYPE CP
+data FAM PolarFireSoC
+data DIE PA5SOC095T
+data PACKAGE fcsg325
+data SPEED -1
+data HYDRA_EXPORT_DATA 1
+data HYDRA_PRESERVE_DATA_FILES 1
+data VCCI_1.2_VOLTR EXT
+data VCCI_1.5_VOLTR EXT
+data VCCI_1.8_VOLTR EXT
+data VCCI_2.5_VOLTR EXT
+data VCCI_3.3_VOLTR EXT
+data FLOW_TYPE NEW
+data AFL '/home/hazen/work/libero-projects/blinky_counter/designer/led_blinker/led_blinker.afl'
+data ADL '/home/hazen/work/libero-projects/blinky_counter/designer/led_blinker/led_blinker.adl'
+data LOC '/home/hazen/work/libero-projects/blinky_counter/designer/led_blinker/led_blinker.loc'
+data SEG '/home/hazen/work/libero-projects/blinky_counter/designer/led_blinker/led_blinker.seg'
+data NMAT_TXT '/home/hazen/work/libero-projects/blinky_counter/designer/led_blinker/led_blinker.nmatinit.txt'
+
+data IO_PDC_0 '/home/hazen/work/libero-projects/blinky_counter/constraint/io/user.pdc'
+data TARGET_IOPDC  '/home/hazen/work/libero-projects/blinky_counter/constraint/io/user.pdc'
+data TARGET_FPPDC  '/home/hazen/work/libero-projects/blinky_counter/constraint/fp/user.pdc'
+data TARGET_DEVICES_FOR_MIGRATION 'PA5SOC095T '
+data RESTRICTPROBEPINS 1
+data RESTRICTSPIPINS 0
+data GDEV_SKIP_UNASSIGN_CMP_CHECK    1 
+data HIDE_MIGRATION_PINS_MENU        1 
+data PLANNER_IS_READONLY   0 
+data IO_DEFT_STD LVCMOS18
+

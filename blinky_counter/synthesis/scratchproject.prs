@@ -1,16 +1,18 @@
 #--  Synopsys, Inc.
 #--  Version V-2023.09M-5
-#--  Project file /home/hazen/LiberoProjects/blinky_counter/synthesis/scratchproject.prs
+#--  Project file /home/hazen/work/libero-projects/blinky_counter/synthesis/scratchproject.prs
 
 #project files
-add_file -verilog "/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v"
-add_file -vhdl -lib work "/home/hazen/LiberoProjects/blinky_counter/hdl/counter_top.vhd"
-add_file -verilog "/home/hazen/LiberoProjects/blinky_counter/component/MSS_syn_comps.v"
-add_file -fpga_constraint "/home/hazen/LiberoProjects/blinky_counter/designer/led_blinker/synthesis.fdc"
+add_file -verilog "/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v"
+add_file -vhdl -lib work "/home/hazen/work/libero-projects/blinky_counter/hdl/uart_tx.vhd"
+add_file -vhdl -lib work "/home/hazen/work/libero-projects/blinky_counter/hdl/uart_new.vhd"
+add_file -vhdl -lib work "/home/hazen/work/libero-projects/blinky_counter/hdl/counter_top.vhd"
+add_file -verilog "/home/hazen/work/libero-projects/blinky_counter/component/MSS_syn_comps.v"
+add_file -fpga_constraint "/home/hazen/work/libero-projects/blinky_counter/designer/led_blinker/synthesis.fdc"
 
 
 #implementation: "synthesis"
-impl -add /home/hazen/LiberoProjects/blinky_counter/synthesis -type fpga
+impl -add /home/hazen/work/libero-projects/blinky_counter/synthesis -type fpga
 
 #device options
 set_option -technology PolarFireSoC
@@ -99,5 +101,5 @@ set_option -vhdl2008 1
 set_option -write_apr_constraint 1
 
 #set result format/file last
-project -result_file "/home/hazen/LiberoProjects/blinky_counter/synthesis/led_blinker.vm"
+project -result_file "/home/hazen/work/libero-projects/blinky_counter/synthesis/led_blinker.vm"
 impl -active "synthesis"

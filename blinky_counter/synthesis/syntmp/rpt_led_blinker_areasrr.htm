@@ -1,5 +1,5 @@
 <html><body><samp><pre>
-<!@TC:1763490983>
+<!@TC:1772486196>
 
 Copyright (C) 1994-2023 Synopsys, Inc.
 This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
@@ -10,9 +10,9 @@ Tool: Synplify Pro (R)
 Build: V-2023.09M-5
 Install: /home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro
 OS: Ubuntu 24.04.3 LTS
-Hostname: hazen-x24
+Hostname: hazen-botlab
 max virtual memory: unlimited (bytes)
-max user processes: 63485
+max user processes: 127236
 max stack size: 8388608 (bytes)
 
 
@@ -29,18 +29,18 @@ Part:			MPFS095TFCVG784-1 (Microchip)
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      32                 100 %                
+SLE      119                100 %                
 =================================================
-Total SEQUENTIAL ELEMENTS in the block led_blinker:	32 (41.03 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block led_blinker:	119 (45.95 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-CFG      1                  100 %                
-ARI1     32                 100 %                
+CFG      66                 100 %                
+ARI1     55                 100 %                
 =================================================
-Total COMBINATIONAL LOGIC in the block led_blinker:	33 (42.31 % Utilization)
+Total COMBINATIONAL LOGIC in the block led_blinker:	121 (46.72 % Utilization)
 
 
 GLOBAL BUFFERS
@@ -48,15 +48,57 @@ Name       Total elements     Utilization     Notes
 ---------------------------------------------------
 GLOBAL     1                  100 %                
 ===================================================
-Total GLOBAL BUFFERS in the block led_blinker:	1 (1.28 % Utilization)
+Total GLOBAL BUFFERS in the block led_blinker:	1 (0.39 % Utilization)
 
 
 IO PADS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-IO       10                 100 %                
+IO       12                 100 %                
 =================================================
-Total IO PADS in the block led_blinker:	10 (12.82 % Utilization)
+Total IO PADS in the block led_blinker:	12 (4.63 % Utilization)
+
+-------------------------------------------------------------------------------------------
+########   Utilization report for  cell:   uart_new_work_led_blinker_rtl_0layer0   ########
+Instance path:   led_blinker.uart_new_work_led_blinker_rtl_0layer0                         
+===========================================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      39                 32.8 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block led_blinker.uart_new_work_led_blinker_rtl_0layer0:	39 (15.06 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      40                 60.6 %               
+ARI1     9                  16.4 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block led_blinker.uart_new_work_led_blinker_rtl_0layer0:	49 (18.92 % Utilization)
+
+------------------------------------------------------------------
+########   Utilization report for  cell:   uart_tx_5208   ########
+Instance path:   led_blinker.uart_tx_5208                         
+==================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      28                 23.5 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block led_blinker.uart_tx_5208:	28 (10.81 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      25                 37.9 %               
+ARI1     14                 25.5 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block led_blinker.uart_tx_5208:	39 (15.06 % Utilization)
 
 
 ##### END OF AREA REPORT #####]

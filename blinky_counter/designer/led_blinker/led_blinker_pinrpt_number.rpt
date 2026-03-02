@@ -1,5 +1,5 @@
 ----------------------------------------------------------------
--Pin Report - Date: Tue Nov 18 13:39:36 2025 Pinchecksum: NOT-AVAILABLE
+-Pin Report - Date: Mon Mar  2 16:18:40 2026 Pinchecksum: NOT-AVAILABLE
 -Product: Designer
 -Release: 2025.1
 -Version: 2025.1.0.14
@@ -112,8 +112,8 @@ E10     led_o[7]   GPIO120PB1/CCC_SW_CLKIN_S_0                             Fixed
 E11                GPIO120NB1                                              Unassigned     
 E12                GPIO123PB1/CLKIN_S_2/CCC_SW_CLKIN_S_2/CCC_SW_PLL1_OUT0  Unassigned     
 E13                GPIO128NB1/DQS                                          Unassigned     
-E14                GPIO126NB1                                              Unassigned     
-E15                GPIO126PB1                                              Unassigned     
+E14     uart_rx_o  GPIO126NB1                                              Fixed          LVCMOS18  Input      None          No                  ON           Up             No                                 OFF              ---              OFF                 120              OFF          ---   ---                ---              ---               ---                       ---           
+E15     uart_tx_o  GPIO126PB1                                              Fixed          LVCMOS18  Output     None          No                  ON           None           No                                 ---              ---              ---                 120              ---          OFF   8                  ---              5                 ---                       OFF           
 E16                VDDI1                                                   Reserved       
 E17                GPIO9PB1/CLKIN_S_8/CCC_SE_CLKIN_S_8/CCC_SE_PLL0_OUT0    Unassigned     
 E18                GPIO16NB1                                               Unassigned     

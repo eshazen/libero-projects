@@ -3,7 +3,12 @@
 @N: MF916 |Option synthesis_strategy=base is enabled. 
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+@N: FX1171 :"/home/hazen/work/libero-projects/blinky_counter/hdl/uart_tx.vhd":49:4:49:5|Found instance UART_TX_1.r_TX_Done with reset/set having higher priority than enable. Selected technology supports register with enable having higher priority than reset/set. Adding glue logic to resolve priority. 
+@N: FX1171 :"/home/hazen/work/libero-projects/blinky_counter/hdl/uart_tx.vhd":49:4:49:5|Found instance UART_TX_1.o_TX_Serial with reset/set having higher priority than enable. Selected technology supports register with enable having higher priority than reset/set. Adding glue logic to resolve priority. 
+@N: FX1171 :"/home/hazen/work/libero-projects/blinky_counter/hdl/uart_tx.vhd":49:4:49:5|Found instance UART_TX_1.o_TX_Active with reset/set having higher priority than enable. Selected technology supports register with enable having higher priority than reset/set. Adding glue logic to resolve priority. 
+@N: BN362 :"/home/hazen/work/libero-projects/blinky_counter/hdl/uart_tx.vhd":49:4:49:5|Removing sequential instance o_TX_Active (in view: work.uart_tx_5208(rtl)) of type view:PrimLib.sdffrse(prim) because it does not drive other instances.
+@N: BN362 :"/home/hazen/work/libero-projects/blinky_counter/hdl/uart_tx.vhd":49:4:49:5|Removing sequential instance r_TX_Done (in view: work.uart_tx_5208(rtl)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
 @N: FP130 |Promoting Net clk_i on CLKINT  I_1 
 @N: FX1184 |Applying syn_allowed_resources blockrams=308 on top level netlist led_blinker 
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
-@N: BN225 |Writing default property annotation file /home/hazen/LiberoProjects/blinky_counter/synthesis/led_blinker.sap.
+@N: BN225 |Writing default property annotation file /home/hazen/work/libero-projects/blinky_counter/synthesis/led_blinker.sap.

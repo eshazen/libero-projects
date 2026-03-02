@@ -8,9 +8,9 @@ Tool: Synplify Pro (R)
 Build: V-2023.09M-5
 Install: /home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro
 OS: Ubuntu 24.04.3 LTS
-Hostname: hazen-x24
+Hostname: hazen-botlab
 max virtual memory: unlimited (bytes)
-max user processes: 63485
+max user processes: 127236
 max stack size: 8388608 (bytes)
 
 
@@ -29,9 +29,9 @@ Tool: Synplify Pro (R)
 Build: V-2023.09M-5
 Install: /home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro
 OS: Ubuntu 24.04.3 LTS
-Hostname: hazen-x24
+Hostname: hazen-botlab
 max virtual memory: unlimited (bytes)
-max user processes: 63485
+max user processes: 127236
 max stack size: 8388608 (bytes)
 
 
@@ -40,16 +40,19 @@ Synopsys VHDL Compiler, Version comp202309synp1, Build 540R, Built Apr 29 2025 0
 
 @N|Running in 64-bit mode
 @N|stack limit increased to max
-@N:"/home/hazen/LiberoProjects/blinky_counter/hdl/counter_top.vhd":5:7:5:17|Top entity is set to led_blinker.
-@N: CD140 :	| Using the VHDL 2008 Standard for file '/home/hazen/LiberoProjects/blinky_counter/hdl/counter_top.vhd'.
+@N:"/home/hazen/work/libero-projects/blinky_counter/hdl/counter_top.vhd":5:7:5:17|Top entity is set to led_blinker.
+@N: CD140 :	| Using the VHDL 2008 Standard for file '/home/hazen/work/libero-projects/blinky_counter/hdl/uart_tx.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file '/home/hazen/work/libero-projects/blinky_counter/hdl/uart_new.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file '/home/hazen/work/libero-projects/blinky_counter/hdl/counter_top.vhd'.
 VHDL syntax check successful!
 @N: CD231 :"/home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/lib/vhd2008/std1164.vhd":889:16:889:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
+Options changed - recompiling
 
 At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 185MB peak: 185MB)
 
 
 Process completed successfully.
-# Tue Nov 18 13:36:24 2025
+# Mon Mar  2 16:16:36 2026
 
 ###########################################################]
 ###########################################################[
@@ -63,9 +66,9 @@ Tool: Synplify Pro (R)
 Build: V-2023.09M-5
 Install: /home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro
 OS: Ubuntu 24.04.3 LTS
-Hostname: hazen-x24
+Hostname: hazen-botlab
 max virtual memory: unlimited (bytes)
-max user processes: 63485
+max user processes: 127236
 max stack size: 8388608 (bytes)
 
 
@@ -75,153 +78,153 @@ Synopsys Verilog Compiler, Version comp202309synp1, Build 540R, Built Apr 29 202
 @N|Running in 64-bit mode
 @I::"/home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/lib/generic/acg5.v" (library work)
 @I::"/home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/lib/vlog/hypermods.v" (library __hyper__lib__)
-@I::"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v" (library work)
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":21:13:21:25|User defined pragma syn_black_box detected
+@I::"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v" (library work)
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":21:13:21:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":61:13:61:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":61:13:61:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":88:13:88:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":88:13:88:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":118:13:118:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":118:13:118:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":168:13:168:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":168:13:168:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":213:13:213:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":213:13:213:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":232:13:232:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":232:13:232:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":281:13:281:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":281:13:281:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":335:13:335:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":335:13:335:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":657:13:657:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":657:13:657:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":761:13:761:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":761:13:761:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":795:13:795:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":795:13:795:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":1059:13:1059:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":1059:13:1059:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":1369:13:1369:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":1369:13:1369:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":1396:13:1396:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":1396:13:1396:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":1441:13:1441:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":1441:13:1441:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":1474:13:1474:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":1474:13:1474:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":1492:13:1492:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":1492:13:1492:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":1518:13:1518:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":1518:13:1518:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":1559:13:1559:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":1559:13:1559:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":1581:13:1581:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":1581:13:1581:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":1599:13:1599:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":1599:13:1599:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":1616:13:1616:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":1616:13:1616:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":1635:13:1635:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":1635:13:1635:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":1652:13:1652:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":1652:13:1652:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":1681:13:1681:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":1681:13:1681:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":1712:13:1712:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":1712:13:1712:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":1802:13:1802:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":1802:13:1802:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":2026:13:2026:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":2026:13:2026:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":2187:13:2187:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":2187:13:2187:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":2203:13:2203:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":2203:13:2203:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":2219:13:2219:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":2219:13:2219:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":2235:13:2235:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":2235:13:2235:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":2267:13:2267:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":2267:13:2267:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":2648:13:2648:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":2648:13:2648:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":3661:13:3661:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":3661:13:3661:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":3732:13:3732:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":3732:13:3732:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":3861:13:3861:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":3861:13:3861:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":3879:13:3879:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":3879:13:3879:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":3896:13:3896:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":3896:13:3896:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":3911:13:3911:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":3911:13:3911:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":3926:13:3926:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":3926:13:3926:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":3953:13:3953:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":3953:13:3953:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":4067:13:4067:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":4067:13:4067:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":4098:13:4098:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":4098:13:4098:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":4144:13:4144:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":4144:13:4144:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":4255:13:4255:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":4255:13:4255:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":4439:13:4439:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":4439:13:4439:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":4480:13:4480:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":4480:13:4480:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":4506:13:4506:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":4506:13:4506:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":4523:13:4523:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":4523:13:4523:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":4600:13:4600:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":4600:13:4600:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":5364:13:5364:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":5364:13:5364:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":6174:13:6174:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":6174:13:6174:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":6283:13:6283:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":6283:13:6283:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":6321:13:6321:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":6321:13:6321:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":6394:13:6394:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":6394:13:6394:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":7283:13:7283:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":7283:13:7283:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":8340:13:8340:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":8340:13:8340:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":9299:13:9299:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":9299:13:9299:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":10035:13:10035:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":10035:13:10035:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":10750:13:10750:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":10750:13:10750:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":10784:13:10784:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":10784:13:10784:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":10820:13:10820:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":10820:13:10820:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":10867:13:10867:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":10867:13:10867:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":10901:13:10901:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":10901:13:10901:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":11767:13:11767:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":11767:13:11767:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":12810:13:12810:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":12810:13:12810:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":12822:15:12822:27|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":12822:15:12822:27|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":12831:13:12831:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":12831:13:12831:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":12843:13:12843:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":12843:13:12843:25|User defined pragma syn_black_box detected
 
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/syn_comps.v":12856:13:12856:25|User defined pragma syn_black_box detected
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/syn_comps.v":12856:13:12856:25|User defined pragma syn_black_box detected
 
-@I::"/home/hazen/LiberoProjects/blinky_counter/component/MSS_syn_comps.v" (library work)
-@W: CG100 :"/home/hazen/LiberoProjects/blinky_counter/component/MSS_syn_comps.v":798:13:798:25|User defined pragma syn_black_box detected
+@I::"/home/hazen/work/libero-projects/blinky_counter/component/MSS_syn_comps.v" (library work)
+@W: CG100 :"/home/hazen/work/libero-projects/blinky_counter/component/MSS_syn_comps.v":798:13:798:25|User defined pragma syn_black_box detected
 
 @N|stack limit increased to max
 Verilog syntax check successful!
@@ -230,38 +233,68 @@ At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 
 
 Process completed successfully.
-# Tue Nov 18 13:36:24 2025
+# Mon Mar  2 16:16:37 2026
 
 ###########################################################]
 ###########################################################[
 @N|stack limit increased to max
-@N:"/home/hazen/LiberoProjects/blinky_counter/hdl/counter_top.vhd":5:7:5:17|Top entity is set to led_blinker.
-
-File Dependency file is up to date.  It will not be rewritten.
-
-@N: CD140 :	| Using the VHDL 2008 Standard for file '/home/hazen/LiberoProjects/blinky_counter/hdl/counter_top.vhd'.
+@N:"/home/hazen/work/libero-projects/blinky_counter/hdl/counter_top.vhd":5:7:5:17|Top entity is set to led_blinker.
+Options changed - recompiling
+@N: CD140 :	| Using the VHDL 2008 Standard for file '/home/hazen/work/libero-projects/blinky_counter/hdl/uart_tx.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file '/home/hazen/work/libero-projects/blinky_counter/hdl/uart_new.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file '/home/hazen/work/libero-projects/blinky_counter/hdl/counter_top.vhd'.
 VHDL syntax check successful!
+Options changed - recompiling
 @N: CD231 :"/home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/lib/vhd2008/std1164.vhd":889:16:889:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
-@N: CD630 :"/home/hazen/LiberoProjects/blinky_counter/hdl/counter_top.vhd":5:7:5:17|Synthesizing work.led_blinker.rtl.
-@W: CD648 :"/home/hazen/LiberoProjects/blinky_counter/hdl/counter_top.vhd":25:24:25:30|Expression does not match type std_ulogic_vector
-@W: CD648 :"/home/hazen/LiberoProjects/blinky_counter/hdl/counter_top.vhd":25:24:25:45|Expression does not match type std_ulogic_vector
+@N: CD630 :"/home/hazen/work/libero-projects/blinky_counter/hdl/counter_top.vhd":5:7:5:17|Synthesizing work.led_blinker.rtl.
+@N: CD630 :"/home/hazen/work/libero-projects/blinky_counter/hdl/uart_tx.vhd":18:7:18:13|Synthesizing work.uart_tx.rtl.
+@N: CD231 :"/home/hazen/work/libero-projects/blinky_counter/hdl/uart_tx.vhd":35:17:35:18|Using onehot encoding for type t_sm_main. For example, enumeration s_idle is mapped to "10000".
+@N: CD604 :"/home/hazen/work/libero-projects/blinky_counter/hdl/uart_tx.vhd":126:8:126:21|OTHERS clause is not synthesized.
+Post processing for work.uart_tx.rtl
+Running optimization stage 1 on uart_tx .......
+Finished optimization stage 1 on uart_tx (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+@N: CD630 :"/home/hazen/work/libero-projects/blinky_counter/hdl/uart_new.vhd":11:7:11:14|Synthesizing work.uart_new.arch.
+Post processing for work.uart_new.arch
+Running optimization stage 1 on uart_new .......
+@W: CL265 :"/home/hazen/work/libero-projects/blinky_counter/hdl/uart_new.vhd":60:4:60:5|Removing unused bit 0 of ser_sr_6(9 downto 0). Either assign all bits or reduce the width of the signal.
+@A: CL282 :"/home/hazen/work/libero-projects/blinky_counter/hdl/uart_new.vhd":60:4:60:5|Feedback mux created for signal ser_dat[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"/home/hazen/work/libero-projects/blinky_counter/hdl/uart_new.vhd":60:4:60:5|Feedback mux created for signal rx_last. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"/home/hazen/work/libero-projects/blinky_counter/hdl/uart_new.vhd":60:4:60:5|Feedback mux created for signal ser_valid. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+Finished optimization stage 1 on uart_new (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
 Post processing for work.led_blinker.rtl
 Running optimization stage 1 on led_blinker .......
-Finished optimization stage 1 on led_blinker (CPU Time 0h:00m:00s, Memory Used current: 186MB peak: 186MB)
+@W: CL271 :"/home/hazen/work/libero-projects/blinky_counter/hdl/counter_top.vhd":53:46:53:46|Pruning unused bits 5 to 4 of param_array_0(5 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL169 :"/home/hazen/work/libero-projects/blinky_counter/hdl/counter_top.vhd":53:46:53:46|Pruning unused register param_array_1(5 downto 0). Make sure that there are no unused intermediate registers.
+@W: CL169 :"/home/hazen/work/libero-projects/blinky_counter/hdl/counter_top.vhd":53:46:53:46|Pruning unused register param_array_2(5 downto 0). Make sure that there are no unused intermediate registers.
+@W: CL169 :"/home/hazen/work/libero-projects/blinky_counter/hdl/counter_top.vhd":53:46:53:46|Pruning unused register param_array_3(5 downto 0). Make sure that there are no unused intermediate registers.
+@A: CL282 :"/home/hazen/work/libero-projects/blinky_counter/hdl/counter_top.vhd":115:6:115:7|Feedback mux created for signal led_o[3:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+Finished optimization stage 1 on led_blinker (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+Running optimization stage 2 on uart_new_work_led_blinker_rtl_0layer0 .......
+Finished optimization stage 2 on uart_new_work_led_blinker_rtl_0layer0 (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+Running optimization stage 2 on uart_tx_5208 .......
+@N: CL201 :"/home/hazen/work/libero-projects/blinky_counter/hdl/uart_tx.vhd":49:4:49:5|Trying to extract state machine for register r_SM_Main.
+Extracted state machine for register r_SM_Main
+State machine has 5 reachable states with original encodings of:
+   00001
+   00010
+   00100
+   01000
+   10000
+Finished optimization stage 2 on uart_tx_5208 (CPU Time 0h:00m:00s, Memory Used current: 188MB peak: 188MB)
 Running optimization stage 2 on led_blinker .......
-Finished optimization stage 2 on led_blinker (CPU Time 0h:00m:00s, Memory Used current: 186MB peak: 186MB)
+Finished optimization stage 2 on led_blinker (CPU Time 0h:00m:00s, Memory Used current: 188MB peak: 188MB)
 
 For a summary of runtime per design unit, please see file:
 ==========================================================
-@L: /home/hazen/LiberoProjects/blinky_counter/synthesis/synwork/layer0.duruntime
+@L: /home/hazen/work/libero-projects/blinky_counter/synthesis/synwork/layer0.duruntime
 
 
 
-At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 185MB peak: 185MB)
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 188MB peak: 188MB)
 
 
 Process completed successfully.
-# Tue Nov 18 13:36:24 2025
+# Mon Mar  2 16:16:37 2026
 
 ###########################################################]
 ###########################################################[
@@ -275,9 +308,9 @@ Tool: Synplify Pro (R)
 Build: V-2023.09M-5
 Install: /home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro
 OS: Ubuntu 24.04.3 LTS
-Hostname: hazen-x24
+Hostname: hazen-botlab
 max virtual memory: unlimited (bytes)
-max user processes: 63485
+max user processes: 127236
 max stack size: 8388608 (bytes)
 
 
@@ -285,22 +318,20 @@ Implementation : synthesis
 Synopsys Synopsys Netlist Linker, Version comp202309synp1, Build 540R, Built Apr 29 2025 06:34:33, @6004905
 
 @N|Running in 64-bit mode
+File /home/hazen/work/libero-projects/blinky_counter/synthesis/synwork/layer0.srs changed - recompiling
 
-Linker output is up to date. No re-linking necessary
-
-
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 184MB peak: 184MB)
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 186MB peak: 186MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Nov 18 13:36:24 2025
+# Mon Mar  2 16:16:37 2026
 
 ###########################################################]
 
 For a summary of runtime and memory usage for all design units, please see file:
 ==========================================================
-@L: /home/hazen/LiberoProjects/blinky_counter/synthesis/synwork/led_blinker_comp.rt.csv
+@L: /home/hazen/work/libero-projects/blinky_counter/synthesis/synwork/led_blinker_comp.rt.csv
 
 @END
 
@@ -309,6 +340,6 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Nov 18 13:36:24 2025
+# Mon Mar  2 16:16:37 2026
 
 ###########################################################]

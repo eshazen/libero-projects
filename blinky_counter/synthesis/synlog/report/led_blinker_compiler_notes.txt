@@ -1,15 +1,24 @@
 @N|Running in 64-bit mode
 @N|Running in 64-bit mode
 @N|stack limit increased to max
-@N:"/home/hazen/LiberoProjects/blinky_counter/hdl/counter_top.vhd":5:7:5:17|Top entity is set to led_blinker.
-@N: CD140 :	| Using the VHDL 2008 Standard for file '/home/hazen/LiberoProjects/blinky_counter/hdl/counter_top.vhd'.
+@N:"/home/hazen/work/libero-projects/blinky_counter/hdl/counter_top.vhd":5:7:5:17|Top entity is set to led_blinker.
+@N: CD140 :	| Using the VHDL 2008 Standard for file '/home/hazen/work/libero-projects/blinky_counter/hdl/uart_tx.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file '/home/hazen/work/libero-projects/blinky_counter/hdl/uart_new.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file '/home/hazen/work/libero-projects/blinky_counter/hdl/counter_top.vhd'.
 @N: CD231 :"/home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/lib/vhd2008/std1164.vhd":889:16:889:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
 @N|Running in 64-bit mode
 @N|stack limit increased to max
 @N|stack limit increased to max
-@N:"/home/hazen/LiberoProjects/blinky_counter/hdl/counter_top.vhd":5:7:5:17|Top entity is set to led_blinker.
-@N: CD140 :	| Using the VHDL 2008 Standard for file '/home/hazen/LiberoProjects/blinky_counter/hdl/counter_top.vhd'.
+@N:"/home/hazen/work/libero-projects/blinky_counter/hdl/counter_top.vhd":5:7:5:17|Top entity is set to led_blinker.
+@N: CD140 :	| Using the VHDL 2008 Standard for file '/home/hazen/work/libero-projects/blinky_counter/hdl/uart_tx.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file '/home/hazen/work/libero-projects/blinky_counter/hdl/uart_new.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file '/home/hazen/work/libero-projects/blinky_counter/hdl/counter_top.vhd'.
 @N: CD231 :"/home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/lib/vhd2008/std1164.vhd":889:16:889:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
-@N: CD630 :"/home/hazen/LiberoProjects/blinky_counter/hdl/counter_top.vhd":5:7:5:17|Synthesizing work.led_blinker.rtl.
+@N: CD630 :"/home/hazen/work/libero-projects/blinky_counter/hdl/counter_top.vhd":5:7:5:17|Synthesizing work.led_blinker.rtl.
+@N: CD630 :"/home/hazen/work/libero-projects/blinky_counter/hdl/uart_tx.vhd":18:7:18:13|Synthesizing work.uart_tx.rtl.
+@N: CD231 :"/home/hazen/work/libero-projects/blinky_counter/hdl/uart_tx.vhd":35:17:35:18|Using onehot encoding for type t_sm_main. For example, enumeration s_idle is mapped to "10000".
+@N: CD604 :"/home/hazen/work/libero-projects/blinky_counter/hdl/uart_tx.vhd":126:8:126:21|OTHERS clause is not synthesized.
+@N: CD630 :"/home/hazen/work/libero-projects/blinky_counter/hdl/uart_new.vhd":11:7:11:14|Synthesizing work.uart_new.arch.
+@N: CL201 :"/home/hazen/work/libero-projects/blinky_counter/hdl/uart_tx.vhd":49:4:49:5|Trying to extract state machine for register r_SM_Main.
 @N|Running in 64-bit mode
 

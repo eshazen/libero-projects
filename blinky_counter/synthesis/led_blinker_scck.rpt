@@ -8,18 +8,18 @@ Tool: Synplify Pro (R)
 Build: V-2023.09M-5
 Install: /home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro
 OS: Ubuntu 24.04.3 LTS
-Hostname: hazen-x24
+Hostname: hazen-botlab
 max virtual memory: unlimited (bytes)
-max user processes: 63485
+max user processes: 127236
 max stack size: 8388608 (bytes)
 
 
 Implementation : synthesis
 
-# Written on Tue Nov 18 13:36:25 2025
+# Written on Mon Mar  2 16:16:39 2026
 
 ##### FILES SYNTAX CHECKED ##############################################
-Constraint File(s):      "/home/hazen/LiberoProjects/blinky_counter/designer/led_blinker/synthesis.fdc"
+Constraint File(s):      "/home/hazen/work/libero-projects/blinky_counter/designer/led_blinker/synthesis.fdc"
 
 #Run constraint checker to find more issues with constraints.
 #########################################################################
@@ -33,18 +33,18 @@ No issues found in constraint syntax.
 Clock Summary
 *************
 
-          Start     Requested     Requested     Clock        Clock                Clock
-Level     Clock     Frequency     Period        Type         Group                Load 
----------------------------------------------------------------------------------------
-0 -       clk50     50.0 MHz      20.000        declared     default_clkgroup     32   
-=======================================================================================
+          Start                 Requested     Requested     Clock        Clock          Clock
+Level     Clock                 Frequency     Period        Type         Group          Load 
+---------------------------------------------------------------------------------------------
+0 -       led_blinker|clk_i     100.0 MHz     10.000        inferred     (multiple)     121  
+=============================================================================================
 
 
 Clock Load Summary
 ******************
 
-          Clock     Source          Clock Pin           Non-clock Pin     Non-clock Pin
-Clock     Load      Pin             Seq Example         Seq Example       Comb Example 
----------------------------------------------------------------------------------------
-clk50     32        clk_i(port)     counter[31:0].C     -                 I_1.A(CLKINT)
-=======================================================================================
+                      Clock     Source          Clock Pin       Non-clock Pin     Non-clock Pin
+Clock                 Load      Pin             Seq Example     Seq Example       Comb Example 
+-----------------------------------------------------------------------------------------------
+led_blinker|clk_i     121       clk_i(port)     send_ena.C      -                 I_1.A(CLKINT)
+===============================================================================================

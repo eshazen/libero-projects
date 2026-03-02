@@ -32,8 +32,8 @@ KEY VendorTechnology_VCCI_1.8_VOLTR "EXT"
 KEY VendorTechnology_VCCI_2.5_VOLTR "EXT"
 KEY VendorTechnology_VCCI_3.3_VOLTR "EXT"
 KEY VendorTechnology_VOLTR "EXT"
-KEY ProjectLocation "/home/hazen/LiberoProjects/blinky_counter"
-KEY ProjectDescription ""
+KEY ProjectLocation "/home/hazen/work/libero-projects/blinky_counter"
+KEY ProjectDescription "Demo for remote control using https://github.com/eshazen/uart-bus"
 KEY UseRootLocationForLinkedFiles "FALSE"
 KEY RootLocationENVForLinkedFiles ""
 KEY RootLocationForLinkedFiles ""
@@ -47,56 +47,57 @@ KEY Vendor "Actel"
 KEY ActiveRoot "led_blinker::work"
 LIST REVISIONS
 VALUE="Impl1",NUM=1
-CURREV=1
+VALUE="Impl2",NUM=2
+CURREV=2
 ENDLIST
 LIST GlobalIncludeFileList
 ENDLIST
 LIST FileManager
 VALUE "<project>/constraint/io/user.pdc,io_pdc"
 STATE="utd"
-TIME="1763491096"
+TIME="1772464523"
 SIZE="1854"
 IS_TARGET="TRUE"
 ENDFILE
 VALUE "<project>/constraint/led_blinker_derived_constraints.sdc,sdc"
 STATE="utd"
-TIME="1763484360"
+TIME="1772464523"
 SIZE="148"
 ENDFILE
 VALUE "<project>/constraint/user.sdc,sdc"
 STATE="utd"
-TIME="1763485927"
+TIME="1772464523"
 SIZE="80"
 IS_TARGET="TRUE"
 ENDFILE
 VALUE "<project>/hdl/counter_top.vhd,hdl"
 STATE="utd"
-TIME="1763490923"
+TIME="1772464523"
 SIZE="622"
 ENDFILE
 VALUE "<project>/synthesis/led_blinker.so,so"
 STATE="utd"
-TIME="1763490986"
+TIME="1772464523"
 SIZE="232"
 ENDFILE
 VALUE "<project>/synthesis/led_blinker.vm,syn_vm"
 STATE="utd"
-TIME="1763490986"
+TIME="1772464523"
 SIZE="15185"
 ENDFILE
 VALUE "<project>/synthesis/led_blinker_syn.prj,prj"
 STATE="utd"
-TIME="1763490986"
-SIZE="2809"
+TIME="1772464691"
+SIZE="2530"
 ENDFILE
 VALUE "<project>/synthesis/led_blinker_vm.sdc,syn_sdc"
 STATE="utd"
-TIME="1763490986"
+TIME="1772464523"
 SIZE="843"
 ENDFILE
 VALUE "<project>/synthesis/synwork/layer0.so,so"
 STATE="utd"
-TIME="1763490031"
+TIME="1772464523"
 SIZE="154"
 ENDFILE
 ENDLIST
@@ -120,7 +121,8 @@ VALUE "<project>/constraint/user.sdc,sdc"
 ENDLIST
 LIST ProjectState5.1
 LIST Impl1
-ideSYNTHESIS(<project>/synthesis/led_blinker.vm,syn_vm)=StateSuccess
+ideSYNTHESIS(<project>/synthesis/led_blinker.vm,syn_vm)=StateFailure
+ideSYNTHESIS(<project>/synthesis/led_blinker.edn,syn_edn)=StateFailure
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -129,6 +131,20 @@ ENDLIST
 Used_File_List
 ENDUsed_File_List
 ENDLIST
+LIST Impl2
+ideSYNTHESIS(<project>/synthesis/led_blinker.vm,syn_vm)=StateFailure
+ideSYNTHESIS(<project>/synthesis/led_blinker.edn,syn_edn)=StateFailure
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST synthesis_implementations
+VALUE "synthesis"
 ENDLIST
 ENDLIST
 ENDLIST
@@ -234,7 +250,19 @@ ENDLIST
 LIST ProjectState5.1
 LIST "led_blinker::work"
 LIST Impl1
-ideSYNTHESIS(<project>/synthesis/led_blinker.vm,syn_vm)=StateSuccess
+ideSYNTHESIS(<project>/synthesis/led_blinker.vm,syn_vm)=StateFailure
+ideSYNTHESIS(<project>/synthesis/led_blinker.edn,syn_edn)=StateFailure
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+LIST Impl2
+ideSYNTHESIS(<project>/synthesis/led_blinker.vm,syn_vm)=StateFailure
+ideSYNTHESIS(<project>/synthesis/led_blinker.edn,syn_edn)=StateFailure
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -257,12 +285,8 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-Constraint Manager;Constraint Manager;0
-HDL;hdl/counter_top.vhd;0
-Reports;Reports;0
-ReportsCurrentItem;Run Programming Action:led_blinker_PROGRAM.log
 StartPage;StartPage;0
-ACTIVEVIEW;Constraint Manager
+ACTIVEVIEW;StartPage
 ENDLIST
 LIST ModuleSubBlockList
 LIST "led_blinker::work","hdl/counter_top.vhd","FALSE","FALSE"

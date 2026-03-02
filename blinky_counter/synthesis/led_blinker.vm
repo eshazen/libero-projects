@@ -2,7 +2,7 @@
 // Written by Synplify Pro 
 // Product Version "V-2023.09M-5"
 // Program "Synplify Pro", Mapper "map202309act, Build 395R"
-// Tue Nov 18 13:36:26 2025
+// Mon Mar  2 16:16:40 2026
 //
 // Source file index table:
 // Object locations will have the form <file>:<line>
@@ -15,44 +15,1823 @@
 // file 6 "\/home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/lib/vhd2008/arith.vhd "
 // file 7 "\/home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/lib/vhd2008/unsigned.vhd "
 // file 8 "\/home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/lib/vhd/hyperents.vhd "
-// file 9 "\/home/hazen/LiberoProjects/blinky_counter/hdl/counter_top.vhd "
-// file 10 "\/home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/lib/nlconst.dat "
-// file 11 "\/home/hazen/LiberoProjects/blinky_counter/designer/led_blinker/synthesis.fdc "
+// file 9 "\/home/hazen/work/libero-projects/blinky_counter/hdl/uart_tx.vhd "
+// file 10 "\/home/hazen/work/libero-projects/blinky_counter/hdl/uart_new.vhd "
+// file 11 "\/home/hazen/work/libero-projects/blinky_counter/hdl/counter_top.vhd "
+// file 12 "\/home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/lib/nlconst.dat "
+// file 13 "\/home/hazen/work/libero-projects/blinky_counter/designer/led_blinker/synthesis.fdc "
 
 `timescale 100 ps/100 ps
+module uart_new_work_led_blinker_rtl_0layer0 (
+  param_ptr_5,
+  param_ptr,
+  ser_dat,
+  un1_reset_n_i_2_1z,
+  store_0_sqmuxa_1z,
+  store_1_sqmuxa_1z,
+  led_o_0_sqmuxa_1z,
+  store,
+  uart_rx_o_c,
+  clk_i,
+  reset_n_i_c
+)
+;
+output [1:0] param_ptr_5 ;
+input [1:0] param_ptr ;
+output [7:0] ser_dat ;
+output un1_reset_n_i_2_1z ;
+output store_0_sqmuxa_1z ;
+output store_1_sqmuxa_1z ;
+output led_o_0_sqmuxa_1z ;
+input store ;
+input uart_rx_o_c ;
+input clk_i ;
+input reset_n_i_c ;
+wire un1_reset_n_i_2_1z ;
+wire store_0_sqmuxa_1z ;
+wire store_1_sqmuxa_1z ;
+wire led_o_0_sqmuxa_1z ;
+wire store ;
+wire uart_rx_o_c ;
+wire clk_i ;
+wire reset_n_i_c ;
+wire [0:0] un1_baud_sample_1_i;
+wire [9:1] ser_sr_Z;
+wire [3:0] sampCtr_Z;
+wire [3:0] sampCtr_6_Z;
+wire [3:0] bitCtr_Z;
+wire [3:0] bitCtr_6_Z;
+wire [8:0] baudCtr_Z;
+wire [8:0] baudCtr_3_Z;
+wire baud_sample_Z ;
+wire VCC ;
+wire un2_baudctr_Z ;
+wire GND ;
+wire valid_out_Z ;
+wire valid_out_3_Z ;
+wire rx_last_Z ;
+wire rx_last_0_sqmuxa_Z ;
+wire ser_busy_Z ;
+wire ser_valid_Z ;
+wire bitCtr_2_sqmuxa_Z ;
+wire ser_dat_0_sqmuxa_Z ;
+wire NN_1 ;
+wire un5_baudctr_cry_7_S ;
+wire un5_baudctr_cry_5_S ;
+wire un5_baudctr_cry_4_S ;
+wire un5_baudctr_cry_3_S ;
+wire un5_baudctr_cry_1_S ;
+wire un5_baudctr_s_1_105_FCO ;
+wire un5_baudctr_s_1_105_S ;
+wire un5_baudctr_s_1_105_Y ;
+wire un5_baudctr_cry_1_Z ;
+wire un5_baudctr_cry_1_Y ;
+wire un5_baudctr_cry_2_Z ;
+wire un5_baudctr_cry_2_S ;
+wire un5_baudctr_cry_2_Y ;
+wire un5_baudctr_cry_3_Z ;
+wire un5_baudctr_cry_3_Y ;
+wire un5_baudctr_cry_4_Z ;
+wire un5_baudctr_cry_4_Y ;
+wire un5_baudctr_cry_5_Z ;
+wire un5_baudctr_cry_5_Y ;
+wire un5_baudctr_cry_6_Z ;
+wire un5_baudctr_cry_6_S ;
+wire un5_baudctr_cry_6_Y ;
+wire un5_baudctr_s_8_FCO ;
+wire un5_baudctr_s_8_S ;
+wire un5_baudctr_s_8_Y ;
+wire un5_baudctr_cry_7_Z ;
+wire un5_baudctr_cry_7_Y ;
+wire un16_baud_sample_Z ;
+wire un6_baud_sample_Z ;
+wire valid_out_1_sqmuxa_Z ;
+wire un12_ser_valid_Z ;
+wire un2_baudctr_5_Z ;
+wire un2_baudctr_4_Z ;
+wire un4_ser_valid_4_Z ;
+wire bitCtr_0_sqmuxa_Z ;
+wire un12_baud_sample_Z ;
+wire un20_baud_sample_Z ;
+wire un4_ser_valid_Z ;
+wire sampCtr_0_sqmuxa_Z ;
+wire CO1 ;
+wire param_ptr_0_sqmuxa_1_Z ;
+wire un1_rx_last3_Z ;
+wire CO1_0 ;
+// @10:60
+  SLE baud_sample (
+	.Q(baud_sample_Z),
+	.ADn(VCC),
+	.ALn(reset_n_i_c),
+	.CLK(clk_i),
+	.D(un2_baudctr_Z),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:60
+  SLE valid_out (
+	.Q(valid_out_Z),
+	.ADn(VCC),
+	.ALn(reset_n_i_c),
+	.CLK(clk_i),
+	.D(valid_out_3_Z),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:60
+  SLE rx_last (
+	.Q(rx_last_Z),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(clk_i),
+	.D(uart_rx_o_c),
+	.EN(rx_last_0_sqmuxa_Z),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:60
+  SLE ser_busy (
+	.Q(ser_busy_Z),
+	.ADn(VCC),
+	.ALn(reset_n_i_c),
+	.CLK(clk_i),
+	.D(un1_baud_sample_1_i[0]),
+	.EN(baud_sample_Z),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:60
+  SLE ser_valid (
+	.Q(ser_valid_Z),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(clk_i),
+	.D(valid_out_Z),
+	.EN(reset_n_i_c),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:60
+  SLE \ser_sr[4]  (
+	.Q(ser_sr_Z[4]),
+	.ADn(VCC),
+	.ALn(reset_n_i_c),
+	.CLK(clk_i),
+	.D(ser_sr_Z[5]),
+	.EN(bitCtr_2_sqmuxa_Z),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:60
+  SLE \ser_sr[3]  (
+	.Q(ser_sr_Z[3]),
+	.ADn(VCC),
+	.ALn(reset_n_i_c),
+	.CLK(clk_i),
+	.D(ser_sr_Z[4]),
+	.EN(bitCtr_2_sqmuxa_Z),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:60
+  SLE \ser_sr[2]  (
+	.Q(ser_sr_Z[2]),
+	.ADn(VCC),
+	.ALn(reset_n_i_c),
+	.CLK(clk_i),
+	.D(ser_sr_Z[3]),
+	.EN(bitCtr_2_sqmuxa_Z),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:60
+  SLE \ser_sr[1]  (
+	.Q(ser_sr_Z[1]),
+	.ADn(VCC),
+	.ALn(reset_n_i_c),
+	.CLK(clk_i),
+	.D(ser_sr_Z[2]),
+	.EN(bitCtr_2_sqmuxa_Z),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:60
+  SLE \sampCtr[1]  (
+	.Q(sampCtr_Z[1]),
+	.ADn(VCC),
+	.ALn(reset_n_i_c),
+	.CLK(clk_i),
+	.D(sampCtr_6_Z[1]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:60
+  SLE \sampCtr[0]  (
+	.Q(sampCtr_Z[0]),
+	.ADn(VCC),
+	.ALn(reset_n_i_c),
+	.CLK(clk_i),
+	.D(sampCtr_6_Z[0]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:60
+  SLE \ser_dat_Z[7]  (
+	.Q(ser_dat[7]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(clk_i),
+	.D(ser_sr_Z[8]),
+	.EN(ser_dat_0_sqmuxa_Z),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:60
+  SLE \ser_dat_Z[6]  (
+	.Q(NN_1),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(clk_i),
+	.D(ser_sr_Z[7]),
+	.EN(ser_dat_0_sqmuxa_Z),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:60
+  SLE \ser_dat_Z[5]  (
+	.Q(ser_dat[5]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(clk_i),
+	.D(ser_sr_Z[6]),
+	.EN(ser_dat_0_sqmuxa_Z),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:60
+  SLE \ser_dat_Z[4]  (
+	.Q(ser_dat[4]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(clk_i),
+	.D(ser_sr_Z[5]),
+	.EN(ser_dat_0_sqmuxa_Z),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:60
+  SLE \ser_dat_Z[3]  (
+	.Q(ser_dat[3]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(clk_i),
+	.D(ser_sr_Z[4]),
+	.EN(ser_dat_0_sqmuxa_Z),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:60
+  SLE \ser_dat_Z[2]  (
+	.Q(ser_dat[2]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(clk_i),
+	.D(ser_sr_Z[3]),
+	.EN(ser_dat_0_sqmuxa_Z),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:60
+  SLE \ser_dat_Z[1]  (
+	.Q(ser_dat[1]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(clk_i),
+	.D(ser_sr_Z[2]),
+	.EN(ser_dat_0_sqmuxa_Z),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:60
+  SLE \ser_dat_Z[0]  (
+	.Q(ser_dat[0]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(clk_i),
+	.D(ser_sr_Z[1]),
+	.EN(ser_dat_0_sqmuxa_Z),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:60
+  SLE \ser_sr[9]  (
+	.Q(ser_sr_Z[9]),
+	.ADn(VCC),
+	.ALn(reset_n_i_c),
+	.CLK(clk_i),
+	.D(uart_rx_o_c),
+	.EN(bitCtr_2_sqmuxa_Z),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:60
+  SLE \ser_sr[8]  (
+	.Q(ser_sr_Z[8]),
+	.ADn(VCC),
+	.ALn(reset_n_i_c),
+	.CLK(clk_i),
+	.D(ser_sr_Z[9]),
+	.EN(bitCtr_2_sqmuxa_Z),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:60
+  SLE \ser_sr[7]  (
+	.Q(ser_sr_Z[7]),
+	.ADn(VCC),
+	.ALn(reset_n_i_c),
+	.CLK(clk_i),
+	.D(ser_sr_Z[8]),
+	.EN(bitCtr_2_sqmuxa_Z),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:60
+  SLE \ser_sr[6]  (
+	.Q(ser_sr_Z[6]),
+	.ADn(VCC),
+	.ALn(reset_n_i_c),
+	.CLK(clk_i),
+	.D(ser_sr_Z[7]),
+	.EN(bitCtr_2_sqmuxa_Z),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:60
+  SLE \ser_sr[5]  (
+	.Q(ser_sr_Z[5]),
+	.ADn(VCC),
+	.ALn(reset_n_i_c),
+	.CLK(clk_i),
+	.D(ser_sr_Z[6]),
+	.EN(bitCtr_2_sqmuxa_Z),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:60
+  SLE \bitCtr[3]  (
+	.Q(bitCtr_Z[3]),
+	.ADn(VCC),
+	.ALn(reset_n_i_c),
+	.CLK(clk_i),
+	.D(bitCtr_6_Z[3]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:60
+  SLE \bitCtr[2]  (
+	.Q(bitCtr_Z[2]),
+	.ADn(VCC),
+	.ALn(reset_n_i_c),
+	.CLK(clk_i),
+	.D(bitCtr_6_Z[2]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:60
+  SLE \bitCtr[1]  (
+	.Q(bitCtr_Z[1]),
+	.ADn(VCC),
+	.ALn(reset_n_i_c),
+	.CLK(clk_i),
+	.D(bitCtr_6_Z[1]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:60
+  SLE \bitCtr[0]  (
+	.Q(bitCtr_Z[0]),
+	.ADn(VCC),
+	.ALn(reset_n_i_c),
+	.CLK(clk_i),
+	.D(bitCtr_6_Z[0]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:60
+  SLE \baudCtr[8]  (
+	.Q(baudCtr_Z[8]),
+	.ADn(VCC),
+	.ALn(reset_n_i_c),
+	.CLK(clk_i),
+	.D(baudCtr_3_Z[8]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:60
+  SLE \baudCtr[7]  (
+	.Q(baudCtr_Z[7]),
+	.ADn(VCC),
+	.ALn(reset_n_i_c),
+	.CLK(clk_i),
+	.D(un5_baudctr_cry_7_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:60
+  SLE \baudCtr[6]  (
+	.Q(baudCtr_Z[6]),
+	.ADn(VCC),
+	.ALn(reset_n_i_c),
+	.CLK(clk_i),
+	.D(baudCtr_3_Z[6]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:60
+  SLE \baudCtr[5]  (
+	.Q(baudCtr_Z[5]),
+	.ADn(VCC),
+	.ALn(reset_n_i_c),
+	.CLK(clk_i),
+	.D(un5_baudctr_cry_5_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:60
+  SLE \baudCtr[4]  (
+	.Q(baudCtr_Z[4]),
+	.ADn(VCC),
+	.ALn(reset_n_i_c),
+	.CLK(clk_i),
+	.D(un5_baudctr_cry_4_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:60
+  SLE \baudCtr[3]  (
+	.Q(baudCtr_Z[3]),
+	.ADn(VCC),
+	.ALn(reset_n_i_c),
+	.CLK(clk_i),
+	.D(un5_baudctr_cry_3_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:60
+  SLE \baudCtr[2]  (
+	.Q(baudCtr_Z[2]),
+	.ADn(VCC),
+	.ALn(reset_n_i_c),
+	.CLK(clk_i),
+	.D(baudCtr_3_Z[2]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:60
+  SLE \baudCtr[1]  (
+	.Q(baudCtr_Z[1]),
+	.ADn(VCC),
+	.ALn(reset_n_i_c),
+	.CLK(clk_i),
+	.D(un5_baudctr_cry_1_S),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:60
+  SLE \baudCtr[0]  (
+	.Q(baudCtr_Z[0]),
+	.ADn(VCC),
+	.ALn(reset_n_i_c),
+	.CLK(clk_i),
+	.D(baudCtr_3_Z[0]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:60
+  SLE \sampCtr[3]  (
+	.Q(sampCtr_Z[3]),
+	.ADn(VCC),
+	.ALn(reset_n_i_c),
+	.CLK(clk_i),
+	.D(sampCtr_6_Z[3]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:60
+  SLE \sampCtr[2]  (
+	.Q(sampCtr_Z[2]),
+	.ADn(VCC),
+	.ALn(reset_n_i_c),
+	.CLK(clk_i),
+	.D(sampCtr_6_Z[2]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @10:82
+  ARI1 un5_baudctr_s_1_105 (
+	.FCO(un5_baudctr_s_1_105_FCO),
+	.S(un5_baudctr_s_1_105_S),
+	.Y(un5_baudctr_s_1_105_Y),
+	.B(baudCtr_Z[0]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(VCC)
+);
+defparam un5_baudctr_s_1_105.INIT=20'h4AA00;
+// @10:82
+  ARI1 un5_baudctr_cry_1 (
+	.FCO(un5_baudctr_cry_1_Z),
+	.S(un5_baudctr_cry_1_S),
+	.Y(un5_baudctr_cry_1_Y),
+	.B(baudCtr_Z[1]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un5_baudctr_s_1_105_FCO)
+);
+defparam un5_baudctr_cry_1.INIT=20'h4AA00;
+// @10:82
+  ARI1 un5_baudctr_cry_2 (
+	.FCO(un5_baudctr_cry_2_Z),
+	.S(un5_baudctr_cry_2_S),
+	.Y(un5_baudctr_cry_2_Y),
+	.B(baudCtr_Z[2]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un5_baudctr_cry_1_Z)
+);
+defparam un5_baudctr_cry_2.INIT=20'h4AA00;
+// @10:82
+  ARI1 un5_baudctr_cry_3 (
+	.FCO(un5_baudctr_cry_3_Z),
+	.S(un5_baudctr_cry_3_S),
+	.Y(un5_baudctr_cry_3_Y),
+	.B(baudCtr_Z[3]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un5_baudctr_cry_2_Z)
+);
+defparam un5_baudctr_cry_3.INIT=20'h4AA00;
+// @10:82
+  ARI1 un5_baudctr_cry_4 (
+	.FCO(un5_baudctr_cry_4_Z),
+	.S(un5_baudctr_cry_4_S),
+	.Y(un5_baudctr_cry_4_Y),
+	.B(baudCtr_Z[4]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un5_baudctr_cry_3_Z)
+);
+defparam un5_baudctr_cry_4.INIT=20'h4AA00;
+// @10:82
+  ARI1 un5_baudctr_cry_5 (
+	.FCO(un5_baudctr_cry_5_Z),
+	.S(un5_baudctr_cry_5_S),
+	.Y(un5_baudctr_cry_5_Y),
+	.B(baudCtr_Z[5]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un5_baudctr_cry_4_Z)
+);
+defparam un5_baudctr_cry_5.INIT=20'h4AA00;
+// @10:82
+  ARI1 un5_baudctr_cry_6 (
+	.FCO(un5_baudctr_cry_6_Z),
+	.S(un5_baudctr_cry_6_S),
+	.Y(un5_baudctr_cry_6_Y),
+	.B(baudCtr_Z[6]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un5_baudctr_cry_5_Z)
+);
+defparam un5_baudctr_cry_6.INIT=20'h4AA00;
+// @10:82
+  ARI1 un5_baudctr_s_8 (
+	.FCO(un5_baudctr_s_8_FCO),
+	.S(un5_baudctr_s_8_S),
+	.Y(un5_baudctr_s_8_Y),
+	.B(baudCtr_Z[8]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un5_baudctr_cry_7_Z)
+);
+defparam un5_baudctr_s_8.INIT=20'h4AA00;
+// @10:82
+  ARI1 un5_baudctr_cry_7 (
+	.FCO(un5_baudctr_cry_7_Z),
+	.S(un5_baudctr_cry_7_S),
+	.Y(un5_baudctr_cry_7_Y),
+	.B(baudCtr_Z[7]),
+	.C(GND),
+	.D(GND),
+	.A(VCC),
+	.FCI(un5_baudctr_cry_6_Z)
+);
+defparam un5_baudctr_cry_7.INIT=20'h4AA00;
+// @10:91
+  CFG3 bitCtr_2_sqmuxa (
+	.A(baud_sample_Z),
+	.B(ser_busy_Z),
+	.C(un16_baud_sample_Z),
+	.Y(bitCtr_2_sqmuxa_Z)
+);
+defparam bitCtr_2_sqmuxa.INIT=8'h80;
+// @10:93
+  CFG2 un6_baud_sample (
+	.A(rx_last_Z),
+	.B(uart_rx_o_c),
+	.Y(un6_baud_sample_Z)
+);
+defparam un6_baud_sample.INIT=4'h2;
+// @11:115
+  CFG2 led_o_0_sqmuxa (
+	.A(store),
+	.B(reset_n_i_c),
+	.Y(led_o_0_sqmuxa_1z)
+);
+defparam led_o_0_sqmuxa.INIT=4'h8;
+// @10:91
+  CFG2 valid_out_1_sqmuxa (
+	.A(ser_busy_Z),
+	.B(baud_sample_Z),
+	.Y(valid_out_1_sqmuxa_Z)
+);
+defparam valid_out_1_sqmuxa.INIT=4'h8;
+// @10:87
+  CFG2 rx_last_0_sqmuxa (
+	.A(baud_sample_Z),
+	.B(reset_n_i_c),
+	.Y(rx_last_0_sqmuxa_Z)
+);
+defparam rx_last_0_sqmuxa.INIT=4'h8;
+// @11:133
+  CFG2 un12_ser_valid (
+	.A(param_ptr[0]),
+	.B(param_ptr[1]),
+	.Y(un12_ser_valid_Z)
+);
+defparam un12_ser_valid.INIT=4'h4;
+// @11:126
+  CFG2 store_1_sqmuxa (
+	.A(NN_1),
+	.B(ser_valid_Z),
+	.Y(store_1_sqmuxa_1z)
+);
+defparam store_1_sqmuxa.INIT=4'h8;
+// @10:78
+  CFG4 un2_baudctr_5 (
+	.A(baudCtr_Z[8]),
+	.B(baudCtr_Z[7]),
+	.C(baudCtr_Z[5]),
+	.D(baudCtr_Z[4]),
+	.Y(un2_baudctr_5_Z)
+);
+defparam un2_baudctr_5.INIT=16'h0002;
+// @10:78
+  CFG3 un2_baudctr_4 (
+	.A(baudCtr_Z[6]),
+	.B(baudCtr_Z[2]),
+	.C(baudCtr_Z[0]),
+	.Y(un2_baudctr_4_Z)
+);
+defparam un2_baudctr_4.INIT=8'h08;
+// @11:122
+  CFG4 un4_ser_valid_4 (
+	.A(NN_1),
+	.B(ser_dat[3]),
+	.C(ser_dat[1]),
+	.D(ser_dat[0]),
+	.Y(un4_ser_valid_4_Z)
+);
+defparam un4_ser_valid_4.INIT=16'h4000;
+// @10:91
+  CFG3 bitCtr_0_sqmuxa (
+	.A(baud_sample_Z),
+	.B(ser_busy_Z),
+	.C(un6_baud_sample_Z),
+	.Y(bitCtr_0_sqmuxa_Z)
+);
+defparam bitCtr_0_sqmuxa.INIT=8'h20;
+// @10:107
+  CFG4 un16_baud_sample (
+	.A(sampCtr_Z[3]),
+	.B(sampCtr_Z[2]),
+	.C(sampCtr_Z[1]),
+	.D(sampCtr_Z[0]),
+	.Y(un16_baud_sample_Z)
+);
+defparam un16_baud_sample.INIT=16'h0002;
+// @10:101
+  CFG4 un12_baud_sample (
+	.A(sampCtr_Z[3]),
+	.B(sampCtr_Z[2]),
+	.C(sampCtr_Z[1]),
+	.D(sampCtr_Z[0]),
+	.Y(un12_baud_sample_Z)
+);
+defparam un12_baud_sample.INIT=16'h8000;
+// @10:112
+  CFG4 un20_baud_sample (
+	.A(bitCtr_Z[3]),
+	.B(bitCtr_Z[2]),
+	.C(bitCtr_Z[1]),
+	.D(bitCtr_Z[0]),
+	.Y(un20_baud_sample_Z)
+);
+defparam un20_baud_sample.INIT=16'h0020;
+// @11:133
+  CFG2 store_0_sqmuxa (
+	.A(store_1_sqmuxa_1z),
+	.B(un12_ser_valid_Z),
+	.Y(store_0_sqmuxa_1z)
+);
+defparam store_0_sqmuxa.INIT=4'h8;
+// @11:122
+  CFG4 un4_ser_valid (
+	.A(ser_dat[2]),
+	.B(un4_ser_valid_4_Z),
+	.C(ser_dat[5]),
+	.D(ser_dat[4]),
+	.Y(un4_ser_valid_Z)
+);
+defparam un4_ser_valid.INIT=16'h0400;
+// @11:53
+  CFG4 un1_reset_n_i_2 (
+	.A(param_ptr[0]),
+	.B(store_1_sqmuxa_1z),
+	.C(reset_n_i_c),
+	.D(param_ptr[1]),
+	.Y(un1_reset_n_i_2_1z)
+);
+defparam un1_reset_n_i_2.INIT=16'h0040;
+// @10:112
+  CFG3 ser_dat_0_sqmuxa (
+	.A(rx_last_0_sqmuxa_Z),
+	.B(un20_baud_sample_Z),
+	.C(ser_busy_Z),
+	.Y(ser_dat_0_sqmuxa_Z)
+);
+defparam ser_dat_0_sqmuxa.INIT=8'h80;
+// @10:87
+  CFG2 valid_out_3 (
+	.A(un20_baud_sample_Z),
+	.B(valid_out_1_sqmuxa_Z),
+	.Y(valid_out_3_Z)
+);
+defparam valid_out_3.INIT=4'h8;
+// @10:87
+  CFG3 \sampCtr_6[0]  (
+	.A(valid_out_1_sqmuxa_Z),
+	.B(sampCtr_0_sqmuxa_Z),
+	.C(sampCtr_Z[0]),
+	.Y(sampCtr_6_Z[0])
+);
+defparam \sampCtr_6[0] .INIT=8'h12;
+// @10:104
+  CFG3 \un1_sampCtr_1.CO1  (
+	.A(sampCtr_Z[0]),
+	.B(valid_out_1_sqmuxa_Z),
+	.C(sampCtr_Z[1]),
+	.Y(CO1)
+);
+defparam \un1_sampCtr_1.CO1 .INIT=8'h80;
+// @11:119
+  CFG3 \param_ptr_5_cZ[0]  (
+	.A(store_1_sqmuxa_1z),
+	.B(param_ptr_0_sqmuxa_1_Z),
+	.C(param_ptr[0]),
+	.Y(param_ptr_5[0])
+);
+defparam \param_ptr_5_cZ[0] .INIT=8'h12;
+// @10:78
+  CFG4 un2_baudctr (
+	.A(baudCtr_Z[3]),
+	.B(baudCtr_Z[1]),
+	.C(un2_baudctr_5_Z),
+	.D(un2_baudctr_4_Z),
+	.Y(un2_baudctr_Z)
+);
+defparam un2_baudctr.INIT=16'h1000;
+// @10:87
+  CFG4 \sampCtr_6[1]  (
+	.A(valid_out_1_sqmuxa_Z),
+	.B(sampCtr_0_sqmuxa_Z),
+	.C(sampCtr_Z[1]),
+	.D(sampCtr_Z[0]),
+	.Y(sampCtr_6_Z[1])
+);
+defparam \sampCtr_6[1] .INIT=16'h1230;
+// @11:119
+  CFG4 \param_ptr_5_cZ[1]  (
+	.A(store_1_sqmuxa_1z),
+	.B(param_ptr_0_sqmuxa_1_Z),
+	.C(param_ptr[1]),
+	.D(param_ptr[0]),
+	.Y(param_ptr_5[1])
+);
+defparam \param_ptr_5_cZ[1] .INIT=16'h1230;
+// @10:91
+  CFG4 sampCtr_0_sqmuxa (
+	.A(baud_sample_Z),
+	.B(ser_busy_Z),
+	.C(un6_baud_sample_Z),
+	.D(un12_baud_sample_Z),
+	.Y(sampCtr_0_sqmuxa_Z)
+);
+defparam sampCtr_0_sqmuxa.INIT=16'hA820;
+// @10:87
+  CFG4 un1_rx_last3 (
+	.A(baud_sample_Z),
+	.B(ser_busy_Z),
+	.C(un6_baud_sample_Z),
+	.D(un16_baud_sample_Z),
+	.Y(un1_rx_last3_Z)
+);
+defparam un1_rx_last3.INIT=16'h57DF;
+// @10:60
+  CFG3 ser_busy_RNO (
+	.A(ser_busy_Z),
+	.B(un6_baud_sample_Z),
+	.C(un20_baud_sample_Z),
+	.Y(un1_baud_sample_1_i[0])
+);
+defparam ser_busy_RNO.INIT=8'h4E;
+// @10:87
+  CFG3 \sampCtr_6[2]  (
+	.A(CO1),
+	.B(sampCtr_0_sqmuxa_Z),
+	.C(sampCtr_Z[2]),
+	.Y(sampCtr_6_Z[2])
+);
+defparam \sampCtr_6[2] .INIT=8'h12;
+// @10:78
+  CFG2 \baudCtr_3[0]  (
+	.A(un2_baudctr_Z),
+	.B(baudCtr_Z[0]),
+	.Y(baudCtr_3_Z[0])
+);
+defparam \baudCtr_3[0] .INIT=4'h1;
+// @11:122
+  CFG4 param_ptr_0_sqmuxa_1 (
+	.A(ser_valid_Z),
+	.B(NN_1),
+	.C(un12_ser_valid_Z),
+	.D(un4_ser_valid_Z),
+	.Y(param_ptr_0_sqmuxa_1_Z)
+);
+defparam param_ptr_0_sqmuxa_1.INIT=16'hAA80;
+// @10:78
+  CFG2 \baudCtr_3[8]  (
+	.A(un2_baudctr_Z),
+	.B(un5_baudctr_s_8_S),
+	.Y(baudCtr_3_Z[8])
+);
+defparam \baudCtr_3[8] .INIT=4'h4;
+// @10:78
+  CFG2 \baudCtr_3[6]  (
+	.A(un2_baudctr_Z),
+	.B(un5_baudctr_cry_6_S),
+	.Y(baudCtr_3_Z[6])
+);
+defparam \baudCtr_3[6] .INIT=4'h4;
+// @10:78
+  CFG2 \baudCtr_3[2]  (
+	.A(un2_baudctr_Z),
+	.B(un5_baudctr_cry_2_S),
+	.Y(baudCtr_3_Z[2])
+);
+defparam \baudCtr_3[2] .INIT=4'h4;
+// @10:87
+  CFG4 \sampCtr_6[3]  (
+	.A(CO1),
+	.B(sampCtr_0_sqmuxa_Z),
+	.C(sampCtr_Z[3]),
+	.D(sampCtr_Z[2]),
+	.Y(sampCtr_6_Z[3])
+);
+defparam \sampCtr_6[3] .INIT=16'h1230;
+// @10:108
+  CFG3 \un1_bitCtr_1.CO1  (
+	.A(bitCtr_Z[0]),
+	.B(un1_rx_last3_Z),
+	.C(bitCtr_Z[1]),
+	.Y(CO1_0)
+);
+defparam \un1_bitCtr_1.CO1 .INIT=8'h20;
+// @10:87
+  CFG3 \bitCtr_6[0]  (
+	.A(bitCtr_0_sqmuxa_Z),
+	.B(un1_rx_last3_Z),
+	.C(bitCtr_Z[0]),
+	.Y(bitCtr_6_Z[0])
+);
+defparam \bitCtr_6[0] .INIT=8'h41;
+// @10:87
+  CFG4 \bitCtr_6[1]  (
+	.A(bitCtr_0_sqmuxa_Z),
+	.B(un1_rx_last3_Z),
+	.C(bitCtr_Z[1]),
+	.D(bitCtr_Z[0]),
+	.Y(bitCtr_6_Z[1])
+);
+defparam \bitCtr_6[1] .INIT=16'h4150;
+// @10:87
+  CFG3 \bitCtr_6[2]  (
+	.A(bitCtr_0_sqmuxa_Z),
+	.B(CO1_0),
+	.C(bitCtr_Z[2]),
+	.Y(bitCtr_6_Z[2])
+);
+defparam \bitCtr_6[2] .INIT=8'h14;
+// @10:87
+  CFG4 \bitCtr_6[3]  (
+	.A(bitCtr_0_sqmuxa_Z),
+	.B(CO1_0),
+	.C(bitCtr_Z[3]),
+	.D(bitCtr_Z[2]),
+	.Y(bitCtr_6_Z[3])
+);
+defparam \bitCtr_6[3] .INIT=16'h1450;
+  GND GND_Z (
+	.Y(GND)
+);
+  VCC VCC_Z (
+	.Y(VCC)
+);
+endmodule /* uart_new_work_led_blinker_rtl_0layer0 */
+
+module uart_tx_5208 (
+  send_data,
+  i_TX_DV,
+  uart_tx_o_c,
+  clk_i
+)
+;
+input [7:0] send_data ;
+input i_TX_DV ;
+output uart_tx_o_c ;
+input clk_i ;
+wire i_TX_DV ;
+wire uart_tx_o_c ;
+wire clk_i ;
+wire [2:0] r_SM_Main_Z;
+wire [2:2] r_SM_Main_i;
+wire [2:0] r_Bit_Index_Z;
+wire [2:0] r_SM_Main_ns;
+wire [7:0] r_TX_Data_Z;
+wire [12:0] r_Clk_Count_Z;
+wire [12:0] r_Clk_Count_s;
+wire [12:12] r_Clk_Count_RNISQBL91_S;
+wire [12:12] r_Clk_Count_RNISQBL91_Y;
+wire [11:0] r_Clk_Count_cry;
+wire [0:0] r_Clk_Count_RNIOU4HM2_Y;
+wire [1:1] r_Clk_Count_RNIL3UC34_Y;
+wire [2:2] r_Clk_Count_RNIJ9N8G5_Y;
+wire [3:3] r_Clk_Count_RNIIGG4T6_Y;
+wire [4:4] r_Clk_Count_RNIIO90A8_Y;
+wire [5:5] r_Clk_Count_RNIJ13SM9_Y;
+wire [6:6] r_Clk_Count_RNILBSN3B_Y;
+wire [7:7] r_Clk_Count_RNIOMLJGC_Y;
+wire [8:8] r_Clk_Count_RNIS2FFTD_Y;
+wire [9:9] r_Clk_Count_RNI1G8BAF_Y;
+wire [10:10] r_Clk_Count_RNIEAAKLG_Y;
+wire [12:12] r_Clk_Count_RNO_FCO;
+wire [12:12] r_Clk_Count_RNO_Y;
+wire [11:11] r_Clk_Count_RNIS5CT0I_Y;
+wire [4:4] r_SM_Main_d;
+wire VCC ;
+wire r_Bit_Index ;
+wire GND ;
+wire r_Bit_Index_0 ;
+wire r_Bit_Index_1 ;
+wire N_46_i_i ;
+wire r_TX_Data_0_sqmuxa ;
+wire N_284_i ;
+wire N_64_mux_i ;
+wire r_Clk_Count_cry_cy ;
+wire r_Clk_Count_lcry_2 ;
+wire N_40 ;
+wire m41_i_m2_2_1_1 ;
+wire m41_i_m2_2_0_1_1 ;
+wire m11_2_0_1 ;
+wire N_71_0 ;
+wire N_68_mux_2 ;
+wire m6_2_0_1 ;
+wire o_TX_Serial_RNO_2_Z ;
+wire o_TX_Serial_RNO_1_Z ;
+wire N_138 ;
+wire m35_0_a2_1_0 ;
+wire m35_0_0 ;
+wire N_41 ;
+wire N_16 ;
+wire N_15 ;
+wire N_14 ;
+wire N_13 ;
+wire N_12 ;
+wire N_5 ;
+wire N_4 ;
+  CFG1 \r_SM_Main_RNI44475[2]  (
+	.A(r_SM_Main_Z[2]),
+	.Y(r_SM_Main_i[2])
+);
+defparam \r_SM_Main_RNI44475[2] .INIT=2'h1;
+// @9:49
+  SLE \r_Bit_Index[2]  (
+	.Q(r_Bit_Index_Z[2]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(clk_i),
+	.D(r_Bit_Index),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:49
+  SLE \r_Bit_Index[1]  (
+	.Q(r_Bit_Index_Z[1]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(clk_i),
+	.D(r_Bit_Index_0),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:49
+  SLE \r_Bit_Index[0]  (
+	.Q(r_Bit_Index_Z[0]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(clk_i),
+	.D(r_Bit_Index_1),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+  SLE \r_SM_Main[1]  (
+	.Q(r_SM_Main_Z[1]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(clk_i),
+	.D(N_46_i_i),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+  SLE \r_SM_Main[2]  (
+	.Q(r_SM_Main_Z[2]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(clk_i),
+	.D(r_SM_Main_ns[2]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+  SLE \r_SM_Main[0]  (
+	.Q(r_SM_Main_Z[0]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(clk_i),
+	.D(r_SM_Main_ns[0]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:49
+  SLE \r_TX_Data[7]  (
+	.Q(r_TX_Data_Z[7]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(clk_i),
+	.D(send_data[7]),
+	.EN(r_TX_Data_0_sqmuxa),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:49
+  SLE \r_TX_Data[6]  (
+	.Q(r_TX_Data_Z[6]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(clk_i),
+	.D(send_data[6]),
+	.EN(r_TX_Data_0_sqmuxa),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:49
+  SLE \r_TX_Data[5]  (
+	.Q(r_TX_Data_Z[5]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(clk_i),
+	.D(send_data[5]),
+	.EN(r_TX_Data_0_sqmuxa),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:49
+  SLE \r_TX_Data[4]  (
+	.Q(r_TX_Data_Z[4]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(clk_i),
+	.D(send_data[4]),
+	.EN(r_TX_Data_0_sqmuxa),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:49
+  SLE \r_TX_Data[3]  (
+	.Q(r_TX_Data_Z[3]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(clk_i),
+	.D(send_data[3]),
+	.EN(r_TX_Data_0_sqmuxa),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:49
+  SLE \r_TX_Data[2]  (
+	.Q(r_TX_Data_Z[2]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(clk_i),
+	.D(send_data[2]),
+	.EN(r_TX_Data_0_sqmuxa),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:49
+  SLE \r_TX_Data[1]  (
+	.Q(r_TX_Data_Z[1]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(clk_i),
+	.D(send_data[1]),
+	.EN(r_TX_Data_0_sqmuxa),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:49
+  SLE \r_TX_Data[0]  (
+	.Q(r_TX_Data_Z[0]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(clk_i),
+	.D(send_data[0]),
+	.EN(r_TX_Data_0_sqmuxa),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @9:49
+  SLE \r_Clk_Count[9]  (
+	.Q(r_Clk_Count_Z[9]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(clk_i),
+	.D(r_Clk_Count_s[9]),
+	.EN(r_SM_Main_i[2]),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(N_284_i)
+);
+// @9:49
+  SLE \r_Clk_Count[8]  (
+	.Q(r_Clk_Count_Z[8]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(clk_i),
+	.D(r_Clk_Count_s[8]),
+	.EN(r_SM_Main_i[2]),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(N_284_i)
+);
+// @9:49
+  SLE \r_Clk_Count[7]  (
+	.Q(r_Clk_Count_Z[7]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(clk_i),
+	.D(r_Clk_Count_s[7]),
+	.EN(r_SM_Main_i[2]),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(N_284_i)
+);
+// @9:49
+  SLE \r_Clk_Count[6]  (
+	.Q(r_Clk_Count_Z[6]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(clk_i),
+	.D(r_Clk_Count_s[6]),
+	.EN(r_SM_Main_i[2]),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(N_284_i)
+);
+// @9:49
+  SLE \r_Clk_Count[5]  (
+	.Q(r_Clk_Count_Z[5]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(clk_i),
+	.D(r_Clk_Count_s[5]),
+	.EN(r_SM_Main_i[2]),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(N_284_i)
+);
+// @9:49
+  SLE \r_Clk_Count[4]  (
+	.Q(r_Clk_Count_Z[4]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(clk_i),
+	.D(r_Clk_Count_s[4]),
+	.EN(r_SM_Main_i[2]),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(N_284_i)
+);
+// @9:49
+  SLE \r_Clk_Count[3]  (
+	.Q(r_Clk_Count_Z[3]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(clk_i),
+	.D(r_Clk_Count_s[3]),
+	.EN(r_SM_Main_i[2]),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(N_284_i)
+);
+// @9:49
+  SLE \r_Clk_Count[2]  (
+	.Q(r_Clk_Count_Z[2]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(clk_i),
+	.D(r_Clk_Count_s[2]),
+	.EN(r_SM_Main_i[2]),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(N_284_i)
+);
+// @9:49
+  SLE \r_Clk_Count[1]  (
+	.Q(r_Clk_Count_Z[1]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(clk_i),
+	.D(r_Clk_Count_s[1]),
+	.EN(r_SM_Main_i[2]),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(N_284_i)
+);
+// @9:49
+  SLE \r_Clk_Count[0]  (
+	.Q(r_Clk_Count_Z[0]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(clk_i),
+	.D(r_Clk_Count_s[0]),
+	.EN(r_SM_Main_i[2]),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(N_284_i)
+);
+// @9:49
+  SLE \r_Clk_Count[12]  (
+	.Q(r_Clk_Count_Z[12]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(clk_i),
+	.D(r_Clk_Count_s[12]),
+	.EN(r_SM_Main_i[2]),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(N_284_i)
+);
+// @9:49
+  SLE \r_Clk_Count[11]  (
+	.Q(r_Clk_Count_Z[11]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(clk_i),
+	.D(r_Clk_Count_s[11]),
+	.EN(r_SM_Main_i[2]),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(N_284_i)
+);
+// @9:49
+  SLE \r_Clk_Count[10]  (
+	.Q(r_Clk_Count_Z[10]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(clk_i),
+	.D(r_Clk_Count_s[10]),
+	.EN(r_SM_Main_i[2]),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(N_284_i)
+);
+// @9:49
+  SLE o_TX_Serial (
+	.Q(uart_tx_o_c),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(clk_i),
+	.D(N_64_mux_i),
+	.EN(r_SM_Main_i[2]),
+	.LAT(GND),
+	.SD(VCC),
+	.SLn(N_284_i)
+);
+  CFG2 \r_SM_Main_RNI558EA[1]  (
+	.A(r_SM_Main_Z[0]),
+	.B(r_SM_Main_Z[1]),
+	.Y(N_284_i)
+);
+defparam \r_SM_Main_RNI558EA[1] .INIT=4'hE;
+  ARI1 \r_Clk_Count_RNISQBL91[12]  (
+	.FCO(r_Clk_Count_cry_cy),
+	.S(r_Clk_Count_RNISQBL91_S[12]),
+	.Y(r_Clk_Count_RNISQBL91_Y[12]),
+	.B(r_Clk_Count_Z[12]),
+	.C(r_Clk_Count_lcry_2),
+	.D(GND),
+	.A(VCC),
+	.FCI(VCC)
+);
+defparam \r_Clk_Count_RNISQBL91[12] .INIT=20'h4DD00;
+  ARI1 \r_Clk_Count_RNIOU4HM2[0]  (
+	.FCO(r_Clk_Count_cry[0]),
+	.S(r_Clk_Count_s[0]),
+	.Y(r_Clk_Count_RNIOU4HM2_Y[0]),
+	.B(r_Clk_Count_RNISQBL91_Y[12]),
+	.C(r_Clk_Count_Z[0]),
+	.D(GND),
+	.A(VCC),
+	.FCI(r_Clk_Count_cry_cy)
+);
+defparam \r_Clk_Count_RNIOU4HM2[0] .INIT=20'h48800;
+  ARI1 \r_Clk_Count_RNIL3UC34[1]  (
+	.FCO(r_Clk_Count_cry[1]),
+	.S(r_Clk_Count_s[1]),
+	.Y(r_Clk_Count_RNIL3UC34_Y[1]),
+	.B(r_Clk_Count_RNISQBL91_Y[12]),
+	.C(r_Clk_Count_Z[1]),
+	.D(GND),
+	.A(VCC),
+	.FCI(r_Clk_Count_cry[0])
+);
+defparam \r_Clk_Count_RNIL3UC34[1] .INIT=20'h48800;
+  ARI1 \r_Clk_Count_RNIJ9N8G5[2]  (
+	.FCO(r_Clk_Count_cry[2]),
+	.S(r_Clk_Count_s[2]),
+	.Y(r_Clk_Count_RNIJ9N8G5_Y[2]),
+	.B(r_Clk_Count_RNISQBL91_Y[12]),
+	.C(r_Clk_Count_Z[2]),
+	.D(GND),
+	.A(VCC),
+	.FCI(r_Clk_Count_cry[1])
+);
+defparam \r_Clk_Count_RNIJ9N8G5[2] .INIT=20'h48800;
+  ARI1 \r_Clk_Count_RNIIGG4T6[3]  (
+	.FCO(r_Clk_Count_cry[3]),
+	.S(r_Clk_Count_s[3]),
+	.Y(r_Clk_Count_RNIIGG4T6_Y[3]),
+	.B(r_Clk_Count_RNISQBL91_Y[12]),
+	.C(r_Clk_Count_Z[3]),
+	.D(GND),
+	.A(VCC),
+	.FCI(r_Clk_Count_cry[2])
+);
+defparam \r_Clk_Count_RNIIGG4T6[3] .INIT=20'h48800;
+  ARI1 \r_Clk_Count_RNIIO90A8[4]  (
+	.FCO(r_Clk_Count_cry[4]),
+	.S(r_Clk_Count_s[4]),
+	.Y(r_Clk_Count_RNIIO90A8_Y[4]),
+	.B(r_Clk_Count_RNISQBL91_Y[12]),
+	.C(r_Clk_Count_Z[4]),
+	.D(GND),
+	.A(VCC),
+	.FCI(r_Clk_Count_cry[3])
+);
+defparam \r_Clk_Count_RNIIO90A8[4] .INIT=20'h48800;
+  ARI1 \r_Clk_Count_RNIJ13SM9[5]  (
+	.FCO(r_Clk_Count_cry[5]),
+	.S(r_Clk_Count_s[5]),
+	.Y(r_Clk_Count_RNIJ13SM9_Y[5]),
+	.B(r_Clk_Count_RNISQBL91_Y[12]),
+	.C(r_Clk_Count_Z[5]),
+	.D(GND),
+	.A(VCC),
+	.FCI(r_Clk_Count_cry[4])
+);
+defparam \r_Clk_Count_RNIJ13SM9[5] .INIT=20'h48800;
+  ARI1 \r_Clk_Count_RNILBSN3B[6]  (
+	.FCO(r_Clk_Count_cry[6]),
+	.S(r_Clk_Count_s[6]),
+	.Y(r_Clk_Count_RNILBSN3B_Y[6]),
+	.B(r_Clk_Count_RNISQBL91_Y[12]),
+	.C(r_Clk_Count_Z[6]),
+	.D(GND),
+	.A(VCC),
+	.FCI(r_Clk_Count_cry[5])
+);
+defparam \r_Clk_Count_RNILBSN3B[6] .INIT=20'h48800;
+  ARI1 \r_Clk_Count_RNIOMLJGC[7]  (
+	.FCO(r_Clk_Count_cry[7]),
+	.S(r_Clk_Count_s[7]),
+	.Y(r_Clk_Count_RNIOMLJGC_Y[7]),
+	.B(r_Clk_Count_RNISQBL91_Y[12]),
+	.C(r_Clk_Count_Z[7]),
+	.D(GND),
+	.A(VCC),
+	.FCI(r_Clk_Count_cry[6])
+);
+defparam \r_Clk_Count_RNIOMLJGC[7] .INIT=20'h48800;
+  ARI1 \r_Clk_Count_RNIS2FFTD[8]  (
+	.FCO(r_Clk_Count_cry[8]),
+	.S(r_Clk_Count_s[8]),
+	.Y(r_Clk_Count_RNIS2FFTD_Y[8]),
+	.B(r_Clk_Count_RNISQBL91_Y[12]),
+	.C(r_Clk_Count_Z[8]),
+	.D(GND),
+	.A(VCC),
+	.FCI(r_Clk_Count_cry[7])
+);
+defparam \r_Clk_Count_RNIS2FFTD[8] .INIT=20'h48800;
+  ARI1 \r_Clk_Count_RNI1G8BAF[9]  (
+	.FCO(r_Clk_Count_cry[9]),
+	.S(r_Clk_Count_s[9]),
+	.Y(r_Clk_Count_RNI1G8BAF_Y[9]),
+	.B(r_Clk_Count_RNISQBL91_Y[12]),
+	.C(r_Clk_Count_Z[9]),
+	.D(GND),
+	.A(VCC),
+	.FCI(r_Clk_Count_cry[8])
+);
+defparam \r_Clk_Count_RNI1G8BAF[9] .INIT=20'h48800;
+  ARI1 \r_Clk_Count_RNIEAAKLG[10]  (
+	.FCO(r_Clk_Count_cry[10]),
+	.S(r_Clk_Count_s[10]),
+	.Y(r_Clk_Count_RNIEAAKLG_Y[10]),
+	.B(r_Clk_Count_RNISQBL91_Y[12]),
+	.C(r_Clk_Count_Z[10]),
+	.D(GND),
+	.A(VCC),
+	.FCI(r_Clk_Count_cry[9])
+);
+defparam \r_Clk_Count_RNIEAAKLG[10] .INIT=20'h48800;
+  ARI1 \r_Clk_Count_RNO[12]  (
+	.FCO(r_Clk_Count_RNO_FCO[12]),
+	.S(r_Clk_Count_s[12]),
+	.Y(r_Clk_Count_RNO_Y[12]),
+	.B(r_Clk_Count_RNISQBL91_Y[12]),
+	.C(r_Clk_Count_Z[12]),
+	.D(GND),
+	.A(VCC),
+	.FCI(r_Clk_Count_cry[11])
+);
+defparam \r_Clk_Count_RNO[12] .INIT=20'h48800;
+  ARI1 \r_Clk_Count_RNIS5CT0I[11]  (
+	.FCO(r_Clk_Count_cry[11]),
+	.S(r_Clk_Count_s[11]),
+	.Y(r_Clk_Count_RNIS5CT0I_Y[11]),
+	.B(r_Clk_Count_RNISQBL91_Y[12]),
+	.C(r_Clk_Count_Z[11]),
+	.D(GND),
+	.A(VCC),
+	.FCI(r_Clk_Count_cry[10])
+);
+defparam \r_Clk_Count_RNIS5CT0I[11] .INIT=20'h48800;
+// @9:49
+  CFG4 \r_Bit_Index_r[1]  (
+	.A(r_SM_Main_d[4]),
+	.B(N_40),
+	.C(r_Bit_Index_Z[0]),
+	.D(r_Bit_Index_Z[1]),
+	.Y(r_Bit_Index_0)
+);
+defparam \r_Bit_Index_r[1] .INIT=16'h4510;
+  CFG4 \r_Clk_Count_RNI21K3K1[12]  (
+	.A(r_SM_Main_Z[0]),
+	.B(r_Clk_Count_lcry_2),
+	.C(r_Clk_Count_Z[12]),
+	.D(r_SM_Main_Z[2]),
+	.Y(N_40)
+);
+defparam \r_Clk_Count_RNI21K3K1[12] .INIT=16'hFFEF;
+  CFG4 o_TX_Serial_RNO_4 (
+	.A(r_Bit_Index_Z[1]),
+	.B(r_Bit_Index_Z[2]),
+	.C(r_TX_Data_Z[0]),
+	.D(r_TX_Data_Z[2]),
+	.Y(m41_i_m2_2_1_1)
+);
+defparam o_TX_Serial_RNO_4.INIT=16'h4567;
+  CFG4 o_TX_Serial_RNO_3 (
+	.A(r_Bit_Index_Z[1]),
+	.B(r_Bit_Index_Z[2]),
+	.C(r_TX_Data_Z[1]),
+	.D(r_TX_Data_Z[3]),
+	.Y(m41_i_m2_2_0_1_1)
+);
+defparam o_TX_Serial_RNO_3.INIT=16'h4567;
+  CFG4 \r_SM_Main_RNI6H9CI[2]  (
+	.A(i_TX_DV),
+	.B(r_SM_Main_Z[2]),
+	.C(r_SM_Main_Z[1]),
+	.D(r_SM_Main_Z[0]),
+	.Y(r_TX_Data_0_sqmuxa)
+);
+defparam \r_SM_Main_RNI6H9CI[2] .INIT=16'h0002;
+  CFG4 \r_Clk_Count_RNI9PL181[10]  (
+	.A(r_Clk_Count_Z[9]),
+	.B(r_Clk_Count_Z[10]),
+	.C(m11_2_0_1),
+	.D(N_71_0),
+	.Y(r_Clk_Count_lcry_2)
+);
+defparam \r_Clk_Count_RNI9PL181[10] .INIT=16'h7300;
+  CFG4 \r_Clk_Count_RNIA56001[7]  (
+	.A(r_Clk_Count_Z[8]),
+	.B(r_Clk_Count_Z[7]),
+	.C(r_Clk_Count_Z[6]),
+	.D(N_68_mux_2),
+	.Y(m11_2_0_1)
+);
+defparam \r_Clk_Count_RNIA56001[7] .INIT=16'h1101;
+  CFG4 \r_Clk_Count_RNILKTCM[4]  (
+	.A(m6_2_0_1),
+	.B(r_Clk_Count_Z[6]),
+	.C(r_Clk_Count_Z[5]),
+	.D(r_Clk_Count_Z[4]),
+	.Y(N_68_mux_2)
+);
+defparam \r_Clk_Count_RNILKTCM[4] .INIT=16'h080C;
+  CFG4 \r_Clk_Count_RNI6ALPC[0]  (
+	.A(r_Clk_Count_Z[3]),
+	.B(r_Clk_Count_Z[2]),
+	.C(r_Clk_Count_Z[1]),
+	.D(r_Clk_Count_Z[0]),
+	.Y(m6_2_0_1)
+);
+defparam \r_Clk_Count_RNI6ALPC[0] .INIT=16'h1555;
+  CFG4 o_TX_Serial_RNO_2 (
+	.A(r_TX_Data_Z[6]),
+	.B(r_TX_Data_Z[4]),
+	.C(r_Bit_Index_Z[2]),
+	.D(m41_i_m2_2_1_1),
+	.Y(o_TX_Serial_RNO_2_Z)
+);
+defparam o_TX_Serial_RNO_2.INIT=16'h3F50;
+  CFG4 o_TX_Serial_RNO_1 (
+	.A(r_TX_Data_Z[7]),
+	.B(r_TX_Data_Z[5]),
+	.C(r_Bit_Index_Z[2]),
+	.D(m41_i_m2_2_0_1_1),
+	.Y(o_TX_Serial_RNO_1_Z)
+);
+defparam o_TX_Serial_RNO_1.INIT=16'h3F50;
+  CFG3 o_TX_Serial_RNO_0 (
+	.A(r_Bit_Index_Z[0]),
+	.B(o_TX_Serial_RNO_1_Z),
+	.C(o_TX_Serial_RNO_2_Z),
+	.Y(N_138)
+);
+defparam o_TX_Serial_RNO_0.INIT=8'hD8;
+  CFG2 \r_SM_Main_RNO_0[0]  (
+	.A(r_SM_Main_Z[1]),
+	.B(r_Bit_Index_Z[2]),
+	.Y(m35_0_a2_1_0)
+);
+defparam \r_SM_Main_RNO_0[0] .INIT=4'h8;
+  CFG2 \r_Clk_Count_RNI52C73[11]  (
+	.A(r_Clk_Count_Z[12]),
+	.B(r_Clk_Count_Z[11]),
+	.Y(N_71_0)
+);
+defparam \r_Clk_Count_RNI52C73[11] .INIT=4'h2;
+  CFG3 \r_SM_Main_RNI99CLF[2]  (
+	.A(r_SM_Main_Z[2]),
+	.B(r_SM_Main_Z[1]),
+	.C(r_SM_Main_Z[0]),
+	.Y(r_SM_Main_d[4])
+);
+defparam \r_SM_Main_RNI99CLF[2] .INIT=8'h01;
+// @9:49
+  CFG3 o_TX_Serial_RNO (
+	.A(r_SM_Main_Z[1]),
+	.B(r_SM_Main_Z[0]),
+	.C(N_138),
+	.Y(N_64_mux_i)
+);
+defparam o_TX_Serial_RNO.INIT=8'h8A;
+  CFG4 \r_SM_Main_RNO_1[0]  (
+	.A(r_TX_Data_0_sqmuxa),
+	.B(r_Clk_Count_RNISQBL91_Y[12]),
+	.C(r_SM_Main_Z[2]),
+	.D(r_SM_Main_Z[0]),
+	.Y(m35_0_0)
+);
+defparam \r_SM_Main_RNO_1[0] .INIT=16'hAEAA;
+  CFG3 \r_SM_Main_RNO[2]  (
+	.A(r_SM_Main_Z[1]),
+	.B(r_SM_Main_Z[0]),
+	.C(r_Clk_Count_RNISQBL91_Y[12]),
+	.Y(r_SM_Main_ns[2])
+);
+defparam \r_SM_Main_RNO[2] .INIT=8'h08;
+  CFG2 \r_Bit_Index_RNIM816P1[0]  (
+	.A(N_40),
+	.B(r_Bit_Index_Z[0]),
+	.Y(N_41)
+);
+defparam \r_Bit_Index_RNIM816P1[0] .INIT=4'hB;
+  CFG3 \r_SM_Main_RNO[1]  (
+	.A(r_SM_Main_Z[1]),
+	.B(r_SM_Main_Z[0]),
+	.C(r_Clk_Count_RNISQBL91_Y[12]),
+	.Y(N_46_i_i)
+);
+defparam \r_SM_Main_RNO[1] .INIT=8'hA6;
+// @9:49
+  CFG3 \r_Bit_Index_r[0]  (
+	.A(r_SM_Main_d[4]),
+	.B(N_40),
+	.C(r_Bit_Index_Z[0]),
+	.Y(r_Bit_Index_1)
+);
+defparam \r_Bit_Index_r[0] .INIT=8'h41;
+// @9:49
+  CFG4 \r_Bit_Index_r[2]  (
+	.A(r_SM_Main_d[4]),
+	.B(N_41),
+	.C(r_Bit_Index_Z[1]),
+	.D(r_Bit_Index_Z[2]),
+	.Y(r_Bit_Index)
+);
+defparam \r_Bit_Index_r[2] .INIT=16'h4510;
+  CFG4 \r_SM_Main_RNO[0]  (
+	.A(m35_0_a2_1_0),
+	.B(r_Bit_Index_Z[1]),
+	.C(m35_0_0),
+	.D(N_41),
+	.Y(r_SM_Main_ns[0])
+);
+defparam \r_SM_Main_RNO[0] .INIT=16'hF0F8;
+  GND GND_Z (
+	.Y(GND)
+);
+  VCC VCC_Z (
+	.Y(VCC)
+);
+endmodule /* uart_tx_5208 */
+
 module led_blinker (
   clk_i,
   reset_n_i,
-  led_o
+  led_o,
+  uart_tx_o,
+  uart_rx_o
 )
 ;
 input clk_i ;
 input reset_n_i ;
 output [7:0] led_o ;
+output uart_tx_o ;
+input uart_rx_o ;
 wire clk_i ;
 wire reset_n_i ;
-wire [23:0] counter_Z;
+wire uart_tx_o ;
+wire uart_rx_o ;
+wire [7:0] ser_dat;
+wire [7:0] send_data_Z;
+wire [1:0] param_ptr_Z;
+wire [3:0] param_array_0_Z;
+wire [1:0] param_ptr_5;
+wire [27:0] counter_Z;
+wire [7:0] led_o_c;
 wire [30:0] counter_s;
 wire [30:1] counter_cry_Z;
-wire [7:0] led_o_c;
 wire [31:31] counter_s_Z;
 wire [30:1] counter_cry_Y;
 wire [31:31] counter_s_FCO;
 wire [31:31] counter_s_Y;
 wire NN_1 ;
+wire un1_reset_n_i_2 ;
+wire UART_TX_1_i_TX_DV ;
 wire VCC ;
 wire GND ;
+wire led_o_0_sqmuxa ;
+wire store_Z ;
+wire store_1_sqmuxa ;
+wire store_0_sqmuxa ;
 wire clk_i_ibuf_Z ;
 wire reset_n_i_c ;
-wire counter_s_1_FCO ;
-wire counter_s_1_S ;
-wire counter_s_1_Y ;
+wire uart_rx_o_c ;
+wire uart_tx_o_c ;
+wire counter_s_104_FCO ;
+wire counter_s_104_S ;
+wire counter_s_104_Y ;
+wire N_313 ;
   CFG1 \counter_RNO[0]  (
 	.A(counter_Z[0]),
 	.Y(counter_s[0])
 );
 defparam \counter_RNO[0] .INIT=2'h1;
-// @9:18
+// @11:92
   SLE \counter[31]  (
 	.Q(led_o_c[7]),
 	.ADn(VCC),
@@ -64,7 +1843,7 @@ defparam \counter_RNO[0] .INIT=2'h1;
 	.SD(GND),
 	.SLn(VCC)
 );
-// @9:18
+// @11:92
   SLE \counter[30]  (
 	.Q(led_o_c[6]),
 	.ADn(VCC),
@@ -76,7 +1855,7 @@ defparam \counter_RNO[0] .INIT=2'h1;
 	.SD(GND),
 	.SLn(VCC)
 );
-// @9:18
+// @11:92
   SLE \counter[29]  (
 	.Q(led_o_c[5]),
 	.ADn(VCC),
@@ -88,7 +1867,7 @@ defparam \counter_RNO[0] .INIT=2'h1;
 	.SD(GND),
 	.SLn(VCC)
 );
-// @9:18
+// @11:92
   SLE \counter[28]  (
 	.Q(led_o_c[4]),
 	.ADn(VCC),
@@ -100,9 +1879,9 @@ defparam \counter_RNO[0] .INIT=2'h1;
 	.SD(GND),
 	.SLn(VCC)
 );
-// @9:18
+// @11:92
   SLE \counter[27]  (
-	.Q(led_o_c[3]),
+	.Q(counter_Z[27]),
 	.ADn(VCC),
 	.ALn(reset_n_i_c),
 	.CLK(NN_1),
@@ -112,9 +1891,9 @@ defparam \counter_RNO[0] .INIT=2'h1;
 	.SD(GND),
 	.SLn(VCC)
 );
-// @9:18
+// @11:92
   SLE \counter[26]  (
-	.Q(led_o_c[2]),
+	.Q(counter_Z[26]),
 	.ADn(VCC),
 	.ALn(reset_n_i_c),
 	.CLK(NN_1),
@@ -124,9 +1903,9 @@ defparam \counter_RNO[0] .INIT=2'h1;
 	.SD(GND),
 	.SLn(VCC)
 );
-// @9:18
+// @11:92
   SLE \counter[25]  (
-	.Q(led_o_c[1]),
+	.Q(counter_Z[25]),
 	.ADn(VCC),
 	.ALn(reset_n_i_c),
 	.CLK(NN_1),
@@ -136,9 +1915,9 @@ defparam \counter_RNO[0] .INIT=2'h1;
 	.SD(GND),
 	.SLn(VCC)
 );
-// @9:18
+// @11:92
   SLE \counter[24]  (
-	.Q(led_o_c[0]),
+	.Q(counter_Z[24]),
 	.ADn(VCC),
 	.ALn(reset_n_i_c),
 	.CLK(NN_1),
@@ -148,7 +1927,7 @@ defparam \counter_RNO[0] .INIT=2'h1;
 	.SD(GND),
 	.SLn(VCC)
 );
-// @9:18
+// @11:92
   SLE \counter[23]  (
 	.Q(counter_Z[23]),
 	.ADn(VCC),
@@ -160,7 +1939,7 @@ defparam \counter_RNO[0] .INIT=2'h1;
 	.SD(GND),
 	.SLn(VCC)
 );
-// @9:18
+// @11:92
   SLE \counter[22]  (
 	.Q(counter_Z[22]),
 	.ADn(VCC),
@@ -172,7 +1951,7 @@ defparam \counter_RNO[0] .INIT=2'h1;
 	.SD(GND),
 	.SLn(VCC)
 );
-// @9:18
+// @11:92
   SLE \counter[21]  (
 	.Q(counter_Z[21]),
 	.ADn(VCC),
@@ -184,7 +1963,7 @@ defparam \counter_RNO[0] .INIT=2'h1;
 	.SD(GND),
 	.SLn(VCC)
 );
-// @9:18
+// @11:92
   SLE \counter[20]  (
 	.Q(counter_Z[20]),
 	.ADn(VCC),
@@ -196,7 +1975,7 @@ defparam \counter_RNO[0] .INIT=2'h1;
 	.SD(GND),
 	.SLn(VCC)
 );
-// @9:18
+// @11:92
   SLE \counter[19]  (
 	.Q(counter_Z[19]),
 	.ADn(VCC),
@@ -208,7 +1987,7 @@ defparam \counter_RNO[0] .INIT=2'h1;
 	.SD(GND),
 	.SLn(VCC)
 );
-// @9:18
+// @11:92
   SLE \counter[18]  (
 	.Q(counter_Z[18]),
 	.ADn(VCC),
@@ -220,7 +1999,7 @@ defparam \counter_RNO[0] .INIT=2'h1;
 	.SD(GND),
 	.SLn(VCC)
 );
-// @9:18
+// @11:92
   SLE \counter[17]  (
 	.Q(counter_Z[17]),
 	.ADn(VCC),
@@ -232,7 +2011,7 @@ defparam \counter_RNO[0] .INIT=2'h1;
 	.SD(GND),
 	.SLn(VCC)
 );
-// @9:18
+// @11:92
   SLE \counter[16]  (
 	.Q(counter_Z[16]),
 	.ADn(VCC),
@@ -244,7 +2023,7 @@ defparam \counter_RNO[0] .INIT=2'h1;
 	.SD(GND),
 	.SLn(VCC)
 );
-// @9:18
+// @11:92
   SLE \counter[15]  (
 	.Q(counter_Z[15]),
 	.ADn(VCC),
@@ -256,7 +2035,7 @@ defparam \counter_RNO[0] .INIT=2'h1;
 	.SD(GND),
 	.SLn(VCC)
 );
-// @9:18
+// @11:92
   SLE \counter[14]  (
 	.Q(counter_Z[14]),
 	.ADn(VCC),
@@ -268,7 +2047,7 @@ defparam \counter_RNO[0] .INIT=2'h1;
 	.SD(GND),
 	.SLn(VCC)
 );
-// @9:18
+// @11:92
   SLE \counter[13]  (
 	.Q(counter_Z[13]),
 	.ADn(VCC),
@@ -280,7 +2059,7 @@ defparam \counter_RNO[0] .INIT=2'h1;
 	.SD(GND),
 	.SLn(VCC)
 );
-// @9:18
+// @11:92
   SLE \counter[12]  (
 	.Q(counter_Z[12]),
 	.ADn(VCC),
@@ -292,7 +2071,7 @@ defparam \counter_RNO[0] .INIT=2'h1;
 	.SD(GND),
 	.SLn(VCC)
 );
-// @9:18
+// @11:92
   SLE \counter[11]  (
 	.Q(counter_Z[11]),
 	.ADn(VCC),
@@ -304,7 +2083,7 @@ defparam \counter_RNO[0] .INIT=2'h1;
 	.SD(GND),
 	.SLn(VCC)
 );
-// @9:18
+// @11:92
   SLE \counter[10]  (
 	.Q(counter_Z[10]),
 	.ADn(VCC),
@@ -316,7 +2095,7 @@ defparam \counter_RNO[0] .INIT=2'h1;
 	.SD(GND),
 	.SLn(VCC)
 );
-// @9:18
+// @11:92
   SLE \counter[9]  (
 	.Q(counter_Z[9]),
 	.ADn(VCC),
@@ -328,7 +2107,7 @@ defparam \counter_RNO[0] .INIT=2'h1;
 	.SD(GND),
 	.SLn(VCC)
 );
-// @9:18
+// @11:92
   SLE \counter[8]  (
 	.Q(counter_Z[8]),
 	.ADn(VCC),
@@ -340,7 +2119,7 @@ defparam \counter_RNO[0] .INIT=2'h1;
 	.SD(GND),
 	.SLn(VCC)
 );
-// @9:18
+// @11:92
   SLE \counter[7]  (
 	.Q(counter_Z[7]),
 	.ADn(VCC),
@@ -352,7 +2131,7 @@ defparam \counter_RNO[0] .INIT=2'h1;
 	.SD(GND),
 	.SLn(VCC)
 );
-// @9:18
+// @11:92
   SLE \counter[6]  (
 	.Q(counter_Z[6]),
 	.ADn(VCC),
@@ -364,7 +2143,7 @@ defparam \counter_RNO[0] .INIT=2'h1;
 	.SD(GND),
 	.SLn(VCC)
 );
-// @9:18
+// @11:92
   SLE \counter[5]  (
 	.Q(counter_Z[5]),
 	.ADn(VCC),
@@ -376,7 +2155,7 @@ defparam \counter_RNO[0] .INIT=2'h1;
 	.SD(GND),
 	.SLn(VCC)
 );
-// @9:18
+// @11:92
   SLE \counter[4]  (
 	.Q(counter_Z[4]),
 	.ADn(VCC),
@@ -388,7 +2167,7 @@ defparam \counter_RNO[0] .INIT=2'h1;
 	.SD(GND),
 	.SLn(VCC)
 );
-// @9:18
+// @11:92
   SLE \counter[3]  (
 	.Q(counter_Z[3]),
 	.ADn(VCC),
@@ -400,7 +2179,7 @@ defparam \counter_RNO[0] .INIT=2'h1;
 	.SD(GND),
 	.SLn(VCC)
 );
-// @9:18
+// @11:92
   SLE \counter[2]  (
 	.Q(counter_Z[2]),
 	.ADn(VCC),
@@ -412,7 +2191,7 @@ defparam \counter_RNO[0] .INIT=2'h1;
 	.SD(GND),
 	.SLn(VCC)
 );
-// @9:18
+// @11:92
   SLE \counter[1]  (
 	.Q(counter_Z[1]),
 	.ADn(VCC),
@@ -424,7 +2203,7 @@ defparam \counter_RNO[0] .INIT=2'h1;
 	.SD(GND),
 	.SLn(VCC)
 );
-// @9:18
+// @11:92
   SLE \counter[0]  (
 	.Q(counter_Z[0]),
 	.ADn(VCC),
@@ -436,69 +2215,319 @@ defparam \counter_RNO[0] .INIT=2'h1;
 	.SD(GND),
 	.SLn(VCC)
 );
-// @9:7
+// @11:103
+  SLE store (
+	.Q(store_Z),
+	.ADn(VCC),
+	.ALn(reset_n_i_c),
+	.CLK(NN_1),
+	.D(store_0_sqmuxa),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:103
+  SLE send_ena (
+	.Q(UART_TX_1_i_TX_DV),
+	.ADn(VCC),
+	.ALn(reset_n_i_c),
+	.CLK(NN_1),
+	.D(store_1_sqmuxa),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:103
+  SLE \send_data[5]  (
+	.Q(send_data_Z[5]),
+	.ADn(VCC),
+	.ALn(reset_n_i_c),
+	.CLK(NN_1),
+	.D(ser_dat[5]),
+	.EN(store_1_sqmuxa),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:103
+  SLE \send_data[4]  (
+	.Q(send_data_Z[4]),
+	.ADn(VCC),
+	.ALn(reset_n_i_c),
+	.CLK(NN_1),
+	.D(ser_dat[4]),
+	.EN(store_1_sqmuxa),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:103
+  SLE \send_data[3]  (
+	.Q(send_data_Z[3]),
+	.ADn(VCC),
+	.ALn(reset_n_i_c),
+	.CLK(NN_1),
+	.D(ser_dat[3]),
+	.EN(store_1_sqmuxa),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:103
+  SLE \send_data[2]  (
+	.Q(send_data_Z[2]),
+	.ADn(VCC),
+	.ALn(reset_n_i_c),
+	.CLK(NN_1),
+	.D(ser_dat[2]),
+	.EN(store_1_sqmuxa),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:103
+  SLE \send_data[1]  (
+	.Q(send_data_Z[1]),
+	.ADn(VCC),
+	.ALn(reset_n_i_c),
+	.CLK(NN_1),
+	.D(ser_dat[1]),
+	.EN(store_1_sqmuxa),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:103
+  SLE \send_data[0]  (
+	.Q(send_data_Z[0]),
+	.ADn(VCC),
+	.ALn(reset_n_i_c),
+	.CLK(NN_1),
+	.D(ser_dat[0]),
+	.EN(store_1_sqmuxa),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:53
+  SLE \param_array_0[3]  (
+	.Q(param_array_0_Z[3]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(NN_1),
+	.D(ser_dat[3]),
+	.EN(un1_reset_n_i_2),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:53
+  SLE \param_array_0[2]  (
+	.Q(param_array_0_Z[2]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(NN_1),
+	.D(ser_dat[2]),
+	.EN(un1_reset_n_i_2),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:53
+  SLE \param_array_0[1]  (
+	.Q(param_array_0_Z[1]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(NN_1),
+	.D(ser_dat[1]),
+	.EN(un1_reset_n_i_2),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:53
+  SLE \param_array_0[0]  (
+	.Q(param_array_0_Z[0]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(NN_1),
+	.D(ser_dat[0]),
+	.EN(un1_reset_n_i_2),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:115
+  SLE \led_o_1[3]  (
+	.Q(led_o_c[3]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(NN_1),
+	.D(param_array_0_Z[3]),
+	.EN(led_o_0_sqmuxa),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:115
+  SLE \led_o_1[2]  (
+	.Q(led_o_c[2]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(NN_1),
+	.D(param_array_0_Z[2]),
+	.EN(led_o_0_sqmuxa),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:115
+  SLE \led_o_1[1]  (
+	.Q(led_o_c[1]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(NN_1),
+	.D(param_array_0_Z[1]),
+	.EN(led_o_0_sqmuxa),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:115
+  SLE \led_o_1[0]  (
+	.Q(led_o_c[0]),
+	.ADn(VCC),
+	.ALn(VCC),
+	.CLK(NN_1),
+	.D(param_array_0_Z[0]),
+	.EN(led_o_0_sqmuxa),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:103
+  SLE \param_ptr[1]  (
+	.Q(param_ptr_Z[1]),
+	.ADn(VCC),
+	.ALn(reset_n_i_c),
+	.CLK(NN_1),
+	.D(param_ptr_5[1]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:103
+  SLE \param_ptr[0]  (
+	.Q(param_ptr_Z[0]),
+	.ADn(VCC),
+	.ALn(reset_n_i_c),
+	.CLK(NN_1),
+	.D(param_ptr_5[0]),
+	.EN(VCC),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:103
+  SLE \send_data[7]  (
+	.Q(send_data_Z[7]),
+	.ADn(VCC),
+	.ALn(reset_n_i_c),
+	.CLK(NN_1),
+	.D(ser_dat[7]),
+	.EN(store_1_sqmuxa),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:103
+  SLE \send_data[6]  (
+	.Q(send_data_Z[6]),
+	.ADn(VCC),
+	.ALn(reset_n_i_c),
+	.CLK(NN_1),
+	.D(VCC),
+	.EN(store_1_sqmuxa),
+	.LAT(GND),
+	.SD(GND),
+	.SLn(VCC)
+);
+// @11:7
   INBUF clk_i_ibuf (
 	.Y(clk_i_ibuf_Z),
 	.PAD(clk_i)
 );
-// @9:8
+// @11:8
   INBUF reset_n_i_ibuf (
 	.Y(reset_n_i_c),
 	.PAD(reset_n_i)
 );
-// @9:9
+// @11:11
+  INBUF uart_rx_o_ibuf (
+	.Y(uart_rx_o_c),
+	.PAD(uart_rx_o)
+);
+// @11:9
   OUTBUF \led_o_obuf[0]  (
 	.PAD(led_o[0]),
 	.D(led_o_c[0])
 );
-// @9:9
+// @11:9
   OUTBUF \led_o_obuf[1]  (
 	.PAD(led_o[1]),
 	.D(led_o_c[1])
 );
-// @9:9
+// @11:9
   OUTBUF \led_o_obuf[2]  (
 	.PAD(led_o[2]),
 	.D(led_o_c[2])
 );
-// @9:9
+// @11:9
   OUTBUF \led_o_obuf[3]  (
 	.PAD(led_o[3]),
 	.D(led_o_c[3])
 );
-// @9:9
+// @11:9
   OUTBUF \led_o_obuf[4]  (
 	.PAD(led_o[4]),
 	.D(led_o_c[4])
 );
-// @9:9
+// @11:9
   OUTBUF \led_o_obuf[5]  (
 	.PAD(led_o[5]),
 	.D(led_o_c[5])
 );
-// @9:9
+// @11:9
   OUTBUF \led_o_obuf[6]  (
 	.PAD(led_o[6]),
 	.D(led_o_c[6])
 );
-// @9:9
+// @11:9
   OUTBUF \led_o_obuf[7]  (
 	.PAD(led_o[7]),
 	.D(led_o_c[7])
 );
-// @9:18
-  ARI1 counter_s_1 (
-	.FCO(counter_s_1_FCO),
-	.S(counter_s_1_S),
-	.Y(counter_s_1_Y),
+// @11:10
+  OUTBUF uart_tx_o_obuf (
+	.PAD(uart_tx_o),
+	.D(uart_tx_o_c)
+);
+// @11:92
+  ARI1 counter_s_104 (
+	.FCO(counter_s_104_FCO),
+	.S(counter_s_104_S),
+	.Y(counter_s_104_Y),
 	.B(counter_Z[0]),
 	.C(GND),
 	.D(GND),
 	.A(VCC),
 	.FCI(VCC)
 );
-defparam counter_s_1.INIT=20'h4AA00;
-// @9:18
+defparam counter_s_104.INIT=20'h4AA00;
+// @11:92
   ARI1 \counter_cry[1]  (
 	.FCO(counter_cry_Z[1]),
 	.S(counter_s[1]),
@@ -507,10 +2536,10 @@ defparam counter_s_1.INIT=20'h4AA00;
 	.C(GND),
 	.D(GND),
 	.A(VCC),
-	.FCI(counter_s_1_FCO)
+	.FCI(counter_s_104_FCO)
 );
 defparam \counter_cry[1] .INIT=20'h4AA00;
-// @9:18
+// @11:92
   ARI1 \counter_cry[2]  (
 	.FCO(counter_cry_Z[2]),
 	.S(counter_s[2]),
@@ -522,7 +2551,7 @@ defparam \counter_cry[1] .INIT=20'h4AA00;
 	.FCI(counter_cry_Z[1])
 );
 defparam \counter_cry[2] .INIT=20'h4AA00;
-// @9:18
+// @11:92
   ARI1 \counter_cry[3]  (
 	.FCO(counter_cry_Z[3]),
 	.S(counter_s[3]),
@@ -534,7 +2563,7 @@ defparam \counter_cry[2] .INIT=20'h4AA00;
 	.FCI(counter_cry_Z[2])
 );
 defparam \counter_cry[3] .INIT=20'h4AA00;
-// @9:18
+// @11:92
   ARI1 \counter_cry[4]  (
 	.FCO(counter_cry_Z[4]),
 	.S(counter_s[4]),
@@ -546,7 +2575,7 @@ defparam \counter_cry[3] .INIT=20'h4AA00;
 	.FCI(counter_cry_Z[3])
 );
 defparam \counter_cry[4] .INIT=20'h4AA00;
-// @9:18
+// @11:92
   ARI1 \counter_cry[5]  (
 	.FCO(counter_cry_Z[5]),
 	.S(counter_s[5]),
@@ -558,7 +2587,7 @@ defparam \counter_cry[4] .INIT=20'h4AA00;
 	.FCI(counter_cry_Z[4])
 );
 defparam \counter_cry[5] .INIT=20'h4AA00;
-// @9:18
+// @11:92
   ARI1 \counter_cry[6]  (
 	.FCO(counter_cry_Z[6]),
 	.S(counter_s[6]),
@@ -570,7 +2599,7 @@ defparam \counter_cry[5] .INIT=20'h4AA00;
 	.FCI(counter_cry_Z[5])
 );
 defparam \counter_cry[6] .INIT=20'h4AA00;
-// @9:18
+// @11:92
   ARI1 \counter_cry[7]  (
 	.FCO(counter_cry_Z[7]),
 	.S(counter_s[7]),
@@ -582,7 +2611,7 @@ defparam \counter_cry[6] .INIT=20'h4AA00;
 	.FCI(counter_cry_Z[6])
 );
 defparam \counter_cry[7] .INIT=20'h4AA00;
-// @9:18
+// @11:92
   ARI1 \counter_cry[8]  (
 	.FCO(counter_cry_Z[8]),
 	.S(counter_s[8]),
@@ -594,7 +2623,7 @@ defparam \counter_cry[7] .INIT=20'h4AA00;
 	.FCI(counter_cry_Z[7])
 );
 defparam \counter_cry[8] .INIT=20'h4AA00;
-// @9:18
+// @11:92
   ARI1 \counter_cry[9]  (
 	.FCO(counter_cry_Z[9]),
 	.S(counter_s[9]),
@@ -606,7 +2635,7 @@ defparam \counter_cry[8] .INIT=20'h4AA00;
 	.FCI(counter_cry_Z[8])
 );
 defparam \counter_cry[9] .INIT=20'h4AA00;
-// @9:18
+// @11:92
   ARI1 \counter_cry[10]  (
 	.FCO(counter_cry_Z[10]),
 	.S(counter_s[10]),
@@ -618,7 +2647,7 @@ defparam \counter_cry[9] .INIT=20'h4AA00;
 	.FCI(counter_cry_Z[9])
 );
 defparam \counter_cry[10] .INIT=20'h4AA00;
-// @9:18
+// @11:92
   ARI1 \counter_cry[11]  (
 	.FCO(counter_cry_Z[11]),
 	.S(counter_s[11]),
@@ -630,7 +2659,7 @@ defparam \counter_cry[10] .INIT=20'h4AA00;
 	.FCI(counter_cry_Z[10])
 );
 defparam \counter_cry[11] .INIT=20'h4AA00;
-// @9:18
+// @11:92
   ARI1 \counter_cry[12]  (
 	.FCO(counter_cry_Z[12]),
 	.S(counter_s[12]),
@@ -642,7 +2671,7 @@ defparam \counter_cry[11] .INIT=20'h4AA00;
 	.FCI(counter_cry_Z[11])
 );
 defparam \counter_cry[12] .INIT=20'h4AA00;
-// @9:18
+// @11:92
   ARI1 \counter_cry[13]  (
 	.FCO(counter_cry_Z[13]),
 	.S(counter_s[13]),
@@ -654,7 +2683,7 @@ defparam \counter_cry[12] .INIT=20'h4AA00;
 	.FCI(counter_cry_Z[12])
 );
 defparam \counter_cry[13] .INIT=20'h4AA00;
-// @9:18
+// @11:92
   ARI1 \counter_cry[14]  (
 	.FCO(counter_cry_Z[14]),
 	.S(counter_s[14]),
@@ -666,7 +2695,7 @@ defparam \counter_cry[13] .INIT=20'h4AA00;
 	.FCI(counter_cry_Z[13])
 );
 defparam \counter_cry[14] .INIT=20'h4AA00;
-// @9:18
+// @11:92
   ARI1 \counter_cry[15]  (
 	.FCO(counter_cry_Z[15]),
 	.S(counter_s[15]),
@@ -678,7 +2707,7 @@ defparam \counter_cry[14] .INIT=20'h4AA00;
 	.FCI(counter_cry_Z[14])
 );
 defparam \counter_cry[15] .INIT=20'h4AA00;
-// @9:18
+// @11:92
   ARI1 \counter_cry[16]  (
 	.FCO(counter_cry_Z[16]),
 	.S(counter_s[16]),
@@ -690,7 +2719,7 @@ defparam \counter_cry[15] .INIT=20'h4AA00;
 	.FCI(counter_cry_Z[15])
 );
 defparam \counter_cry[16] .INIT=20'h4AA00;
-// @9:18
+// @11:92
   ARI1 \counter_cry[17]  (
 	.FCO(counter_cry_Z[17]),
 	.S(counter_s[17]),
@@ -702,7 +2731,7 @@ defparam \counter_cry[16] .INIT=20'h4AA00;
 	.FCI(counter_cry_Z[16])
 );
 defparam \counter_cry[17] .INIT=20'h4AA00;
-// @9:18
+// @11:92
   ARI1 \counter_cry[18]  (
 	.FCO(counter_cry_Z[18]),
 	.S(counter_s[18]),
@@ -714,7 +2743,7 @@ defparam \counter_cry[17] .INIT=20'h4AA00;
 	.FCI(counter_cry_Z[17])
 );
 defparam \counter_cry[18] .INIT=20'h4AA00;
-// @9:18
+// @11:92
   ARI1 \counter_cry[19]  (
 	.FCO(counter_cry_Z[19]),
 	.S(counter_s[19]),
@@ -726,7 +2755,7 @@ defparam \counter_cry[18] .INIT=20'h4AA00;
 	.FCI(counter_cry_Z[18])
 );
 defparam \counter_cry[19] .INIT=20'h4AA00;
-// @9:18
+// @11:92
   ARI1 \counter_cry[20]  (
 	.FCO(counter_cry_Z[20]),
 	.S(counter_s[20]),
@@ -738,7 +2767,7 @@ defparam \counter_cry[19] .INIT=20'h4AA00;
 	.FCI(counter_cry_Z[19])
 );
 defparam \counter_cry[20] .INIT=20'h4AA00;
-// @9:18
+// @11:92
   ARI1 \counter_cry[21]  (
 	.FCO(counter_cry_Z[21]),
 	.S(counter_s[21]),
@@ -750,7 +2779,7 @@ defparam \counter_cry[20] .INIT=20'h4AA00;
 	.FCI(counter_cry_Z[20])
 );
 defparam \counter_cry[21] .INIT=20'h4AA00;
-// @9:18
+// @11:92
   ARI1 \counter_cry[22]  (
 	.FCO(counter_cry_Z[22]),
 	.S(counter_s[22]),
@@ -762,7 +2791,7 @@ defparam \counter_cry[21] .INIT=20'h4AA00;
 	.FCI(counter_cry_Z[21])
 );
 defparam \counter_cry[22] .INIT=20'h4AA00;
-// @9:18
+// @11:92
   ARI1 \counter_cry[23]  (
 	.FCO(counter_cry_Z[23]),
 	.S(counter_s[23]),
@@ -774,55 +2803,55 @@ defparam \counter_cry[22] .INIT=20'h4AA00;
 	.FCI(counter_cry_Z[22])
 );
 defparam \counter_cry[23] .INIT=20'h4AA00;
-// @9:18
+// @11:92
   ARI1 \counter_cry[24]  (
 	.FCO(counter_cry_Z[24]),
 	.S(counter_s[24]),
 	.Y(counter_cry_Y[24]),
-	.B(led_o_c[0]),
+	.B(counter_Z[24]),
 	.C(GND),
 	.D(GND),
 	.A(VCC),
 	.FCI(counter_cry_Z[23])
 );
 defparam \counter_cry[24] .INIT=20'h4AA00;
-// @9:18
+// @11:92
   ARI1 \counter_cry[25]  (
 	.FCO(counter_cry_Z[25]),
 	.S(counter_s[25]),
 	.Y(counter_cry_Y[25]),
-	.B(led_o_c[1]),
+	.B(counter_Z[25]),
 	.C(GND),
 	.D(GND),
 	.A(VCC),
 	.FCI(counter_cry_Z[24])
 );
 defparam \counter_cry[25] .INIT=20'h4AA00;
-// @9:18
+// @11:92
   ARI1 \counter_cry[26]  (
 	.FCO(counter_cry_Z[26]),
 	.S(counter_s[26]),
 	.Y(counter_cry_Y[26]),
-	.B(led_o_c[2]),
+	.B(counter_Z[26]),
 	.C(GND),
 	.D(GND),
 	.A(VCC),
 	.FCI(counter_cry_Z[25])
 );
 defparam \counter_cry[26] .INIT=20'h4AA00;
-// @9:18
+// @11:92
   ARI1 \counter_cry[27]  (
 	.FCO(counter_cry_Z[27]),
 	.S(counter_s[27]),
 	.Y(counter_cry_Y[27]),
-	.B(led_o_c[3]),
+	.B(counter_Z[27]),
 	.C(GND),
 	.D(GND),
 	.A(VCC),
 	.FCI(counter_cry_Z[26])
 );
 defparam \counter_cry[27] .INIT=20'h4AA00;
-// @9:18
+// @11:92
   ARI1 \counter_cry[28]  (
 	.FCO(counter_cry_Z[28]),
 	.S(counter_s[28]),
@@ -834,7 +2863,7 @@ defparam \counter_cry[27] .INIT=20'h4AA00;
 	.FCI(counter_cry_Z[27])
 );
 defparam \counter_cry[28] .INIT=20'h4AA00;
-// @9:18
+// @11:92
   ARI1 \counter_cry[29]  (
 	.FCO(counter_cry_Z[29]),
 	.S(counter_s[29]),
@@ -846,7 +2875,7 @@ defparam \counter_cry[28] .INIT=20'h4AA00;
 	.FCI(counter_cry_Z[28])
 );
 defparam \counter_cry[29] .INIT=20'h4AA00;
-// @9:18
+// @11:92
   ARI1 \counter_s[31]  (
 	.FCO(counter_s_FCO[31]),
 	.S(counter_s_Z[31]),
@@ -858,7 +2887,7 @@ defparam \counter_cry[29] .INIT=20'h4AA00;
 	.FCI(counter_cry_Z[30])
 );
 defparam \counter_s[31] .INIT=20'h4AA00;
-// @9:18
+// @11:92
   ARI1 \counter_cry[30]  (
 	.FCO(counter_cry_Z[30]),
 	.S(counter_s[30]),
@@ -873,6 +2902,27 @@ defparam \counter_cry[30] .INIT=20'h4AA00;
   CLKINT I_1 (
 	.Y(NN_1),
 	.A(clk_i_ibuf_Z)
+);
+// @11:69
+  uart_new_work_led_blinker_rtl_0layer0 uart_new_1 (
+	.param_ptr_5(param_ptr_5[1:0]),
+	.param_ptr(param_ptr_Z[1:0]),
+	.ser_dat({ser_dat[7], N_313, ser_dat[5:0]}),
+	.un1_reset_n_i_2_1z(un1_reset_n_i_2),
+	.store_0_sqmuxa_1z(store_0_sqmuxa),
+	.store_1_sqmuxa_1z(store_1_sqmuxa),
+	.led_o_0_sqmuxa_1z(led_o_0_sqmuxa),
+	.store(store_Z),
+	.uart_rx_o_c(uart_rx_o_c),
+	.clk_i(NN_1),
+	.reset_n_i_c(reset_n_i_c)
+);
+// @11:77
+  uart_tx_5208 UART_TX_1 (
+	.send_data(send_data_Z[7:0]),
+	.i_TX_DV(UART_TX_1_i_TX_DV),
+	.uart_tx_o_c(uart_tx_o_c),
+	.clk_i(NN_1)
 );
   GND GND_Z (
 	.Y(GND)

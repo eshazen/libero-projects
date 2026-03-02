@@ -3,5 +3,9 @@ Runtime Summary:
 
 	The following design units have negligible CPU times:
 	=====================================================
+		*Library: work, Entity: uart_new_work_led_blinker_rtl_0layer0, Architecture: arch
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: uart_tx_5208, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
 		*Library: work, Entity: led_blinker, Architecture: rtl
 			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time

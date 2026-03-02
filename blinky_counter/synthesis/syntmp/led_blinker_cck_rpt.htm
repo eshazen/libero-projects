@@ -1,5 +1,5 @@
 <html><body><samp><pre>
-<!@TC:1763490983>
+<!@TC:1772486196>
 
 Copyright (C) 1994-2023 Synopsys, Inc.
 This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
@@ -10,27 +10,27 @@ Tool: Synplify Pro (R)
 Build: V-2023.09M-5
 Install: /home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro
 OS: Ubuntu 24.04.3 LTS
-Hostname: hazen-x24
+Hostname: hazen-botlab
 max virtual memory: unlimited (bytes)
-max user processes: 63485
+max user processes: 127236
 max stack size: 8388608 (bytes)
 
 
 Implementation : synthesis
 
-# Written on Tue Nov 18 13:36:25 2025
+# Written on Mon Mar  2 16:16:39 2026
 
 ##### DESIGN INFO #######################################################
 
 Top View:                "led_blinker"
-Constraint File(s):      "/home/hazen/LiberoProjects/blinky_counter/designer/led_blinker/synthesis.fdc"
+Constraint File(s):      "/home/hazen/work/libero-projects/blinky_counter/designer/led_blinker/synthesis.fdc"
 
 
 
 
 ##### SUMMARY ############################################################
 
-Found 0 issues in 0 out of 1 constraints
+Found 0 issues in 0 out of 0 constraints
 
 
 ##### DETAILS ############################################################
@@ -40,10 +40,10 @@ Found 0 issues in 0 out of 1 constraints
 Clock Relationships
 *******************
 
-Starting     Ending     |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
------------------------------------------------------------------------------------------------------------------------------------
-clk50        clk50      |     20.000           |     No paths         |     No paths         |     No paths                         
-===================================================================================================================================
+Starting              Ending                |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+led_blinker|clk_i     led_blinker|clk_i     |     10.000           |     No paths         |     No paths         |     No paths                         
+=======================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
 
@@ -60,6 +60,8 @@ p:led_o[5]
 p:led_o[6]
 p:led_o[7]
 p:reset_n_i
+p:uart_rx_o
+p:uart_tx_o
 
 
 <a name=InapplicableconstraintsCCK44></a>Inapplicable constraints</a>

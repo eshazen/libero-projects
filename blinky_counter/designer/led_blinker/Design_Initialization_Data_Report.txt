@@ -3,9 +3,9 @@ Microchip Technology Inc. - Microchip Libero Software Release 2025.1 (Version 20
 Family: PolarFireSoC
 Die: MPFS095T
 Package: FCSG325
-Date: Tue Nov 18 13:41:49 2025
+Date: Mon Mar  2 16:20:41 2026
 
-Report path: /home/hazen/LiberoProjects/blinky_counter/designer/led_blinker/Design_Initialization_Data_Report.txt
+Report path: /home/hazen/work/libero-projects/blinky_counter/designer/led_blinker/Design_Initialization_Data_Report.txt
 
 PolarFireSoC Macros
 +------------+------+

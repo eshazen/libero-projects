@@ -1,12 +1,12 @@
 Software Version: 2025.1.0.14
 Programmer 'E2009O0GCO' : JTAG TCK / SPI SCK frequency = 1 MHz
 programmer 'E2009O0GCO' : FlashPro5
-Opened '/home/hazen/LiberoProjects/blinky_counter/designer/led_blinker/led_blinker_fp/led_blinker.pro'
+Opened '/home/hazen/work/libero-projects/blinky_counter/designer/led_blinker/led_blinker_fp/led_blinker.pro'
 The 'open_project' command succeeded.
 Info: Programming is already enabled for device 'MPFS095T'.
 The 'enable_device' command succeeded.
-PPD file '/home/hazen/LiberoProjects/blinky_counter/designer/led_blinker/led_blinker.ppd' has been loaded successfully.
-DESIGN : led_blinker;  CHECKSUM : FA5B;  PDB_VERSION : 1.0
+PPD file '/home/hazen/work/libero-projects/blinky_counter/designer/led_blinker/led_blinker.ppd' has been loaded successfully.
+DESIGN : led_blinker;  CHECKSUM : FF88;  PDB_VERSION : 1.0
 The 'set_programming_file' command succeeded.
 The 'set_programming_action' command succeeded.
 programmer 'E2009O0GCO' : Scan Chain...
@@ -22,13 +22,13 @@ programmer 'E2009O0GCO' : device 'MPFS095T' : EXPORT CRCERR[1] = 0
 programmer 'E2009O0GCO' : device 'MPFS095T' : Programming Mode: JTAG
 programmer 'E2009O0GCO' : device 'MPFS095T' : Programming FPGA Array and sNVM...
 programmer 'E2009O0GCO' : device 'MPFS095T' : Calculating component bitstream digests using programming file...
-programmer 'E2009O0GCO' : device 'MPFS095T' : EXPORT Fabric component bitstream digest[256] = 7321ffb4272c8c4f05dfd2e620bffddd42611bf50076a8ffc78c7cc0f0fad481
+programmer 'E2009O0GCO' : device 'MPFS095T' : EXPORT Fabric component bitstream digest[256] = c0d965dbb21150f8fdb4d92e661f6aa6bde4fa3e72fde718e5fa5fd45111ac7a
 programmer 'E2009O0GCO' : device 'MPFS095T' : EXPORT sNVM component bitstream digest[256] = b0a9e2be29f47fa951a6a131a8dd9a9016e5ba87de5833c742b7f654428ea6e7
-programmer 'E2009O0GCO' : device 'MPFS095T' : EXPORT Entire bitstream digest[256] = 15c2f10e64a97410e8ac131d524d9ce1a984a527811decc61195c9a97fed66f8
+programmer 'E2009O0GCO' : device 'MPFS095T' : EXPORT Entire bitstream digest[256] = 327754e3a5288534eb4ce58cc4469edde5bcdfa4d615750f3525926a3c413b5c
 programmer 'E2009O0GCO' : device 'MPFS095T' : Reading digests for all the segments from the device...
-programmer 'E2009O0GCO' : device 'MPFS095T' : EXPORT CHECK FABRIC digest[256] = 6a4d2782106a83cdde13d69dc8b35fb4a2b7cef783d5e775d895771d3aea0a35
-programmer 'E2009O0GCO' : device 'MPFS095T' : EXPORT CC digest[256] = bb2d11664e8b081476135e119df99806fc344f2147d1bb564ea20af0a303b3f6
-programmer 'E2009O0GCO' : device 'MPFS095T' : EXPORT SNVM digest[256] = b00d31dc13701e6c9538772d079b681d11acb9071a6cbc870e67606d142b3da8
+programmer 'E2009O0GCO' : device 'MPFS095T' : EXPORT CHECK FABRIC digest[256] = 178969a3a5daa80485bb4dd846a230606ad118c1add38f2ec8935a009991d0f2
+programmer 'E2009O0GCO' : device 'MPFS095T' : EXPORT CC digest[256] = da1ee5aaddd758da09f905ea71a65139afd699a4b124f0e182a964519617d389
+programmer 'E2009O0GCO' : device 'MPFS095T' : EXPORT SNVM digest[256] = d2fddf49e6d643854ac7989409d4f66a05cc10e7bbf56d112b3b8b8e0a1d0896
 programmer 'E2009O0GCO' : device 'MPFS095T' : EXPORT UL digest[256] = 6536ff1fd0a85bd3eda079923dd36fe296d55bfff4dd26b63b8b8209c2b4648d
 programmer 'E2009O0GCO' : device 'MPFS095T' : EXPORT UKDIGEST0 digest[256] = 0000000000000000000000000000000000000000000000000000000000000000
 programmer 'E2009O0GCO' : device 'MPFS095T' : EXPORT UKDIGEST1 digest[256] = 0000000000000000000000000000000000000000000000000000000000000000
@@ -48,10 +48,10 @@ programmer 'E2009O0GCO' : device 'MPFS095T' : Please refer to System Services Us
 programmer 'E2009O0GCO' : device 'MPFS095T' : ===================================================================================
 programmer 'E2009O0GCO' : device 'MPFS095T' : EXPORT DSN[128] = 8ba757fb661e89533ea32f166620b6c7
 programmer 'E2009O0GCO' : device 'MPFS095T' : ===================================================================================
-programmer 'E2009O0GCO' : Finished: Tue Nov 18 13:44:10 2025 (Elapsed time 00:01:29)
+programmer 'E2009O0GCO' : Finished: Mon Mar  2 16:23:04 2026 (Elapsed time 00:01:28)
 programmer 'E2009O0GCO' : device 'MPFS095T' : Executing action PROGRAM PASSED.
 programmer 'E2009O0GCO' : Chain programming PASSED.
-Chain Programming Finished: Tue Nov 18 13:44:10 2025 (Elapsed time 00:01:29)
+Chain Programming Finished: Mon Mar  2 16:23:04 2026 (Elapsed time 00:01:28)
 
                         o - o - o - o - o - o
 

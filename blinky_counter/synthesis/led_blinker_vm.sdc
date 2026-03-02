@@ -1,8 +1,8 @@
-# Written by Synplify Pro version map202309act, Build 395R. Synopsys Run ID: sid1763490985 
+# Written by Synplify Pro version map202309act, Build 395R. Synopsys Run ID: sid1772486199 
 # Top Level Design Parameters 
 
 # Clocks 
-create_clock -period 20.000 -waveform {0.000 10.000} -name {clk50} [get_ports {clk_i}] 
+create_clock -period 10.000 -waveform {0.000 5.000} -name {led_blinker|clk_i} [get_ports {clk_i}] 
 
 # Virtual Clocks 
 
@@ -33,6 +33,7 @@ create_clock -period 20.000 -waveform {0.000 10.000} -name {clk50} [get_ports {c
 # set_case Attributes 
 
 # Clock Delay Constraints 
+set_clock_groups -asynchronous -group [get_clocks {led_blinker|clk_i}]
 
 # syn_mode Attributes 
 

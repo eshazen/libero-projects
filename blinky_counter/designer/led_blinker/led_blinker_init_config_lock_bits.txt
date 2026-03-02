@@ -1,6 +1,6 @@
 ;----------------------------------------------------------------------------------
 ; Register Lock Bits Configuration File for peripheral blocks
-; Date:    Tue Nov 18 13:41:08 2025
+; Date:    Mon Mar  2 16:19:50 2026
 ; Version: 2025.1 2025.1.0.14
 ; Design:  led_blinker
 ; Family:  PolarFireSoC

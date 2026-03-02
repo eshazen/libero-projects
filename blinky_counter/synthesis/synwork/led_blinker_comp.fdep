@@ -1,4 +1,4 @@
-#OPTIONS:"|-mixedhdl|-top|work.led_blinker|-layerid|0|-orig_srs|/home/hazen/LiberoProjects/blinky_counter/synthesis/synwork/led_blinker_comp.srs|-prodtype|synplify_pro|-infer_seqShift|-primux|-dspmac|-pqdpadd|-fixsmult|-sdff_counter|-divnmod|-nram|-actel|-work_is_curlib|1|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-vhdl2008|-work_is_curlib|1|-ignore_undefined_lib|-lib|work"
+#OPTIONS:"|-mixedhdl|-top|work.led_blinker|-layerid|0|-orig_srs|/home/hazen/work/libero-projects/blinky_counter/synthesis/synwork/led_blinker_comp.srs|-prodtype|synplify_pro|-infer_seqShift|-primux|-dspmac|-pqdpadd|-fixsmult|-sdff_counter|-divnmod|-nram|-actel|-work_is_curlib|1|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-vhdl2008|-work_is_curlib|1|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work"
 #CUR:"/home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/linux_a_64/c_vhdl":1745933903
 #CUR:"/home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/lib/vhd2008/location.map":1745933277
 #CUR:"/home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/lib/vhd2008/std.vhd":1745933277
@@ -10,12 +10,24 @@
 #CUR:"/home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/lib/vhd2008/arith.vhd":1745933276
 #CUR:"/home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/lib/vhd2008/unsigned.vhd":1745933277
 #CUR:"/home/hazen/microchip/Libero_SoC_2025.1/Libero_SoC/Synplify_Pro/lib/vhd/hyperents.vhd":1745933276
-#CUR:"/home/hazen/LiberoProjects/blinky_counter/hdl/counter_top.vhd":1763490923
-0			"/home/hazen/LiberoProjects/blinky_counter/hdl/counter_top.vhd" vhdl
+#CUR:"/home/hazen/work/libero-projects/blinky_counter/hdl/uart_tx.vhd":1772484976
+#CUR:"/home/hazen/work/libero-projects/blinky_counter/hdl/uart_new.vhd":1772485844
+#CUR:"/home/hazen/work/libero-projects/blinky_counter/hdl/counter_top.vhd":1772486188
+0			"/home/hazen/work/libero-projects/blinky_counter/hdl/uart_tx.vhd" vhdl
+1			"/home/hazen/work/libero-projects/blinky_counter/hdl/uart_new.vhd" vhdl
+2			"/home/hazen/work/libero-projects/blinky_counter/hdl/counter_top.vhd" vhdl
 #Dependency Lists(Uses List)
 0 -1
+1 -1
+2 0 1
 #Dependency Lists(Users Of)
-0 -1
+0 2
+1 2
+2 -1
 #Design Unit to File Association
-module work led_blinker 0
-arch work led_blinker rtl 0
+module work led_blinker 2
+arch work led_blinker rtl 2
+module work uart_new 1
+arch work uart_new arch 1
+module work uart_tx 0
+arch work uart_tx rtl 0

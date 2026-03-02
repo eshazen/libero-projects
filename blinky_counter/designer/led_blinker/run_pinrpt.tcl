@@ -1,6 +1,6 @@
 DESIGN=led_blinker
-DESDIR=/home/hazen/LiberoProjects/blinky_counter/designer/led_blinker
-TARGET_DIR=/home/hazen/LiberoProjects/blinky_counter/designer/led_blinker
+DESDIR=/home/hazen/work/libero-projects/blinky_counter/designer/led_blinker
+TARGET_DIR=/home/hazen/work/libero-projects/blinky_counter/designer/led_blinker
 FAM=PolarFireSoC
 DIE=PA5SOC095T
 PACKAGE=fcsg325

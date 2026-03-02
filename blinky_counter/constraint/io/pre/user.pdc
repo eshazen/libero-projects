@@ -6,7 +6,7 @@
 
 # Family: PolarFireSoC , Die: MPFS095T , Package: FCSG325
 
-# Date generated: Tue Nov 25 13:48:01 2025 
+# Date generated: Mon Mar  2 16:17:58 2026 
 
 
 # 
@@ -83,6 +83,18 @@ set_io -port_name reset_n_i  \
     -pin_name T19            \
     -fixed true              \
     -DIRECTION INPUT
+
+
+set_io -port_name uart_rx_o  \
+    -pin_name E14            \
+    -fixed true              \
+    -DIRECTION INPUT
+
+
+set_io -port_name uart_tx_o  \
+    -pin_name E15            \
+    -fixed true              \
+    -DIRECTION OUTPUT
 
 
 

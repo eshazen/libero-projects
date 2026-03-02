@@ -1,11 +1,11 @@
 # Microsemi Corp.
-# Date: 2025-Nov-25 14:17:14
+# Date: 2026-Mar-02 10:20:53
 Libero Release : 2025.1
 Libero Version : 2025.1.0.14
 Operating System Name : Linux
 Linux Distribution Description:	Ubuntu 24.04.3 LTS
 
-Ram Size : Unknown
+Ram Size : 31.14 GB (usable)
 OS Type : 64-bit
 
 Environment Variables : 
